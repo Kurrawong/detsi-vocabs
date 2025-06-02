@@ -51,7 +51,7 @@ dq-iso-19157:CompletenessOmission
     rdfs:isDefinedBy <https://www.iso.org/standard/32575.html> ;
     skos:broader dq-iso-19157:Completeness ;
     skos:definition "Data absent from the data set, as described by the scope"@en ;
-    skos:exactMatch dq-iso-25012:completeness ;
+    skos:exactMatch dq-iso-25012:Completeness ;
     skos:inScheme cs: ;
     skos:prefLabel "Completeness Omission"@en ;
 .

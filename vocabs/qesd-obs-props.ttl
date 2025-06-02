@@ -8424,10 +8424,10 @@ tern-cv:ff4ce8d1-4c2b-4d6e-8aea-be4138fea452
     a skos:Concept ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:created "2022-07-27"^^xsd:date ;
+    schema:dateCreated "2022-07-27"^^xsd:date ;
     skos:definition "The elements and conditions which are found in, influence and affect oceans and coasts; oceanography is the study of the oceans."@en ;
     skos:inScheme cs: ;
-    skos:modified "2022-07-27"^^xsd:date ;
+    schema:dateModified "2022-07-27"^^xsd:date ;
     skos:narrower
         <http://pid.geoscience.gov.au/def/voc/ga/netcdfldtos/sea_surface_temperature> ,
         <https://linked.data.gov.au/def/qld-obsprop/5fb80b7c-b505-5960-853a-23c85c7cf472> ;

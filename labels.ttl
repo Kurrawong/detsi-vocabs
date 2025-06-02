@@ -1,8 +1,11 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prof: <http://www.w3.org/ns/dx/prof/>
 PREFIX prov: <http://www.w3.org/ns/prov/#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/org/des>
@@ -29,3 +32,353 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:name "The US Library of Congress" ;
     schema:url "https://id.loc.gov/"^^xsd:anyURI ;
 .
+
+<https://w3id.org/profile/vocpub> schema:name "VocPub Profile of SKOS" .
+
+<http://qudt.org/2.1/vocab/unit> schema:name "unit" .
+<http://qudt.org/vocab/unit/DAY> schema:name "day" .
+<http://qudt.org/vocab/unit/TON_Metric> schema:name "metric ton" .
+<http://qudt.org/vocab/unit/V> schema:name "volt" .
+
+<http://www.w3.org/ns/dqv#Category> schema:name "Categoryit" .
+<http://www.w3.org/ns/dqv#Dimension> schema:name "Dimension" .
+<http://www.w3.org/ns/dqv#inCategory> schema:name "in category" .
+
+
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:132448> schema:name "CHEBI:132448" .
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:138089> schema:name "CHEBI:138089" .
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35546> schema:name "CHEBI:35546" .
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35547> schema:name "CHEBI:35547" .
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35549> schema:name "CHEBI:35549" .
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:38397> schema:name "CHEBI:38397" .
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39426> schema:name "CHEBI:39426" .
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:83492> schema:name "CHEBI:83492" .
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:83493> schema:name "CHEBI:83493" .
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:83507> schema:name "CHEBI:83507" .
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:90633> schema:name "CHEBI:90633" .
+
+<https://www.iso.org/standard/32575.html> schema:name "ISO 19157:2013 Geographic information - Data quality" .
+
+schema:DataCatalog
+    schema:description "A collection of datasets" ;
+    schema:name "Data Catalog" ;
+.
+
+schema:hasPart
+    schema:description
+        "Indicates a Resource that is part of this item" ;
+    schema:name
+        "has part" ;
+.
+
+<https://iso25000.com/index.php/en/iso-25000-standards/iso-25012>
+    schema:description "ISO Data Quality model" ;
+    schema:name "ISO/IEC 25012" ;
+.
+
+<http://vocab.aodn.org.au/def/discovery_parameter/1>
+    schema:description "ISO Data Quality model" ;
+    schema:name "ISO/IEC 25012" ;
+.
+
+<http://linked.data.gov.au/def/tern-cv/5699eca7-9ef0-47a6-bcfb-9306e0e2b85e>
+    schema:description "This controlled vocabulary covers parameter terms and their descriptions. It can be used for marking up Marine Community Profile metadata and a classified version of the terms is used to control faceted searching in the AODN/IMOS portal." ;
+    schema:name "AODN Discovery Parameter Vocabulary" ;
+.
+
+dcterms:conformsTo
+    schema:description "An established standard to which the described resource conforms." ;
+    schema:name "Conforms To" ;
+.
+
+<http://qudt.org/2.1/vocab/quantitykind>
+    schema:name "QUDT Quantity Kind Vocabulary Version 2.1.33" ;
+.
+
+<http://qudt.org/schema/qudt/CountingUnit>
+    schema:description "Used for all units that express counts. Examples are Atomic Number, Number, Number per Year, Percent and Sample per Second." ;
+    schema:name "Counting Unit" ;
+.
+
+<http://qudt.org/schema/qudt/DerivedUnit>
+    schema:description "A DerivedUnit is a type specification for units that are derived from other units." ;
+    schema:name "Derived Unit" ;
+.
+
+<http://qudt.org/schema/qudt/DimensionlessUnit>
+    schema:description "A Dimensionless Unit is a quantity for which all the exponents of the factors corresponding to the base quantities in its quantity dimension are zero." ;
+    schema:name "Dimensionless Unit" ;
+.
+
+<http://qudt.org/schema/qudt/QuantityKind>
+    schema:description "A <b>Quantity Kind</b> is any observable property that can be  measured and quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity." ;
+    schema:name "Quantity Kind" ;
+.
+
+<http://qudt.org/schema/qudt/Unit>
+    schema:name "Unit" ;
+.
+
+<http://qudt.org/schema/qudt/applicableUnit>
+    schema:name "applicable unit" ;
+.
+
+<http://qudt.org/schema/qudt/hasQuantityKind>
+    schema:name "has quantity kind" ;
+.
+
+<http://qudt.org/vocab/quantitykind/AbsoluteHumidity>
+    schema:name "Absolute Humidity" ;
+    schema:url <http://qudt.org/vocab/quantitykind/RelativeHumidity> ;
+.
+
+<http://qudt.org/vocab/quantitykind/MassFractionOfWater>
+    schema:name "Mass Fraction of Water" ;
+    schema:url <http://qudt.org/vocab/quantitykind/MassFractionOfDryMatter> ;
+.
+
+<http://qudt.org/vocab/quantitykind/ThermodynamicTemperature>
+    schema:name "thermodynamic temperature" ;
+    schema:url <http://qudt.org/vocab/quantitykind/Temperature> ;
+.
+
+<http://qudt.org/vocab/quantitykind/Velocity>
+    schema:name "velocity" ;
+.
+
+rdfs:comment
+    schema:description "A description of the subject resource." ;
+    schema:name "comment" ;
+.
+
+rdfs:isDefinedBy
+    schema:description "The defininition of the subject resource." ;
+    schema:name "is defined by" ;
+.
+
+rdfs:seeAlso
+    schema:description "Further information about the subject resource." ;
+    schema:name "see also" ;
+.
+
+owl:deprecated
+    schema:description "The annotation property that indicates that a given entity has been deprecated." ;
+    schema:name "deprecated" ;
+.
+
+owl:inverseOf
+    schema:description "The property that determines that two given properties are inverse." ;
+    schema:name "inverseOf" ;
+.
+
+owl:sameAs
+    schema:description "The property that determines that two given individuals are equal." ;
+    schema:name "sameAs" ;
+.
+
+skos:Concept
+    schema:description
+        "An idea or notion; a unit of thought" ;
+    schema:name
+        "Concept" ;
+.
+
+skos:ConceptScheme
+    schema:description "A set of concepts, optionally including statements about semantic relationships between those concepts" ;
+    schema:name "Concept Scheme" ;
+.
+
+skos:altLabel
+    schema:description "An alternative lexical label for a resource" ;
+    schema:name "alternative label" ;
+.
+
+skos:broader
+    schema:description "Relates a concept to a concept that is more general in meaning" ;
+    schema:name "has broader" ;
+.
+
+skos:closeMatch
+    schema:description "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property" ;
+    schema:name "has close match" ;
+.
+
+skos:definition
+    schema:description "A statement or formal explanation of the meaning of a concept" ;
+    schema:name "definition" ;
+.
+
+skos:editorialNote
+    schema:description "A note for an editor, translator or maintainer of the vocabulary" ;
+    schema:name "editorial note" ;
+.
+
+skos:exactMatch
+    schema:description "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch" ;
+    schema:name "has exact match" ;
+.
+
+skos:example
+    schema:description "An example of the use of a concept" ;
+    schema:name "example" ;
+.
+
+skos:hasTopConcept
+    schema:description "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies" ;
+    schema:name "has top concept" ;
+.
+
+skos:historyNote
+    schema:description "A note about the past state/use/meaning of a concept" ;
+    schema:name "history note" ;
+.
+
+skos:inScheme
+    schema:description "Relates a resource (for example a concept) to a concept scheme in which it is included" ;
+    schema:name "is in scheme" ;
+.
+
+skos:narrower
+    schema:description "Relates a concept to a concept that is more specific in meaning" ;
+    schema:name "has narrower" ;
+.
+
+skos:notation
+    schema:description "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme" ;
+    schema:name "notation" ;
+.
+
+skos:prefLabel
+    schema:description "The preferred lexical label for a resource, in a given language" ;
+    schema:name "preferred label" ;
+.
+
+skos:related
+    schema:description "Relates a concept to a concept with which there is an associative semantic relationship" ;
+    schema:name "has related" ;
+.
+
+skos:relatedMatch
+    schema:description "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes" ;
+    schema:name "has related match" ;
+.
+
+skos:scopeNote
+    schema:description "A note that helps to clarify the meaning and/or the use of a concept" ;
+    schema:name "scope note" ;
+.
+
+skos:topConceptOf
+    schema:description "Relates a concept to the concept scheme that it is a top level concept of" ;
+    schema:name "is top concept in scheme" ;
+.
+
+dcat:Catalog
+    schema:description "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog)." ;
+    schema:name "Catalog" ;
+.
+
+prof:hasArtifact
+    schema:description "The URL of a downloadable file with particulars such as its format and role indicated by the Resource Descriptor" ;
+    schema:name "has artifact" ;
+.
+
+prof:hasResource
+    schema:description "A resource which describes the nature of an artifact and the role it plays in relation to the Profile" ;
+    schema:name "has resource" ;
+.
+
+prof:hasRole
+    schema:description "The function of an artifact described by a Resource Descriptor, such as specification, guidance etc." ;
+    schema:name "has role" ;
+.
+
+<https://kurrawong.ai>
+    schema:description """KurrawongAI is a small, Australian-based company enabling organisations to take control of their data.
+
+We use data modelling, data governance and data systems implementation expertise all based on Semantic Web and Knowledge Graph principles to ensure data is in the richest, most open and most extensible form it can be.
+
+We use knowledge graphs for data storage, as a transfer format, when serialised, and as inputs to advanced reasoning and data processing tasks, such as for Machine Learning and Artificial Intelligence applications.""" ;
+    schema:name
+        "KurrawongAI" ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+.
+
+<https://prez.dev/Manifest>
+    schema:name "Manifest" ;
+.
+
+<https://prez.dev/ManifestResourceRoles/CatalogueData>
+    schema:description "Data for the container, usually a Catalogue, including the identity of it and each item fo content" ;
+    schema:name "Catalogue Data" ;
+.
+
+<https://prez.dev/ManifestResourceRoles/CompleteCatalogueAndResourceLabels>
+    schema:description "All the labels - possibly including names, descriptions & seeAlso links - for the Catalogue and Resource objects" ;
+    schema:name "Complete Catalogue and Resource Labels" ;
+.
+
+<https://prez.dev/ManifestResourceRoles/ResourceData>
+    schema:description "Data for the content of the container" ;
+    schema:name "Resource Data" ;
+.
+
+schema:Organization
+    schema:description "An organization such as a school, NGO, corporation, club, etc" ;
+    schema:name "Organization" ;
+.
+
+schema:citation
+    schema:description "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc" ;
+    schema:name "citation" ;
+.
+
+schema:codeRepository
+    schema:description "Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex)" ;
+    schema:name "code repository" ;
+.
+
+schema:contributor
+    schema:description "A secondary contributor to the CreativeWork or Event" ;
+    schema:name "contributor" ;
+.
+
+schema:creator
+    schema:description "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork" ;
+    schema:name "creator" ;
+.
+
+schema:dateCreated
+    schema:description "The date on which the CreativeWork was created or the item was added to a DataFeed" ;
+    schema:name "date created" ;
+.
+
+schema:dateModified
+    schema:description "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed" ;
+    schema:name "date modified" ;
+.
+
+schema:description
+    schema:description "A description of the item" ;
+    schema:name "description" ;
+.
+
+schema:name
+    schema:description "The name of the item" ;
+    schema:name "name" ;
+.
+
+schema:publisher
+    schema:description "The publisher of the creative work" ;
+    schema:name "publisher" ;
+.
+
+schema:url
+    schema:description "URL of the item" ;
+    schema:name "url" ;
+.
+
+

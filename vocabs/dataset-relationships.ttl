@@ -4,7 +4,6 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov/#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX schema: <https://www.schema.org/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -179,7 +178,7 @@ prov:specializationOf
     a skos:Concept ;
     skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
-    owl:inverseOf :generalisationOf ;
+    owl:inverseOf :generalizationOf ;
     skos:definition "An entity that is a specialization of another shares all aspects of the latter, and additionally presents more specific aspects of the same thing as the latter. In particular, the lifetime of the entity being specialized contains that of any specialization. Examples of aspects include a time period, an abstraction, and a context associated with the entity."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Is Specialization Of"@en ;
@@ -239,7 +238,7 @@ prov:wasRevisionOf
     skos:inScheme cs: ;
     skos:prefLabel "Was Derivation of"@en ;
     skos:topConceptOf cs: ;
-    prov:wasDerivedFrom <https://www.w3.org/ns/prov-o-inverses> ;
+    schema:citation "https://www.w3.org/ns/prov-o-inverses"^^xsd:anyURI ;
 .
 
 :hadRevision

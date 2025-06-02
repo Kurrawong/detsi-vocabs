@@ -2,7 +2,6 @@ PREFIX : <https://linked.data.gov.au/def/nsw-quality-dimension/>
 PREFIX cs: <https://linked.data.gov.au/def/nsw-quality-dimension>
 PREFIX dqv: <http://www.w3.org/ns/dqv#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX schema: <https://www.schema.org/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -401,7 +400,7 @@ cs:
 2020: Derived from NSW Government Standard for Data Quality Reporting. https://data.nsw.gov.au/data-quality-reporting-tool""" ;
     schema:publisher <https://linked.data.gov.au/org/detsi> ;
     rdfs:comment "Find out more about the quality assurance processes from the NSW Government Standard for Data Quality Reporting. https://data.nsw.gov.au/data-quality-reporting-tool"@en ;
-    rdfs:seeAlso <https://data.nsw.gov.au/data-quality-reporting-tool> ;
+    schema:citation "https://data.nsw.gov.au/data-quality-reporting-tool"^^xsd:anyURI ;
     skos:definition "Criteria for a Data Quality Statement as per the New South Wales (NSW) Government. Find out more about the quality assurance processes from the NSW Government Standard for Data Quality Reporting. https://data.nsw.gov.au/data-quality-reporting-tool"@en ;
     skos:hasTopConcept
         :accessibility ,

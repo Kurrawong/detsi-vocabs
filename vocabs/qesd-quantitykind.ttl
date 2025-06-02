@@ -1,12 +1,10 @@
 PREFIX cs: <https://linked.data.gov.au/def/qesd-qkd>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX quantitykind: <http://qudt.org/vocab/quantitykind/>
 PREFIX qudt: <http://qudt.org/schema/qudt/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX unit: <http://qudt.org/vocab/unit/>
-PREFIX vaem: <http://www.linkedmodel.org/schema/vaem#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 quantitykind:AmountOfSubstancePerUnitMass
@@ -108,7 +106,7 @@ quantitykind:Absorptance
     qudt:applicableUnit unit:UNITLESS ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
     skos:definition "Absorptance is the ratio of the radiation absorbed by a surface to that incident upon it. Also known as absorbance." ;
-    skos:exactMatch <http://en.wikipedia.org/wiki/Absorbance> ;
+    schema:citation "http://en.wikipedia.org/wiki/Absorbance" ;
     skos:inScheme cs: ;
     skos:prefLabel "Absorptance"@en ;
     skos:topConceptOf cs: ;
@@ -357,7 +355,6 @@ quantitykind:Period
         skos:Concept ;
     skos:historyNote "Derived from QUDT (http://qudt.org/vocab/quantitykind)" ;
     qudt:applicableUnit unit:SEC ;
-    vaem:todo "belongs to SOQ-ISO" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
     skos:definition "Duration of one cycle of a periodic phenomenon." ;
     skos:inScheme cs: ;
