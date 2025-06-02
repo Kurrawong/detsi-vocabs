@@ -1,0 +1,246 @@
+PREFIX : <https://linked.data.gov.au/def/resource-types/>
+PREFIX cs: <https://linked.data.gov.au/def/resource-types>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://www.schema.org/>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:Audiovisual
+    a skos:Concept ;
+    skos:historyNote "DataCite Metadata Working Group. (2017). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.1. DataCite e.V. 10.5438/0014."@en ;
+    schema:citation "https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A series of visual representations imparting an impression of motion when shown in succession. May or may not include sound."@en ;
+    skos:exactMatch <http://registry.it.csiro.au/def/datacite/resourceType/Audiovisual> ;
+    skos:example <https://data.datacite.org/application/vnd.datacite.datacite+xml/10.17608/K6.AUCKLAND.4620790.V1> ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Audiovisual"@en ;
+    skos:scopeNote "May be used for films, video, etc, Ex: https://data.datacite.org/application/vnd.datacite.datacite+xml/10.17608/K6.AUCKLAND.4620790.V1"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:Collection
+    a skos:Concept ;
+    skos:historyNote "DataCite Metadata Working Group. (2017). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.1. DataCite e.V. 10.5438/0014."@en ;
+    schema:citation "https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "An aggregation of resources, which may encompass collections of one resourceType as well as those of mixed types. A collection is described as a group; its parts may also be separately described."@en ;
+    skos:exactMatch <http://registry.it.csiro.au/def/datacite/resourceType/Collection> ;
+    skos:example <https://data.datacite.org/application/vnd.datacite.datacite+xml/10.5284/1001038> ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Collection"@en ;
+    skos:scopeNote "A collection of samples, or various files making up a report. Ex: https://data.datacite.org/application/vnd.datacite.datacite+xml/10.5284/1001038"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:DataPaper
+    a skos:Concept ;
+    skos:historyNote "DataCite Metadata Working Group. (2017). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.1. DataCite e.V. 10.5438/0014."@en ;
+    schema:citation "https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A factual and objective publication with a focused intent to identify and describe specific data, sets of data, or data collections to facilitate discoverability."@en ;
+    skos:exactMatch <http://registry.it.csiro.au/def/datacite/resourceType/DataPaper> ;
+    skos:example <https://data.datacite.org/application/vnd.datacite.datacite+xml/10.15470/5a5kni> ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Data Paper"@en ;
+    skos:scopeNote "A data paper describes data provenance and methodologies used in the gathering, processing, organizing, and representing the data. Ex: https://data.datacite.org/application/vnd.datacite.datacite+xml/10.15470/5a5kni"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:Dataset
+    a skos:Concept ;
+    skos:historyNote "DataCite Metadata Working Group. (2017). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.1. DataCite e.V. 10.5438/0014."@en ;
+    schema:citation "https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Data encoded in a defined structure."@en ;
+    skos:exactMatch <http://registry.it.csiro.au/def/datacite/resourceType/Dataset> ;
+    skos:example <https://data.datacite.org/application/vnd.datacite.datacite+xml/10.1594/PANGAEA.804876> ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Dataset"@en ;
+    skos:scopeNote "Data file or files. Ex: https://data.datacite.org/application/vnd.datacite.datacite+xml/10.1594/PANGAEA.804876"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:Event
+    a skos:Concept ;
+    skos:historyNote "DataCite Metadata Working Group. (2017). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.1. DataCite e.V. 10.5438/0014."@en ;
+    schema:citation "https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A non-persistent, time-based occurrence."@en ;
+    skos:exactMatch <http://registry.it.csiro.au/def/datacite/resourceType/Event> ;
+    skos:example <https://data.datacite.org/application/vnd.datacite.datacite+xml/10.7269/P3RN35SZ> ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Event"@en ;
+    skos:scopeNote "Descriptive information and/or content that is the basis for discovery of the purpose, location, duration, and responsible agents associated with an event such as a webcast or convention. Ex: https://data.datacite.org/application/vnd.datacite.datacite+xml/10.7269/P3RN35SZ"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:Image
+    a skos:Concept ;
+    skos:historyNote "DataCite Metadata Working Group. (2017). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.1. DataCite e.V. 10.5438/0014."@en ;
+    schema:citation "https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A visual representation other than text."@en ;
+    skos:exactMatch <http://registry.it.csiro.au/def/datacite/resourceType/Image> ;
+    skos:example <https://data.datacite.org/application/vnd.datacite.datacite+xml/10.6083/M4QN65C5> ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Image"@en ;
+    skos:scopeNote "Digitised or born digital images, drawings or photographs. Ex: https://data.datacite.org/application/vnd.datacite.datacite+xml/10.6083/M4QN65C5"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:InteractiveResource
+    a skos:Concept ;
+    skos:historyNote "DataCite Metadata Working Group. (2017). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.1. DataCite e.V. 10.5438/0014."@en ;
+    schema:citation "https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A resource requiring interaction from the user to be understood, executed, or experienced"@en ;
+    skos:exactMatch <http://registry.it.csiro.au/def/datacite/resourceType/InteractiveResource> ;
+    skos:example <https://data.datacite.org/application/vnd.datacite.datacite+xml/10.7269/P3TB14TR> ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Interactive Resource"@en ;
+    skos:scopeNote "Training modules, files that require use of a viewer (e.g., Flash), or query/response portals. Ex: https://data.datacite.org/application/vnd.datacite.datacite+xml/10.7269/P3TB14TR"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:Model
+    a skos:Concept ;
+    skos:historyNote "DataCite Metadata Working Group. (2017). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.1. DataCite e.V. 10.5438/0014."@en ;
+    schema:citation "https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "An abstract, conceptual, graphical, mathematical or visualization model that represents empirical objects, phenomena, or physical processes."@en ;
+    skos:exactMatch <http://registry.it.csiro.au/def/datacite/resourceType/Model> ;
+    skos:example <https://data.datacite.org/application/vnd.datacite.datacite+xml/10.5285/4D866CD2-C907-4CE2-B070-084CA9779DC2> ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Model"@en ;
+    skos:scopeNote "Modelled descriptions of, for example, different aspects of languages or a molecular biology reaction chain. Ex: https://data.datacite.org/application/vnd.datacite.datacite+xml/10.5285/4D866CD2-C907-4CE2-B070-084CA9779DC2"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:Other
+    a skos:Concept ;
+    skos:historyNote "DataCite Metadata Working Group. (2017). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.1. DataCite e.V. 10.5438/0014."@en ;
+    schema:citation "https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "If selected, supply a value for ResourceType."@en ;
+    skos:exactMatch <http://registry.it.csiro.au/def/datacite/resourceType/Other> ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Other"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:PhysicalObject
+    a skos:Concept ;
+    skos:historyNote "DataCite Metadata Working Group. (2017). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.1. DataCite e.V. 10.5438/0014."@en ;
+    schema:citation "https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "An inanimate, three-dimensional object or substance."@en ;
+    skos:exactMatch <http://registry.it.csiro.au/def/datacite/resourceType/PhysicalObject> ;
+    skos:example <https://data.datacite.org/application/vnd.datacite.datacite+xml/10.7299/X78052RB> ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Physical Object"@en ;
+    skos:scopeNote "Artifacts, specimens. Ex: https://data.datacite.org/application/vnd.datacite.datacite+xml/10.7299/X78052RB"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:Service
+    a skos:Concept ;
+    skos:historyNote "DataCite Metadata Working Group. (2017). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.1. DataCite e.V. 10.5438/0014."@en ;
+    schema:citation "https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "An organized system of apparatus, appliances, staff, etc., for supplying some function(s) required by end users."@en ;
+    skos:exactMatch <http://registry.it.csiro.au/def/datacite/resourceType/Service> ;
+    skos:example <https://data.datacite.org/application/vnd.datacite.datacite+xml/10.21938/3I01ISNUCODNH1ZJBCVUWA> ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Service"@en ;
+    skos:scopeNote "Data management service, or long-term preservation service. Ex.: https://data.datacite.org/application/vnd.datacite.datacite+xml/10.21938/3I01ISNUCODNH1ZJBCVUWA"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:Software
+    a skos:Concept ;
+    skos:historyNote "DataCite Metadata Working Group. (2017). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.1. DataCite e.V. 10.5438/0014."@en ;
+    schema:citation "https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A computer program in source code (text) or compiled form. Use this type for all software components supporting scholarly research."@en ;
+    skos:exactMatch <http://registry.it.csiro.au/def/datacite/resourceType/Software> ;
+    skos:example <https://data.datacite.org/application/vnd.datacite.datacite+xml/10.4225/03/5954F738EE5AA> ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Software"@en ;
+    skos:scopeNote "Software supporting scholarly research. Ex: https://data.datacite.org/application/vnd.datacite.datacite+xml/10.4225/03/5954F738EE5AA"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:Sound
+    a skos:Concept ;
+    skos:historyNote "DataCite Metadata Working Group. (2017). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.1. DataCite e.V. 10.5438/0014."@en ;
+    schema:citation "https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A resource primarily intended to be heard."@en ;
+    skos:exactMatch <http://registry.it.csiro.au/def/datacite/resourceType/Sound> ;
+    skos:example <https://data.datacite.org/application/vnd.datacite.datacite+xml/10.7282/T3J67F05> ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Sound"@en ;
+    skos:scopeNote "Audio recording. Ex: https://data.datacite.org/application/vnd.datacite.datacite+xml/10.7282/T3J67F05"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:Text
+    a skos:Concept ;
+    skos:historyNote "DataCite Metadata Working Group. (2017). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.1. DataCite e.V. 10.5438/0014."@en ;
+    schema:citation "https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A resource consisting primarily of words for reading."@en ;
+    skos:exactMatch <http://registry.it.csiro.au/def/datacite/resourceType/Text> ;
+    skos:example <https://data.datacite.org/application/vnd.datacite.datacite+xml/10.5682/9786065914018> ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Text"@en ;
+    skos:scopeNote "Grey literature, lab notes, accompanying materials. Ex: https://data.datacite.org/application/vnd.datacite.datacite+xml/10.5682/9786065914018"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:Workflow
+    a skos:Concept ;
+    skos:historyNote "DataCite Metadata Working Group. (2017). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.1. DataCite e.V. 10.5438/0014."@en ;
+    schema:citation "https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A structured series of steps which can be executed to produce a final outcome, allowing users a means to specify and enact their  work in a more reproducible manner."@en ;
+    skos:exactMatch <http://registry.it.csiro.au/def/datacite/resourceType/Workflow> ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Workflow"@en ;
+    skos:scopeNote "Computational workflows involving sequential operations made on data by wrapped software and may be specified in a format belonging to a workflow management system, such as Taverna (http://www.taverna.org.uk/). An education module on workflows prepared by DataONE is available at http://www.dataone.org/sites/all/documents/L10_AnalysisWorkflows.pptx"@en ;
+    skos:topConceptOf cs: ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    schema:creator <https://linked.data.gov.au/org/detsi> ;
+    schema:dateCreated "2020-12-01"^^xsd:date ;
+    schema:dateModified "2025-06-02"^^xsd:date ;
+    skos:historyNote """2025-06 NJC: Updated from DES to DETSI. No content changes.
+
+Create by the DataCite Metadata Working Group. (2017). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.1. DataCite e.V. 10.5438/0014.""" ;
+    schema:publisher <https://linked.data.gov.au/org/detsi> ;
+    rdfs:seeAlso <http://doi.org/10.5438/0014> ;
+    skos:definition "List of resource-types from https://schema.datacite.org/meta/kernel-4.1/include/datacite-resourceType-v4.1.xsd DataCite metadata schema."@en ;
+    skos:hasTopConcept
+        :Audiovisual ,
+        :Collection ,
+        :DataPaper ,
+        :Dataset ,
+        :Event ,
+        :Image ,
+        :InteractiveResource ,
+        :Model ,
+        :Other ,
+        :PhysicalObject ,
+        :Service ,
+        :Software ,
+        :Sound ,
+        :Text ,
+        :Workflow ;
+    skos:prefLabel "DataCite Resource Types"@en ;
+.
+
