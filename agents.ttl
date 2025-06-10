@@ -1,0 +1,47 @@
+PREFIX prov: <http://www.w3.org/ns/prov/#>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+<https://linked.data.gov.au/org/des>
+    a schema:Organization ;
+    schema:name "Department of Environment and Science" ;
+    schema:url "https://www.desi.qld.gov.au/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/detsi>
+    a schema:Organization ;
+    schema:name "Department of the Environment, Tourism, Science and Innovation" ;
+    schema:url "https://www.desi.qld.gov.au/"^^xsd:anyURI ;
+    prov:wasDerivedFrom <https://linked.data.gov.au/org/des> ;
+.
+
+<https://linked.data.gov.au/org/gsq>
+    a schema:Organization ;
+    schema:name "Geological Survey of Queensland" ;
+    schema:url "https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq"^^xsd:anyURI ;
+.
+
+<https://id.loc.gov>
+    a schema:Organization ;
+    schema:name "The US Library of Congress" ;
+    schema:url "https://id.loc.gov/"^^xsd:anyURI ;
+.
+
+<https://committee.iso.org/home/tc211>
+    a schema:Organization ;
+    schema:name "ISCO Technical Committee 211" ;
+    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/immc-eu>
+    a schema:Organization ;
+    schema:name "Interinstitutional Metadata Maintenance Committee (IMMC) of the European Union" ;
+    schema:url "https://op.europa.eu/en/web/eu-vocabularies/immc"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/ga>
+    a schema:Organization ;
+    schema:name "Geoscience Australia" ;
+    schema:url "https://www.ga.gov.au"^^xsd:anyURI ;
+.

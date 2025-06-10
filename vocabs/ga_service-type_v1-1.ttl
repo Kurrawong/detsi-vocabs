@@ -1,0 +1,237 @@
+
+PREFIX : <http://pid.geoscience.gov.au/def/voc/ga/servicetype/>
+PREFIX cs: <http://pid.geoscience.gov.au/def/voc/ga/servicetype> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+cs:
+    a skos:ConceptScheme ;
+    schema:creator <https://linked.data.gov.au/org/ga> ;
+	schema:dateCreated "2018-03-20"^^xsd:date ;
+	schema:dateModified "2025-06-10"^^xsd:date ;
+	schema:publisher <https://linked.data.gov.au/org/ga> ;
+	schema:version "v1.1" ;
+	skos:definition "Types of online service"@en ;
+	skos:hasTopConcept
+	    :ESRI ,
+	    :OGC ,
+	    :OPeNDAP ,
+	    :REST ,
+	    :SPARQL ,
+	    :Unknown ,
+	    :W3C ;
+	skos:historyNote "2025-06: taken from the source vocab in RVA at https://vocabs.ardc.edu.au/viewById/181 and made VocPub conformant" ;
+	skos:prefLabel "Service Type"@en ;
+.
+
+:WPS 
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "Web Processing Service"@en ;
+	schema:citation "Geoscience Australia" ;
+	skos:altLabel "OGC:WPS"@en ;
+	skos:broader :OGC ;
+	skos:definition "Open Geospatial Consortium's Web Processing Service (WPS)"@en ;
+.
+
+
+:ESRI
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "ESRI service"@en ;
+	schema:citation "Geoscience Australia" ;
+	skos:definition "Un-typed ESRI service"@en ;
+	skos:narrower 
+	    :ArcIMS ,
+	    :GPServer ,
+	    :ImageServer ,
+	    :MapServer ;
+	skos:topConceptOf cs:.
+
+:OGC
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "Open Geospatial Consortium service"@en ;
+	schema:citation "Geoscience Australia" ;
+	skos:definition "Un-typed Open Geospatial Consortium service"@en ;
+	skos:narrower 
+	    :WPS ,
+	    :CSW , 
+	    :SOS , 
+	    :WCS , 
+	    :WFS , 
+	    :WMS , 
+	    :WMTS ;
+	skos:topConceptOf cs:;
+.
+
+:OPeNDAP
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "OPeNDAP root URL"@en ;
+	schema:citation "Geoscience Australia" ;
+	skos:altLabel "OPeNDAP:OPeNDAP"@en ;
+	skos:definition "Open-source Project for a Network Data Access Protocol (OPeNDAP) root URL"@en ;
+	skos:topConceptOf cs:.
+
+:REST
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "REST service"@en ;
+	schema:citation "Geoscience Australia" ;
+	skos:altLabel "REST"@en ;
+	skos:definition "Generic REST web service"@en ;
+	skos:topConceptOf cs:;
+.
+
+:SPARQL
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "SPARQL service"@en ;
+	schema:citation "Geoscience Australia" ;
+	skos:altLabel "W3C:SPARQL"@en ;
+	skos:definition "W3C's SPARQL service"@en ;
+	skos:topConceptOf cs:;
+.
+
+:Unknown
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "Unknown"@en ;
+	schema:citation "Geoscience Australia" ;
+	skos:altLabel "UKST"@en ;
+	skos:definition "Unknown service type"@en ;
+	skos:topConceptOf cs:;
+.
+
+:W3C
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "World Wide Web Consortium service"@en ;
+	schema:citation "Geoscience Australia" ;
+	skos:definition "Un-typed World Wide Web Consortium (W3C) service"@en ;
+	skos:narrower 
+	    :HTML-DOWNLOAD, 
+	    :HTML-INFORMATION ;
+	skos:topConceptOf cs:;
+.
+
+:ArcIMS
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "ArcIMS Service"@en ;
+	schema:citation "Geoscience Australia" ;
+	skos:altLabel "ESRI:ArcIMS"@en ;
+	skos:broader :ESRI ;
+	skos:definition "ESRI's ArcIMS Service"@en .
+
+
+:CSW
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "Catalogue Service for the Web"@en ;
+	schema:citation "Geoscience Australia" ;
+	skos:altLabel "OGC:CSW"@en ;
+	skos:broader :OGC ;
+	skos:definition "Open Geospatial Consortium's Catalogue Service for the Web (CSW)"@en ;
+.
+
+:GPServer
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "ArcGIS GP Server"@en ;
+	schema:citation "Geoscience Australia" ;
+	skos:altLabel "ESRI:ArcGIS:GPServer"@en ;
+	skos:broader :ESRI ;
+	skos:definition "ESRI's ArcGIS Geoprocessing Server"@en ;
+.
+
+:ImageServer
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "ArcGIS Image Server"@en ;
+	schema:citation "Geoscience Australia" ;
+	skos:altLabel "ESRI:ArcGIS:ImageServer"@en ;
+	skos:broader :ESRI ;
+	skos:definition "ESRI's ArcGIS Image Server"@en .
+
+:MapServer
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "ArcGIS Map Server"@en ;
+	schema:citation "Geoscience Australia" ;
+	skos:altLabel "ESRI:ArcGIS:MapServer"@en ;
+	skos:broader :ESRI ;
+	skos:definition "ESRI's ArcGIS Map Server"@en ;
+.
+
+:HTML-DOWNLOAD
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "Download"@en ;
+	schema:citation "GeoNetwork" ;
+	skos:altLabel "W3C:HTML:DOWNLOAD"@en ;
+	skos:broader :W3C ;
+	skos:definition "Download"@en .
+
+:HTML-INFORMATION
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "HTML Information"@en ;
+	schema:citation "Geoscience Australia" ;
+	skos:altLabel "W3C:HTML:INFORMATION"@en ;
+	skos:broader :W3C ;
+	skos:definition "HTML Information"@en .
+
+:SOS
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "Sensor Observation Service"@en ;
+	schema:citation "Geoscience Australia" ;
+	skos:altLabel "OGC:SOS"@en ;
+	skos:broader :OGC ;
+	skos:definition "Open Geospatial Consortium's Sensor Observation Service"@en ;
+.
+
+:WCS
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "Web Coverage Service"@en ;
+	schema:citation "GeoNetwork" ;
+	skos:altLabel "OGC:WCS"@en ;
+	skos:broader :OGC ;
+	skos:definition "Open Geospatial Consortium's Web Coverage Service (WCS) "@en ;
+.
+
+:WFS
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "Web Feature Service"@en ;
+	schema:citation "GeoNetwork" ;
+	skos:altLabel "OGC:WFS"@en ;
+	skos:broader :OGC ;
+	skos:definition "Open Geospatial Consortium's Web Feature Service (WFS)"@en ;
+.
+
+:WMS
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "OGC Web Map Service"@en ;
+	schema:citation "GeoNetwork" ;
+	skos:altLabel "OGC:WMS"@en ;
+	skos:broader :OGC ;
+	skos:definition "Open Geospatial Consortium's Web Map Service (WMS)"@en ;
+.
+
+:WMTS
+    a skos:Concept ;
+    skos:inScheme cs: ;
+	skos:prefLabel "Web Map Tile Service"@en ;
+	schema:citation "Geoscience Australia" ;
+	skos:altLabel "OGC:WMTS"@en ;
+	skos:broader :OGC ;
+	skos:definition "Open Geospatial Consortium's Web Map Tile Service (WMTS)"@en ;
+.

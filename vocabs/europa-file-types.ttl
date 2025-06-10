@@ -1,0 +1,5800 @@
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs: <http://linked.data.gov.au/def/qg-file-types>
+PREFIX dc11: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX euft: <http://publications.europa.eu/resource/authority/file-type/>
+PREFIX euauth: <http://publications.europa.eu/ontology/authority/>
+PREFIX euauth2: <http://publications.europa.eu/resource/authority/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX qgft: <http://linked.data.gov.au/def/qg-file-types/>
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+qgft:des-compress-types
+    a skos:Collection ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    skos:definition "A collection of compression types used by DES"@en ;
+    skos:member
+        euft:7Z ,
+        euft:GZIP ,
+        euft:TAR ,
+        euft:TAR_GZ ,
+        euft:ZIP ;
+    skos:prefLabel "Department of Environment and Science Compression Types"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+.
+
+qgft:des-file-types
+    a skos:Collection ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    skos:definition "A collection of file types used by DES"@en ;
+    skos:member
+        euft:ACCDB ,
+        euft:ASC ,
+        euft:CSV ,
+        euft:DOCX ,
+        euft:ECW ,
+        euft:GDB ,
+        euft:GEOJSON ,
+        euft:GRID ,
+        euft:GRID_ASCII ,
+        euft:HTML_SIMPL ,
+        euft:JPEG ,
+        euft:JSON ,
+        euft:KML ,
+        euft:KMZ ,
+        euft:MDB ,
+        euft:MPEG4_AVC,
+        euft:NETCDF ,
+        <http://linked.data.gov.au/def/qg-file-types/PARQUET> ,
+        euft:PDF ,
+        euft:PPTX ,
+        euft:REST ,
+        euft:SHP ,
+        euft:SQL ,
+        euft:TIFF ,
+        euft:TSV ,
+        euft:TXT ,
+        euft:WFS_SRVC ,
+        euft:WMS_SRVC ,
+        euft:XLSX ,
+        euft:XML ;
+    skos:prefLabel "Department of Environment and Science File Types"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+.
+
+qgft:des-pack-types
+    a skos:Collection ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    skos:definition "A collection of packaging file types used by DES"@en ;
+    skos:member
+        euft:TAR ,
+        euft:TAR_GZ ,
+        euft:ZIP ;
+    skos:prefLabel "Department of Environment and Science Packaging Types"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+.
+
+euft:AAC
+    a skos:Concept ;
+    euauth:authority-code "AAC" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "AAC" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".adts" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".aac" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".loas" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".ass" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1997-01-01" ;
+    euauth2:op-code "AAC" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Advanced Audio Coding"@en ;
+    skos:definition "AAC"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "AAC"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:APK
+    a skos:Concept ;
+    euauth:authority-code "APK" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "APK" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".apk" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xapk" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2008-09-23" ;
+    euauth2:op-code "APK" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Android Package"@en ;
+    skos:definition "APK"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "APK"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:APPX
+    a skos:Concept ;
+    euauth:authority-code "APPX" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "APPX" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".appx" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".appxbundle" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-10-26" ;
+    euauth2:op-code "APPX" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Microsoft AppX application package"@en ;
+    skos:definition "AppX"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "AppX"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:ARC
+    a skos:Concept ;
+    euauth:authority-code "ARC" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "ARC" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".arc" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1996-05-12" ;
+    euauth2:op-code "ARC" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Internet Archive ARC file format"@en ;
+    skos:definition "ARC"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ARC"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:ARC_GZ
+    a skos:Concept ;
+    euauth:authority-code "ARC_GZ" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "ARC_GZ" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".arc.gz" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "ARC_GZ" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Compressed Internet Archive ARC file format"@en ;
+    skos:definition "ARC GZ"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ARC GZ"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:ARJ
+    a skos:Concept ;
+    euauth:authority-code "ARJ" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "ARJ" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".arj" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1990-01-01" ;
+    euauth2:op-code "ARJ" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "ARJ archive"@en ;
+    skos:definition "ARJ"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ARJ"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:ATOM
+    a skos:Concept ;
+    euauth:authority-code "ATOM" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "ATOM" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".atom" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xml" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2005-12-01" ;
+    euauth2:op-code "ATOM" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Atom Syndication Format"@en ;
+    skos:definition "Atom Feed"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Atom Feed"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:AZW
+    a skos:Concept ;
+    euauth:authority-code "AZW" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "AZW" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "AMZ" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".azw" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "amz" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/vnd.amazon.ebook" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "240" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "AZW" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Amazon Kindle eBook format"@en ;
+    skos:definition "Amazon Kindle eBook"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Amazon Kindle eBook"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:BIN
+    a skos:Concept ;
+    euauth:authority-code "BIN" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "BIN" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".bin" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/octet-stream" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "1996-11-01" ;
+    euauth2:op-code "BIN" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Binary Data"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Binary Data"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:BITS
+    a skos:Concept ;
+    euauth:authority-code "BITS" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "BITS" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xml" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-08-22" ;
+    euauth2:op-code "BITS" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Book Interchange Tag Suite"@en ;
+    skos:definition "BITS XML"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "BITS XML"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:BMP
+    a skos:Concept ;
+    euauth:authority-code "BMP" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "BMP" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".bm" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".bmp" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".dib" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "image/bmp" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "1996-04-01" ;
+    euauth2:op-code "BMP" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bitmap Image File"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bitmap Image File"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:BWF
+    a skos:Concept ;
+    euauth:authority-code "BWF" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "BWF" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".bwf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".wav" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2001-07-01" ;
+    euauth2:op-code "BWF" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Broadcast Wave File"@en ;
+    skos:definition "BWF"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "BWF"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:BZIP2
+    a skos:Concept ;
+    euauth:authority-code "BZIP2" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "BZIP2" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".bz2" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1996-07-18" ;
+    euauth2:op-code "BZIP2" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "bzip2 compressed file"@en ;
+    skos:definition "bzip2"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "bzip2"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:CSS
+    a skos:Concept ;
+    euauth:authority-code "CSS" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "CSS" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".css" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "css" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "text/css" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "7" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "CSS" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Cascading Style Sheet"@en ;
+    skos:definition "CSS"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "CSS"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:DBF
+    a skos:Concept ;
+    euauth:authority-code "DBF" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "DBF" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".dbf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ;
+    euauth:start.use "2013-09-18" ;
+    euauth2:op-code "DBF" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "dBase File"@en ;
+    skos:definition "DBF"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "DBF"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:DCR
+    a skos:Concept ;
+    euauth:authority-code "DCR" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "DCR" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".dcr" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/x-director" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "1988-01-01" ;
+    euauth2:op-code "DCR" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "DCR File"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "DCR File"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:DEB
+    a skos:Concept ;
+    euauth:authority-code "DEB" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "DEB" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".deb" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1994-04-01" ;
+    euauth2:op-code "DEB" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Debian package"@en ;
+    skos:definition "deb"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "deb"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:DMG
+    a skos:Concept ;
+    euauth:authority-code "DMG" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "DMG" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".dmg" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2001-01-01" ;
+    euauth2:op-code "DMG" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Apple Disk Image"@en ;
+    skos:definition "DMG"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "DMG"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:DMP
+    a skos:Concept ;
+    euauth:authority-code "DMP" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "DMP" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".dmp" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2004-01-01" ;
+    euauth2:op-code "DMP" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Oracle Dump"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Oracle Dump"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:DOC
+    a skos:Concept ;
+    euauth:authority-code "DOC" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "DOC" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "DOC" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".doc" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "doc" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/msword" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "290" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "DOC" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Microsoft Word"@en ;
+    skos:definition "Word DOC"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Word DOC"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:DTD_SGML
+    a skos:Concept ;
+    euauth:authority-code "DTD_SGML" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "DTD_SGML" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".dtd" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/sgml-dtd" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "DTD_SGML" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "SGML Document Type Definition (DTD)"@en ;
+    skos:definition "SGML DTD"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "SGML DTD"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:DTD_XML
+    a skos:Concept ;
+    euauth:authority-code "DTD_XML" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "DTD_XML" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".dtd" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/xml-dtd" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "DTD_XML" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "XML Document Type Definition (DTD)"@en ;
+    skos:definition "XML DTD"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "XML DTD"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:E00
+    a skos:Concept ;
+    euauth:authority-code "E00" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "E00" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".e00" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2013-09-18" ;
+    euauth2:op-code "E00" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "ESRI Arc/Info interchange file"@en ;
+    skos:definition "E00"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "E00"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:EAR
+    a skos:Concept ;
+    euauth:authority-code "EAR" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "EAR" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".ear" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2006-05-11" ;
+    euauth2:op-code "EAR" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Enterprise Application Archive"@en ;
+    skos:definition "EAR"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "EAR"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:EPS
+    a skos:Concept ;
+    euauth:authority-code "EPS" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "EPS" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".eps" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/postscript" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "EPS" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Encapsulated Postscript"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Encapsulated Postscript"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:EPUB
+    a skos:Concept ;
+    euauth:authority-code "EPUB" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "EPUB" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "EPUB" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".epub" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "epub" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/epub+zip" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "210" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "EPUB" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "eBook standard of the International Digital Publishing Forum (IDPF)"@en ;
+    skos:definition "EPUB"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "EPUB"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:EXE
+    a skos:Concept ;
+    euauth:authority-code "EXE" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "EXE" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".exe" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1978-01-01" ;
+    euauth2:op-code "EXE" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Executable file"@en ;
+    skos:definition "EXE"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "EXE"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:FMX2
+    a skos:Concept ;
+    euauth:authority-code "FMX2" ;
+    euauth:deprecated "true" ;
+    euauth:end.use "1999-03-31" ;
+    euauth:op-code "FMX2" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "FMXV2" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xml" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "fmx2" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/xml;type=fmx2" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "text/sgml;type=fmx2" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "174" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "1989-01-01" ;
+    euauth2:op-code "FMX2" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Formalized Exchange of Electronic Publications (Formex), version 2"@en ;
+    skos:definition "Formex 2"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Formex 2"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:FMX3
+    a skos:Concept ;
+    euauth:authority-code "FMX3" ;
+    euauth:deprecated "true" ;
+    euauth:end.use "2004-04-30" ;
+    euauth:op-code "FMX3" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "FMXV3" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xml" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "fmx3" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/xml;type=fmx3" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "text/sgml;type=fmx3" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "175" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "1999-04-01" ;
+    euauth2:op-code "FMX3" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Formalized Exchange of Electronic Publications (Formex), version 3"@en ;
+    skos:definition "Formex 3"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Formex 3"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:FMX4
+    a skos:Concept ;
+    euauth:authority-code "FMX4" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "FMX4" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "FMXV4" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xml" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "fmx4" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/xml;type=fmx4" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "180" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2004-05-01" ;
+    euauth2:op-code "FMX4" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Formalized Exchange of Electronic Publications (Formex), version 4"@en ;
+    skos:definition "Formex 4"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Formex 4"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:GIF
+    a skos:Concept ;
+    euauth:authority-code "GIF" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "GIF" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "GIF" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".gif" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "gif" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "image/gif" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "20" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "GIF" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Graphics Interchange Format"@en ;
+    skos:definition "GIF"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "GIF"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:GML
+    a skos:Concept ;
+    euauth:authority-code "GML" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "GML" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".gml .xml" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2000-05-01" ;
+    euauth2:op-code "GML" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Geography Markup Language"@en ;
+    skos:definition "GML"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "GML"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:GMZ
+    a skos:Concept ;
+    euauth:authority-code "GMZ" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "GMZ" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".gmz" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2013-09-03" ;
+    euauth2:op-code "GMZ" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Zipped Geography Markup Language"@en ;
+    skos:definition "Zipped GML"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Zipped GML"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:HDF
+    a skos:Concept ;
+    euauth:authority-code "HDF" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "HDF" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".hdf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".h4" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".hdf4" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".he2" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".h5" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".hdf5" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".he5" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/x-hdf" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "1990-01-01" ;
+    euauth2:op-code "HDF" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Hierarchical Data Format"@en ;
+    skos:definition "HDF"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "HDF"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:HDT
+    a skos:Concept ;
+    euauth:authority-code "HDT" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "HDT" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".hdt" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2011-03-30" ;
+    euauth2:op-code "HDT" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Header Dictionary Triples"@en ;
+    skos:definition "HDT"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "HDT"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:HTML
+    a skos:Concept ;
+    euauth:authority-code "HTML" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "HTML" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "HTML" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".html" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".htm" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "html" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "text/html" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "320" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "HTML" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "HyperText Mark-up Language"@en ;
+    skos:definition "HTML"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "HTML"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:ICS
+    a skos:Concept ;
+    euauth:authority-code "ICS" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "ICS" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".ical" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".ics" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".ifb" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".icalendar" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ;
+    euauth:start.use "1998-01-01" ;
+    euauth2:op-code "ICS" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "iCalendar"@en ;
+    skos:definition "ICalendar"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ICalendar"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:IMMC_XML
+    a skos:Concept ;
+    euauth:authority-code "IMMC_XML" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "IMMC_XML" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "IMMC_XML" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "_immc.xml" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "immc_xml" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/xml;type=immc" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "2016-04-08" ;
+    euauth2:op-code "IMMC_XML" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "IMMC XML message"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "IMMC XML message"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:INDD
+    a skos:Concept ;
+    euauth:authority-code "INDD" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "INDD" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".indd" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "INDD" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Adobe InDesign Document"@en ;
+    skos:definition "INDD"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "INDD"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:ISO
+    a skos:Concept ;
+    euauth:authority-code "ISO" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "ISO" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".iso" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".img" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1988-09-01" ;
+    euauth2:op-code "ISO" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "ISO Disc Image file"@en ;
+    skos:definition "ISO image"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ISO image"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:ISO_ZIP
+    a skos:Concept ;
+    euauth:authority-code "ISO_ZIP" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "ISO_ZIP" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".zip" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "ISO_ZIP" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Zipped ISO Disc Image file"@en ;
+    skos:definition "Zipped ISO image"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Zipped ISO image"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:JAR
+    a skos:Concept ;
+    euauth:authority-code "JAR" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "JAR" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".jar" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1997-01-01" ;
+    euauth2:op-code "JAR" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Java Archive"@en ;
+    skos:definition "JAR"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "JAR"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:JATS
+    a skos:Concept ;
+    euauth:authority-code "JATS" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "JATS" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xml" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2003-03-31" ;
+    euauth2:op-code "JATS" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Journal Article Tag Suite"@en ;
+    skos:definition "JATS XML"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "JATS XML"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:JPEG2000
+    a skos:Concept ;
+    euauth:authority-code "JPEG2000" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "JPEG2000" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".jp2" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".jpg2" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ;
+    euauth:start.use "2000-01-01" ;
+    euauth2:op-code "JPEG2000" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Joint Photographic Experts Group 2000"@en ;
+    skos:definition "JPEG 2000"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "JPEG 2000"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:JS
+    a skos:Concept ;
+    euauth:authority-code "JS" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "JS" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".js" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "js" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "text/javascript" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "6" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "1995-12-04" ;
+    euauth2:op-code "JS" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "JavaScript"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "JavaScript"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:JSON_LD
+    a skos:Concept ;
+    euauth:authority-code "JSON_LD" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "JSON_LD" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".jsonld" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ;
+    euauth:start.use "2011-12-27" ;
+    euauth2:op-code "JSON_LD" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "JavaScript Object Notation for Linked Data"@en ;
+    skos:definition "JSON-LD"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "JSON-LD"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:LAS
+    a skos:Concept ;
+    euauth:authority-code "LAS" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "LAS" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".las" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2003-05-09" ;
+    euauth2:op-code "LAS" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "LASer file"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "LASer file"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:LAZ
+    a skos:Concept ;
+    euauth:authority-code "LAZ" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "LAZ" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".laz" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2003-05-09" ;
+    euauth2:op-code "LAZ" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Compressed LASer file"@en ;
+    skos:definition "Compressed LAS file"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Compressed LAS file"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:LEG
+    a skos:Concept ;
+    euauth:authority-code "LEG" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "LEG" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".leg" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2016-06-01" ;
+    euauth2:op-code "LEG" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "LEG"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "LEG"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:LHA
+    a skos:Concept ;
+    euauth:authority-code "LHA" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "LHA" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".lzh" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".lha" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1988-01-01" ;
+    euauth2:op-code "LHA" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "LHA compressed file"@en ;
+    skos:definition "LHA"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "LHA"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:LZIP
+    a skos:Concept ;
+    euauth:authority-code "LZIP" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "LZIP" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".lz" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2008-01-01" ;
+    euauth2:op-code "LZIP" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "lzip compressed file"@en ;
+    skos:definition "lzip"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "lzip"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:LZMA
+    a skos:Concept ;
+    euauth:authority-code "LZMA" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "LZMA" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".lzma" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2000-01-01" ;
+    euauth2:op-code "LZMA" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "lzma compressed file"@en ;
+    skos:definition "lzma"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "lzma"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:LZO
+    a skos:Concept ;
+    euauth:authority-code "LZO" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "LZO" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".lzo" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1996-01-01" ;
+    euauth2:op-code "LZO" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "lzo compressed file"@en ;
+    skos:definition "lzo"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "lzo"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:MAP_PRVW
+    a skos:Concept ;
+    euauth:authority-code "MAP_PRVW" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "MAP_PRVW" ;
+    euauth:start.use "2010-01-01" ;
+    euauth2:op-code "MAP_PRVW" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "ArcGIS Map Preview"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ArcGIS Map Preview"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:MAP_SRVC
+    a skos:Concept ;
+    euauth:authority-code "MAP_SRVC" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "MAP_SRVC" ;
+    euauth:start.use "2010-01-01" ;
+    euauth2:op-code "MAP_SRVC" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "ArcGIS Map Service"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ArcGIS Map Service"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:MBOX
+    a skos:Concept ;
+    euauth:authority-code "MBOX" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "MBOX" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".mbox" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2005-09-01" ;
+    euauth2:op-code "MBOX" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Mbox"@en ;
+    skos:definition "MBOX"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "MBOX"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:METS
+    a skos:Concept ;
+    euauth:authority-code "METS" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "METS" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xml" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/xml;type=mets" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "2003-10-27" ;
+    euauth2:op-code "METS" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Metadata Encoding and Transmission Standard – Logical METS container"@en ;
+    skos:definition "METS XML"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "METS XML"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:METS_ZIP
+    a skos:Concept ;
+    euauth:authority-code "METS_ZIP" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "METS_ZIP" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".zip" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/zip;type=mets" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "2003-10-27" ;
+    euauth2:op-code "METS_ZIP" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Metadata Encoding and Transmission Standard – Physical METS container"@en ;
+    skos:definition "METS package"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "METS package"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:MHTML
+    a skos:Concept ;
+    euauth:authority-code "MHTML" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "MHTML" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".mhtml" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".mht" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1999-03-01" ;
+    euauth2:op-code "MHTML" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "MIME HTML"@en ;
+    skos:definition "MHTML"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "MHTML"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:MOBI
+    a skos:Concept ;
+    euauth:authority-code "MOBI" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "MOBI" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "MOBI" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".mobi" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".prc" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "mobi" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/x-mobipocket-ebook" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "160" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "MOBI" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Mobipocket eBook format"@en ;
+    skos:definition "Mobipocket eBook"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mobipocket eBook"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:MOP
+    a skos:Concept ;
+    euauth:authority-code "MOP" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "MOP" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".mop" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2013-09-18" ;
+    euauth2:op-code "MOP" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "MOPAC Input Format"@en ;
+    skos:definition "MOP"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "MOP"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:MPEG2
+    a skos:Concept ;
+    euauth:authority-code "MPEG2" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "MPEG2" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".mpeg" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "mpg" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "m2v" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "mp2" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "mp3" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2000-12-01" ;
+    euauth2:op-code "MPEG2" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Moving Picture Experts Group 2"@en ;
+    skos:definition "MPEG-2"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "MPEG-2"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:MPEG4
+    a skos:Concept ;
+    euauth:authority-code "MPEG4" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "MPEG4" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".mpeg" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "mpg" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "mp4" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2001-10-11" ;
+    euauth2:op-code "MPEG4" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Moving Picture Experts Group 4"@en ;
+    skos:definition "MPEG-4"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "MPEG-4"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:MPEG4_AVC
+    a skos:Concept ;
+    euauth:authority-code "MPEG4_AVC" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "MPEG4_AVC" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".mpeg" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "mpg" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "mp4" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2003-05-30" ;
+    euauth2:op-code "MPEG4_AVC" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Moving Picture Experts Group 4 Advanced Video Coding"@en ;
+    skos:definition "MPEG-4 AVC"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "MPEG-4 AVC"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:MRSID
+    a skos:Concept ;
+    euauth:authority-code "MRSID" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "MRSID" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".sid" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1996-01-01" ;
+    euauth2:op-code "MRSID" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Multiresolution seamless image database"@en ;
+    skos:definition "MrSID"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "MrSID"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:MSG_HTTP
+    a skos:Concept ;
+    euauth:authority-code "MSG_HTTP" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "MSG_HTTP" ;
+    euauth:start.use "2014-06-01" ;
+    euauth2:op-code "MSG_HTTP" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "HTTP Message Syntax and Routing"@en ;
+    skos:definition "HTTP Message"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "HTTP Message"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:MSI
+    a skos:Concept ;
+    euauth:authority-code "MSI" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "MSI" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".msi" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".msp" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1999-08-31" ;
+    euauth2:op-code "MSI" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Windows Installer Package"@en ;
+    skos:definition "MSI"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "MSI"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:MXD
+    a skos:Concept ;
+    euauth:authority-code "MXD" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "MXD" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".mxd" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2013-09-18" ;
+    euauth2:op-code "MXD" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "ArcGIS Map Document"@en ;
+    skos:definition "MXD"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "MXD"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:N3
+    a skos:Concept ;
+    euauth:authority-code "N3" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "N3" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".n3" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2008-01-01" ;
+    euauth2:op-code "N3" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Notation3"@en ;
+    skos:definition "N3"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "N3"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:OCTET
+    a skos:Concept ;
+    euauth:authority-code "OCTET" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "OCTET" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".zoo" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/octet-stream" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "1996-11-01" ;
+    euauth2:op-code "OCTET" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Octet Stream"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Octet Stream"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:ODB
+    a skos:Concept ;
+    euauth:authority-code "ODB" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "ODB" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".odb" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2009-01-16" ;
+    euauth2:op-code "ODB" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "OpenDocument Database"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "OpenDocument Database"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:ODC
+    a skos:Concept ;
+    euauth:authority-code "ODC" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "ODC" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".odc" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2005-05-01" ;
+    euauth2:op-code "ODC" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "OpenDocument Chart"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "OpenDocument Chart"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:ODF
+    a skos:Concept ;
+    euauth:authority-code "ODF" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "ODF" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".odf" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "ODF" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "OpenDocument Format"@en ;
+    skos:definition "ODF"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ODF"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:ODG
+    a skos:Concept ;
+    euauth:authority-code "ODG" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "ODG" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".odg" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2006-05-31" ;
+    euauth2:op-code "ODG" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "OpenDocument Image"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "OpenDocument Image"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:ODP
+    a skos:Concept ;
+    euauth:authority-code "ODP" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "ODP" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".odp" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".fodp" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2005-05-01" ;
+    euauth2:op-code "ODP" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "OpenDocument Presentation"@en ;
+    skos:definition "ODP"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ODP"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:ODS
+    a skos:Concept ;
+    euauth:authority-code "ODS" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "ODS" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".ods" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ;
+    euauth:start.use "2013-11-27" ;
+    euauth2:op-code "ODS" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "OpenDocument Spreadsheet"@en ;
+    skos:definition "ODS"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ODS"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:ODT
+    a skos:Concept ;
+    euauth:authority-code "ODT" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "ODT" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".odt" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/vnd.oasis.opendocument.text" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "ODT" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Open Document Text"@en ;
+    skos:definition "ODT"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ODT"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:OP_DATPRO
+    a skos:Concept ;
+    euauth:op-code "OP_DATPRO" ;
+    euauth2:op-code "OP_DATPRO" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Provisional data"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Provisional data"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:OVF
+    a skos:Concept ;
+    euauth:authority-code "OVF" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "OVF" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".ovf" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2007-09-10" ;
+    euauth2:op-code "OVF" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Open Virtualization Format"@en ;
+    skos:definition "OVF"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "OVF"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:OWL
+    a skos:Concept ;
+    euauth:authority-code "OWL" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "OWL" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".owl" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".owx" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".rdf" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "OWL" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Web Ontology Language"@en ;
+    skos:definition "OWL"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "OWL"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PDF1X
+    a skos:Concept ;
+    euauth:authority-code "PDF1X" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PDF1X" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "PDF" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".pdf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "pdf1x" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/pdf" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/pdf;type=pdf1x" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "280" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "PDF1X" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "PDF printing format extension"@en ;
+    skos:definition "PDF1X"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PDF1X"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PDFA1A
+    a skos:Concept ;
+    euauth:authority-code "PDFA1A" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PDFA1A" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "PDF" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".pdf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "pdfa1a" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/pdf;type=pdfa1a" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "270" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "PDFA1A" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "PDF archiving format, Level A conformance"@en ;
+    skos:definition "PDF/A-1a"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PDF/A-1a"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PDFA1B
+    a skos:Concept ;
+    euauth:authority-code "PDFA1B" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PDFA1B" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "PDF" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".pdf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "pdfa1b" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/pdf;type=pdfa1b" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "260" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "PDFA1B" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "PDF archiving format, Level B conformance"@en ;
+    skos:definition "PDF/A-1b"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PDF/A-1b"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PDFA2A
+    a skos:Concept ;
+    euauth:authority-code "PDFA2A" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PDFA2A" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "PDF" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".pdf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "pdfa2a" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/pdf;type=pdfa2a" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "248" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2011-07-01" ;
+    euauth2:op-code "PDFA2A" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "PDF/A-2a"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PDF/A-2a"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PDFA2B
+    a skos:Concept ;
+    euauth:authority-code "PDFA2B" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PDFA2B" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "PDF" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".pdf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "pdfa2b" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/pdf;type=pdfa2b" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "246" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2011-07-01" ;
+    euauth2:op-code "PDFA2B" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "PDF/A-2b"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PDF/A-2b"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PDFA3
+    a skos:Concept ;
+    euauth:authority-code "PDFA3" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PDFA3" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "PDF" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".pdf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "pdfa3" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/pdf;type=pdfa3" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "244" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-12-15" ;
+    euauth2:op-code "PDFA3" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "PDFA-3"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PDFA-3"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PDFX
+    a skos:Concept ;
+    euauth:authority-code "PDFX" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PDFX" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "PDF" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".pdf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "pdfx" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/pdf;type=pdfx" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "250" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2001-12-01" ;
+    euauth2:op-code "PDFX" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "PDF printing format, Blind eXchange"@en ;
+    skos:definition "PDF/X"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PDF/X"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PDFX1A
+    a skos:Concept ;
+    euauth:authority-code "PDFX1A" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PDFX1A" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "PDF" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".pdf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "pdfx1a" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/pdf;type=pdfx1a" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "243" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2001-12-01" ;
+    euauth2:op-code "PDFX1A" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "PDF/X-1a"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PDF/X-1a"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PDFX2A
+    a skos:Concept ;
+    euauth:authority-code "PDFX2A" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PDFX2A" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "PDF" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".pdf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "pdfx2a" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/pdf;type=pdfx2a" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "242" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2003-12-01" ;
+    euauth2:op-code "PDFX2A" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "PDF/X-2a"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PDF/X-2a"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PDFX4
+    a skos:Concept ;
+    euauth:authority-code "PDFX4" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PDFX4" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "PDF" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".pdf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "pdfx4" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/pdf;type=pdfx4" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "241" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2008-03-01" ;
+    euauth2:op-code "PDFX4" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "PDF/X-4"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PDF/X-4"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PL
+    a skos:Concept ;
+    euauth:authority-code "PL" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PL" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".pl" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".pm" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".t" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".pod" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1987-12-18" ;
+    euauth2:op-code "PL" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Perl script"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Perl script"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PNG
+    a skos:Concept ;
+    euauth:authority-code "PNG" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PNG" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "PNG" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".png" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "png" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "image/png" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "10" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "PNG" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Portable Network Graphics"@en ;
+    skos:definition "PNG"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PNG"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PPS
+    a skos:Concept ;
+    euauth:authority-code "PPS" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PPS" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".pps" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/vnd.ms-powerpoint" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "PPS" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Microsoft PowerPoint Slide Show"@en ;
+    skos:definition "PowerPoint Slide Show"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PowerPoint Slide Show"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PPSX
+    a skos:Concept ;
+    euauth:authority-code "PPSX" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PPSX" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "ppsx" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/vnd.openxmlformats-officedocument.presentationml.slideshow" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "150" ;
+            dc11:source "priority-weight-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "DOC" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".ppsx" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "PPSX" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "PowerPoint Open XML Slide Show"@en ;
+    skos:definition "PowerPoint PPSX"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PowerPoint PPSX"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PPT
+    a skos:Concept ;
+    euauth:authority-code "PPT" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PPT" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "DOC" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".ppt" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "ppt" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/vnd.ms-powerpoint" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "140" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "PPT" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Microsoft PowerPoint Presentation"@en ;
+    skos:definition "PowerPoint PPT"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PowerPoint PPT"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PS
+    a skos:Concept ;
+    euauth:authority-code "PS" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PS" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".ps" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "PS" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "PostScript File"@en ;
+    skos:definition "PS"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PS"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PSD
+    a skos:Concept ;
+    euauth:authority-code "PSD" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PSD" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".psd" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "PSD" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Adobe Photoshop Document"@en ;
+    skos:definition "PSD"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PSD"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PWP
+    a skos:Concept ;
+    euauth:authority-code "PWP" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PWP" ;
+    euauth:start.use "2017-05-01" ;
+    euauth2:op-code "PWP" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Packaged Web Publications"@en ;
+    skos:definition "PWP"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PWP"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:QGS
+    a skos:Concept ;
+    euauth:authority-code "QGS" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "QGS" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".qgs" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2002-07-01" ;
+    euauth2:op-code "QGS" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Quantum GIS project"@en ;
+    skos:definition "QGS"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "QGS"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:RAR
+    a skos:Concept ;
+    euauth:authority-code "RAR" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "RAR" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".rar" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".rev" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".r00" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".r01" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1993-03-01" ;
+    euauth2:op-code "RAR" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Roshal Archive"@en ;
+    skos:definition "RAR"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "RAR"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:RDF
+    a skos:Concept ;
+    euauth:authority-code "RDF" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "RDF" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".rdf" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "RDF" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Resource Description Framework (RDF)"@en ;
+    skos:definition "RDF"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "RDF"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:RDFA
+    a skos:Concept ;
+    euauth:authority-code "RDFA" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "RDFA" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".rdfa" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ;
+    euauth:start.use "2006-03-10" ;
+    euauth2:op-code "RDFA" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Resource Description Framework in Attributes"@en ;
+    skos:definition "RDFa"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "RDFa"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:RDF_N_QUADS
+    a skos:Concept ;
+    euauth:authority-code "RDF_N_QUADS" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "RDF_N_QUADS" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".nq" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ;
+    euauth:start.use "2013-04-09" ;
+    euauth2:op-code "RDF_N_QUADS" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Resource Description Framework N-Quads"@en ;
+    skos:definition "RDF N-Quads"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "RDF N-Quads"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:RDF_N_TRIPLES
+    a skos:Concept ;
+    euauth:authority-code "RDF_N_TRIPLES" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "RDF_N_TRIPLES" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".nt" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "rdf_n_triples" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/n-triples" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "118" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2008-02-17" ;
+    euauth2:op-code "RDF_N_TRIPLES" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Resource Description Framework N-Triples"@en ;
+    skos:definition "RDF N-Triples"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "RDF N-Triples"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:RDF_TRIG
+    a skos:Concept ;
+    euauth:authority-code "RDF_TRIG" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "RDF_TRIG" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".trig" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ;
+    euauth:start.use "2013-04-09" ;
+    euauth2:op-code "RDF_TRIG" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Resource Description Framework TriG"@en ;
+    skos:definition "RDF TriG"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "RDF TriG"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:RDF_TRIX
+    a skos:Concept ;
+    euauth:authority-code "RDF_TRIX" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "RDF_TRIX" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xml" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".trix" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2004-05-13" ;
+    euauth2:op-code "RDF_TRIX" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Triples in XML"@en ;
+    skos:definition "RDF TriX"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "RDF TriX"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:RDF_TURTLE
+    a skos:Concept ;
+    euauth:authority-code "RDF_TURTLE" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "RDF_TURTLE" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".ttl" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "rdf_turtle" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "text/turtle" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "119" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "RDF_TURTLE" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Terse RDF Triple Language"@en ;
+    skos:definition "RDF Turtle"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "RDF Turtle"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:RDF_XML
+    a skos:Concept ;
+    euauth:authority-code "RDF_XML" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "RDF_XML" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "RDF" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".rdf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "rdf" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/rdf+xml" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "120" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "RDF_XML" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Resource Description Framework XML syntax"@en ;
+    skos:definition "RDF XML"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "RDF XML"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:RPM
+    a skos:Concept ;
+    euauth:authority-code "RPM" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "RPM" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".rpm" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1997-01-01" ;
+    euauth2:op-code "RPM" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "RPM Package"@en ;
+    skos:definition "RPM"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "RPM"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:RSS
+    a skos:Concept ;
+    euauth:authority-code "RSS" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "RSS" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".rss" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xml" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ;
+    euauth:start.use "2013-11-27" ;
+    euauth2:op-code "RSS" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Really Simple Syndication"@en ;
+    skos:definition "RSS feed"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "RSS feed"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:RTF
+    a skos:Concept ;
+    euauth:authority-code "RTF" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "RTF" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "DOC" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".rtf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "rtf" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "text/rtf" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "110" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "RTF" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Rich Text Format File"@en ;
+    skos:definition "RTF"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "RTF"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:SB3
+    a skos:Concept ;
+    euauth:authority-code "SB3" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "SB3" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".sb3" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".sprite3" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2019-01-02" ;
+    euauth2:op-code "SB3" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Scratch 3.0"@en ;
+    skos:definition "sb3"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "sb3"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:SCHEMA_XML
+    a skos:Concept ;
+    euauth:authority-code "SCHEMA_XML" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "SCHEMA_XML" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xsd" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "SCHEMA_XML" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "XML Schema"@en ;
+    skos:definition "XML schema"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "XML schema"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:SDMX
+    a skos:Concept ;
+    euauth:authority-code "SDMX" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "SDMX" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".edi" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xml" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2001-01-01" ;
+    euauth2:op-code "SDMX" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Statistical Data and Metadata eXchange"@en ;
+    skos:definition "SDMX"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "SDMX"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:SGML
+    a skos:Concept ;
+    euauth:authority-code "SGML" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "SGML" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "SGML" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".sgml" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".sgm" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "sgml" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "text/sgml" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "100" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "SGML" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Standard Generalized Mark-up Language"@en ;
+    skos:definition "SGML"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "SGML"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:SKOS_XML
+    a skos:Concept ;
+    euauth:authority-code "SKOS_XML" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "SKOS_XML" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".rdf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/rdf+xml;type=skos" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "SKOS_XML" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Simple Knowledge Organization System"@en ;
+    skos:definition "SKOS"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "SKOS"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:SPARQLQ
+    a skos:Concept ;
+    euauth:authority-code "SPARQLQ" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "SPARQLQ" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "SPARQLQ" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".sparqlq" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".rq" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "sparqlq" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/sparql-query" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "90" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "SPARQLQ" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "SPARQL Query"@en ;
+    skos:definition "SPARQL"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "SPARQL"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:SPARQLQRES
+    a skos:Concept ;
+    euauth:authority-code "SPARQLQRES" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "SPARQLQRES" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "SPARQLQR" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".sparqlqr" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".srx" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "sparqlqr" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/sparql-results+xml" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "80" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "SPARQLQRES" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "SPARQL Query Results"@en ;
+    skos:definition "SPARQL results"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "SPARQL results"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:SQL
+    a skos:Concept ;
+    euauth:authority-code "SQL" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "SQL" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".sql" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1974-01-01" ;
+    euauth2:op-code "SQL" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Structured Query Language"@en ;
+    skos:definition "SQL"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "SQL"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:SVG
+    a skos:Concept ;
+    euauth:authority-code "SVG" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "SVG" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".svg" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".svgz" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2001-09-04" ;
+    euauth2:op-code "SVG" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Scalable Vector Graphics"@en ;
+    skos:definition "SVG"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "SVG"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:SWM
+    a skos:Concept ;
+    euauth:authority-code "SWM" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "SWM" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".swm" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2007-01-30" ;
+    euauth2:op-code "SWM" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Split WIM file"@en ;
+    skos:definition "SWM"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "SWM"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:TAB
+    a skos:Concept ;
+    euauth:authority-code "TAB" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "TAB" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".tab" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2000-03-26" ;
+    euauth2:op-code "TAB" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "MapInfo TAB file"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "MapInfo TAB file"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:TAB_RSTR
+    a skos:Concept ;
+    euauth:authority-code "TAB_RSTR" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "TAB_RSTR" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".tab" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2000-03-26" ;
+    euauth2:op-code "TAB_RSTR" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "MapInfo TAB raster file"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "MapInfo TAB raster file"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:TAR_XZ
+    a skos:Concept ;
+    euauth:authority-code "TAR_XZ" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "TAR_XZ" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".tar.xz" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "TAR_XZ" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "XZ Compressed Tar Archive"@en ;
+    skos:definition "TAR XZ"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "TAR XZ"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:TIFF_FX
+    a skos:Concept ;
+    euauth:authority-code "TIFF_FX" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "TIFF_FX" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".tiff" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".tif" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "image/tiff-fx" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "2005-02-01" ;
+    euauth2:op-code "TIFF_FX" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Tagged Image Format File Fax eXtended"@en ;
+    skos:definition "TIFF FX"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "TIFF FX"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:TMX
+    a skos:Concept ;
+    euauth:authority-code "TMX" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "TMX" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xml" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/xml" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "1997-11-25" ;
+    euauth2:op-code "TMX" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Translation Memory eXchange"@en ;
+    skos:definition "TMX"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "TMX"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:WAR
+    a skos:Concept ;
+    euauth:authority-code "WAR" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "WAR" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".war" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1999-01-01" ;
+    euauth2:op-code "WAR" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Web Archive"@en ;
+    skos:definition "WAR"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "WAR"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:WARC
+    a skos:Concept ;
+    euauth:authority-code "WARC" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "WARC" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "WARC" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".warc" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "warc" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/warc" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "25" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2009-05-15" ;
+    euauth2:op-code "WARC" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Web Archive format"@en ;
+    skos:definition "WARC"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "WARC"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:WARC_GZ
+    a skos:Concept ;
+    euauth:authority-code "WARC_GZ" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "WARC_GZ" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".warc.gz" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "WARC_GZ" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Compressed Web Archive format"@en ;
+    skos:definition "WARC GZ"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "WARC GZ"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:WIM
+    a skos:Concept ;
+    euauth:authority-code "WIM" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "WIM" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".swm" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2007-01-30" ;
+    euauth2:op-code "WIM" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Windows Imaging Format"@en ;
+    skos:definition "WIM"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "WIM"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:WORLD
+    a skos:Concept ;
+    euauth:authority-code "WORLD" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "WORLD" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".jgw" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".tfw" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2001-03-26" ;
+    euauth2:op-code "WORLD" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "World file"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "World file"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:XHTML
+    a skos:Concept ;
+    euauth:authority-code "XHTML" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "XHTML" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "HTML" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".html" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".htm" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xhtml" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xht" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "xhtml" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/xhtml+xml" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "360" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "XHTML" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Extensible Hypertext Markup Language"@en ;
+    skos:definition "XHTML"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "XHTML"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:XHTML_SIMPL
+    a skos:Concept ;
+    euauth:authority-code "XHTML_SIMPL" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "XHTML_SIMPL" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "HTML" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".html" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".htm" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xhtml" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xht" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "xhtml_simplified" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/xhtml+xml;type=simplified" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "350" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "XHTML_SIMPL" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Extensible Hypertext Markup Language, simplified"@en ;
+    skos:definition "XHTML simplified"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "XHTML simplified"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:XLIFF
+    a skos:Concept ;
+    euauth:authority-code "XLIFF" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "XLIFF" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xlf" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2001-05-30" ;
+    euauth2:op-code "XLIFF" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "XML Localisation Interchange File Format"@en ;
+    skos:definition "XLIFF"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "XLIFF"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:XLS
+    a skos:Concept ;
+    euauth:authority-code "XLS" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "XLS" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "DOC" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xls" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "xls" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/vnd.ms-excel" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "60" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "XLS" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Microsof Excel Workbook"@en ;
+    skos:definition "Excel XLS"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Excel XLS"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:XLSB
+    a skos:Concept ;
+    euauth:authority-code "XLSB" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "XLSB" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xlsb" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2007-01-30" ;
+    euauth2:op-code "XLSB" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Excel Binary Workbook"@en ;
+    skos:definition "XLSB"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "XLSB"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:XLSM
+    a skos:Concept ;
+    euauth:authority-code "XLSM" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "XLSM" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xlsm" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2007-01-30" ;
+    euauth2:op-code "XLSM" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Excel Macro-enabled Workbook"@en ;
+    skos:definition "XLSM"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "XLSM"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:XSLFO
+    a skos:Concept ;
+    euauth:authority-code "XSLFO" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "XSLFO" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".fo" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "XSLFO" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Extensible Stylesheet Language – Formatting Objects"@en ;
+    skos:definition "XSL-FO"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "XSL-FO"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:XSLT
+    a skos:Concept ;
+    euauth:authority-code "XSLT" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "XSLT" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "XSLT" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xslt" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xsl" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "xslt" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/xslt+xml" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "40" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "XSLT" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Extensible Stylesheet Language Transformations"@en ;
+    skos:definition "XSLT"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "XSLT"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:XYZ
+    a skos:Concept ;
+    euauth:authority-code "XYZ" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "XYZ" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xyz" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "chemical/x-pdb" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "2010-10-10" ;
+    euauth2:op-code "XYZ" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "XYZ Chemical File"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "XYZ Chemical File"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:XZ
+    a skos:Concept ;
+    euauth:authority-code "XZ" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "XZ" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xz" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2010-10-23" ;
+    euauth2:op-code "XZ" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "xz compressed file"@en ;
+    skos:definition "xz"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "xz"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:Z
+    a skos:Concept ;
+    euauth:authority-code "Z" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "Z" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".Z" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1985-02-01" ;
+    euauth2:op-code "Z" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Unix compressed file"@en ;
+    skos:definition "Z"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Z"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:7Z
+    a skos:Concept ;
+    euauth:authority-code "7Z" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "7Z" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".7z" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2000-01-01" ;
+    euauth2:op-code "7Z" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "7-Zip compressed file"@en ;
+    skos:definition "7z"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "7z"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:CSV
+    a skos:Concept ;
+    euauth:authority-code "CSV" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "CSV" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".csv" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "text/csv" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "2013-05-21" ;
+    euauth2:op-code "CSV" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Comma-Separated Values"@en ;
+    skos:definition "CSV"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "CSV"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:DOCX
+    a skos:Concept ;
+    euauth:authority-code "DOCX" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "DOCX" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "DOC" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".docx" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "docx" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "220" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "DOCX" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Office Open XML Document"@en ;
+    skos:definition "Word DOCX"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Word DOCX"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:ECW
+    a skos:Concept ;
+    euauth:authority-code "ECW" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "ECW" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".ecw" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "1998-01-01" ;
+    euauth2:op-code "ECW" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Enhanced Compressed Wavelet"@en ;
+    skos:definition "ECW"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ECW"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:GDB
+    a skos:Concept ;
+    euauth:authority-code "GDB" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "GDB" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".gdb" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2008-02-06" ;
+    euauth2:op-code "GDB" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Environmental Systems Research Institute File Geodatabase"@en ;
+    skos:definition "Esri File Geodatabase"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Esri File Geodatabase"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:GEOJSON
+    a skos:Concept ;
+    euauth:authority-code "GEOJSON" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "GEOJSON" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "GeoJSON" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".json" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".geojson" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "geojson" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/geo+json" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "15" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2016-08-01" ;
+    euauth2:op-code "GEOJSON" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Geographical JavaScript Object Notation"@en ;
+    skos:definition "GeoJSON"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "GeoJSON"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:GRID
+    a skos:Concept ;
+    euauth:authority-code "GRID" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "GRID" ;
+    euauth:start.use "2013-08-21" ;
+    euauth2:op-code "GRID" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Environmental Systems Research Institute binary grid"@en ;
+    skos:definition "Esri binary grid"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Esri binary grid"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:GRID_ASCII
+    a skos:Concept ;
+    euauth:authority-code "GRID_ASCII" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "GRID_ASCII" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".asc" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2013-08-21" ;
+    euauth2:op-code "GRID_ASCII" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Environmental Systems Research Institute ASCII grid"@en ;
+    skos:definition "Esri ASCII grid"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Esri ASCII grid"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:GZIP
+    a skos:Concept ;
+    euauth:authority-code "GZIP" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "GZIP" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".gz" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "gzip" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/x-gzip" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "GZIP" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "GNU zip"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "GNU zip"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:HTML_SIMPL
+    a skos:Concept ;
+    euauth:authority-code "HTML_SIMPL" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "HTML_SIMPL" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "HTML" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".html" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".htm" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "html_simplified" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "text/html;type=simplified" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "310" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "HTML_SIMPL" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "HyperText Mark-up Language, simplified"@en ;
+    skos:definition "HTML simplified"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "HTML simplified"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:JPEG
+    a skos:Concept ;
+    euauth:authority-code "JPEG" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "JPEG" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "JPEG" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".jpeg" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".jpg" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "jepg" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "image/jpeg" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "170" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "JPEG" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "JPEG"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "JPEG"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:JSON
+    a skos:Concept ;
+    euauth:authority-code "JSON" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "JSON" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".json" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ;
+    euauth:start.use "2006-07-01" ;
+    euauth2:op-code "JSON" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "JavaScript Object Notation"@en ;
+    skos:definition "JSON"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "JSON"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:KML
+    a skos:Concept ;
+    euauth:authority-code "KML" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "KML" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".kml" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ;
+    euauth:start.use "2013-09-18" ;
+    euauth2:op-code "KML" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Keyhole Markup Language"@en ;
+    skos:definition "KML"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "KML"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:KMZ
+    a skos:Concept ;
+    euauth:authority-code "KMZ" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "KMZ" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".kmz" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ;
+    euauth:start.use "2013-11-27" ;
+    euauth2:op-code "KMZ" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Keyhole Markup Language, Zipped"@en ;
+    skos:definition "KMZ"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "KMZ"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:MDB
+    a skos:Concept ;
+    euauth:authority-code "MDB" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "MDB" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".mdb" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2013-09-18" ;
+    euauth2:op-code "MDB" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Microsoft Access Database"@en ;
+    skos:definition "MDB"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "MDB"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:NETCDF
+    a skos:Concept ;
+    euauth:authority-code "NETCDF" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "NETCDF" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".cdf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".nc" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/x-netcdf" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "1990-01-01" ;
+    euauth2:op-code "NETCDF" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Network Common Data Form"@en ;
+    skos:definition "NetCDF"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "NetCDF"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PDF
+    a skos:Concept ;
+    euauth:authority-code "PDF" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PDF" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "PDF" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".pdf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "pdf" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/pdf;type=pdf1x" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "230" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "PDF" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Portable Document Format"@en ;
+    skos:definition "PDF"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PDF"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:PPTX
+    a skos:Concept ;
+    euauth:authority-code "PPTX" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "PPTX" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "DOC" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".pptx" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "pptx" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/vnd.openxmlformats-officedocument.presentationml.presentation" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "130" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "PPTX" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Office Open XML Presentation"@en ;
+    skos:definition "PowerPoint PPTX"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "PowerPoint PPTX"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:REST
+    a skos:Concept ;
+    euauth:authority-code "REST" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "REST" ;
+    euauth:start.use "2010-01-01" ;
+    euauth2:op-code "REST" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Esri Representational State Transfer"@en ;
+    skos:definition "Esri REST"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Esri REST"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:SHP
+    a skos:Concept ;
+    euauth:authority-code "SHP" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "SHP" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".shp" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".shx" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".dbf" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ;
+    euauth:start.use "1998-07-01" ;
+    euauth2:op-code "SHP" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Environmental Systems Research Institute Shape"@en ;
+    skos:definition "Esri Shape"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Esri Shape"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:TIFF
+    a skos:Concept ;
+    euauth:authority-code "TIFF" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "TIFF" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "TIFF" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".tiff" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".tif" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "tiff" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "image/tiff" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "image/tiff-fx" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "70" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "TIFF" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Tagged Image Format File"@en ;
+    skos:definition "TIFF"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "TIFF"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:TSV
+    a skos:Concept ;
+    euauth:authority-code "TSV" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "TSV" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".tsv" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".tab" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ;
+    euauth:start.use "2013-10-02" ;
+    euauth2:op-code "TSV" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Tab-Separated Value"@en ;
+    skos:definition "TSV"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "TSV"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:TXT
+    a skos:Concept ;
+    euauth:authority-code "TXT" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "TXT" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "TXT" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".txt" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "txt" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "text/plain" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "300" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "TXT" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Text file"@en ;
+    skos:definition "Plain text"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Plain text"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:WFS_SRVC
+    a skos:Concept ;
+    euauth:authority-code "WFS_SRVC" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "WFS_SRVC" ;
+    euauth:start.use "2006-01-01" ;
+    euauth2:op-code "WFS_SRVC" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Web Feature Service"@en ;
+    skos:definition "WFS"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "WFS"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:WMS_SRVC
+    a skos:Concept ;
+    euauth:authority-code "WMS_SRVC" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "WMS_SRVC" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ;
+    euauth:start.use "1999-01-01" ;
+    euauth2:op-code "WMS_SRVC" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Web Map Service"@en ;
+    skos:definition "WMS"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "WMS"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:XLSX
+    a skos:Concept ;
+    euauth:authority-code "XLSX" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "XLSX" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "DOC" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xlsx" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "xlsx" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "50" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "XLSX" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Office Open XML Workbook"@en ;
+    skos:definition "Excel XLSX"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Excel XLSX"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:XML
+    a skos:Concept ;
+    euauth:authority-code "XML" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "XML" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "XML" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".xml" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-machine-readable"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "xml" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/xml" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "5" ;
+            dc11:source "priority-weight-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "XML" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Extensible Markup Language"@en ;
+    skos:definition "XML"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "XML"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:TAR
+    a skos:Concept ;
+    euauth:authority-code "TAR" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "TAR" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".tar" ;
+            dc11:source "file-extension"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/x-tar" ;
+            dc11:source "mime-type-cellar"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "TAR" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Tape Archive"@en ;
+    skos:definition "TAR"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "TAR"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:TAR_GZ
+    a skos:Concept ;
+    euauth:authority-code "TAR_GZ" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "TAR_GZ" ;
+    euauth:op-mapped-code [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".tar.gz" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "TAR_GZ" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Compressed Tarball File"@en ;
+    skos:definition "TAR GZ"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "TAR GZ"@en ;
+    skos:topConceptOf cs: ;
+.
+
+euft:ZIP
+    a skos:Concept ;
+    euauth:authority-code "ZIP" ;
+    euauth:deprecated "false" ;
+    euauth:op-code "ZIP" ;
+    euauth:op-mapped-code
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "true" ;
+            dc11:source "is-nonPropExt"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "false" ;
+            dc11:source "is-textual-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "zip" ;
+            dc11:source "manifestation-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "application/zip" ;
+            dc11:source "mime-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "30" ;
+            dc11:source "priority-weight-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code "ZIP" ;
+            dc11:source "eudor-type-cellar"
+        ] ,
+        [
+            a euauth:MappedCode ;
+            euauth:legacy-code ".zip" ;
+            dc11:source "file-extension"
+        ] ;
+    euauth:start.use "2012-09-01" ;
+    euauth2:op-code "ZIP" ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "ZIP"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ZIP"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<http://linked.data.gov.au/def/qg-file-types/PARQUET>
+  a skos:Concept ;
+  rdfs:isDefinedBy cs: ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "PARQUET"@en ;
+  skos:definition "Apache Parquet is an open source, column-oriented data file format designed for efficient data storage and retrieval."@en ;
+  skos:altLabel "Apache Parquet"@en ;
+  skos:historyNote "Created for this vocabulary" ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    schema:creator <https://linked.data.gov.au/org/immc-eu> ;
+    schema:dateCreated "2021-04-19"^^xsd:date ;
+    schema:dateModified "2023-03-16"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/detsi> ;
+    schema:citation "http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type"^^xsd:anyURI ;
+    schema:status astatus:stable ;
+    owl:versionInfo "20200923-0" ;
+    skos:definition "Types of digital files used in the Queensland Government"@en ;
+    skos:hasTopConcept
+        euft:7Z ,
+        euft:AAC ,
+        euft:APK ,
+        euft:APPX ,
+        euft:ARC ,
+        euft:ARC_GZ ,
+        euft:ARJ ,
+        euft:ATOM ,
+        euft:AZW ,
+        euft:BIN ,
+        euft:BITS ,
+        euft:BMP ,
+        euft:BWF ,
+        euft:BZIP2 ,
+        euft:CSS ,
+        euft:CSV ,
+        euft:DBF ,
+        euft:DCR ,
+        euft:DEB ,
+        euft:DMG ,
+        euft:DMP ,
+        euft:DOC ,
+        euft:DOCX ,
+        euft:DTD_SGML ,
+        euft:DTD_XML ,
+        euft:E00 ,
+        euft:EAR ,
+        euft:ECW ,
+        euft:EPS ,
+        euft:EPUB ,
+        euft:EXE ,
+        euft:FMX2 ,
+        euft:FMX3 ,
+        euft:FMX4 ,
+        euft:GDB ,
+        euft:GEOJSON ,
+        euft:GIF ,
+        euft:GML ,
+        euft:GMZ ,
+        euft:GRID ,
+        euft:GRID_ASCII ,
+        euft:GZIP ,
+        euft:HDF ,
+        euft:HDT ,
+        euft:HTML ,
+        euft:HTML_SIMPL ,
+        euft:ICS ,
+        euft:IMMC_XML ,
+        euft:INDD ,
+        euft:ISO ,
+        euft:ISO_ZIP ,
+        euft:JAR ,
+        euft:JATS ,
+        euft:JPEG ,
+        euft:JPEG2000 ,
+        euft:JS ,
+        euft:JSON ,
+        euft:JSON_LD ,
+        euft:KML ,
+        euft:KMZ ,
+        euft:LAS ,
+        euft:LAZ ,
+        euft:LEG ,
+        euft:LHA ,
+        euft:LZIP ,
+        euft:LZMA ,
+        euft:LZO ,
+        euft:MAP_PRVW ,
+        euft:MAP_SRVC ,
+        euft:MBOX ,
+        euft:MDB ,
+        euft:METS ,
+        euft:METS_ZIP ,
+        euft:MHTML ,
+        euft:MOBI ,
+        euft:MOP ,
+        euft:MPEG2 ,
+        euft:MPEG4 ,
+        euft:MPEG4_AVC ,
+        euft:MRSID ,
+        euft:MSG_HTTP ,
+        euft:MSI ,
+        euft:MXD ,
+        euft:N3 ,
+        euft:NETCDF ,
+        euft:OCTET ,
+        euft:ODB ,
+        euft:ODC ,
+        euft:ODF ,
+        euft:ODG ,
+        euft:ODP ,
+        euft:ODS ,
+        euft:ODT ,
+        euft:OP_DATPRO ,
+        euft:OVF ,
+        euft:OWL ,
+        <http://linked.data.gov.au/def/qg-file-types/PARQUET> ,
+        euft:PDF ,
+        euft:PDF1X ,
+        euft:PDFA1A ,
+        euft:PDFA1B ,
+        euft:PDFA2A ,
+        euft:PDFA2B ,
+        euft:PDFA3 ,
+        euft:PDFX ,
+        euft:PDFX1A ,
+        euft:PDFX2A ,
+        euft:PDFX4 ,
+        euft:PL ,
+        euft:PNG ,
+        euft:PPS ,
+        euft:PPSX ,
+        euft:PPT ,
+        euft:PPTX ,
+        euft:PS ,
+        euft:PSD ,
+        euft:PWP ,
+        euft:QGS ,
+        euft:RAR ,
+        euft:RDF ,
+        euft:RDFA ,
+        euft:RDF_N_QUADS ,
+        euft:RDF_N_TRIPLES ,
+        euft:RDF_TRIG ,
+        euft:RDF_TRIX ,
+        euft:RDF_TURTLE ,
+        euft:RDF_XML ,
+        euft:REST ,
+        euft:RPM ,
+        euft:RSS ,
+        euft:RTF ,
+        euft:SB3 ,
+        euft:SCHEMA_XML ,
+        euft:SDMX ,
+        euft:SGML ,
+        euft:SHP ,
+        euft:SKOS_XML ,
+        euft:SPARQLQ ,
+        euft:SPARQLQRES ,
+        euft:SQL ,
+        euft:SVG ,
+        euft:SWM ,
+        euft:TAB ,
+        euft:TAB_RSTR ,
+        euft:TAR ,
+        euft:TAR_GZ ,
+        euft:TAR_XZ ,
+        euft:TIFF ,
+        euft:TIFF_FX ,
+        euft:TMX ,
+        euft:TSV ,
+        euft:TXT ,
+        euft:WAR ,
+        euft:WARC ,
+        euft:WARC_GZ ,
+        euft:WFS_SRVC ,
+        euft:WIM ,
+        euft:WMS_SRVC ,
+        euft:WORLD ,
+        euft:XHTML ,
+        euft:XHTML_SIMPL ,
+        euft:XLIFF ,
+        euft:XLS ,
+        euft:XLSB ,
+        euft:XLSM ,
+        euft:XLSX ,
+        euft:XML ,
+        euft:XSLFO ,
+        euft:XSLT ,
+        euft:XYZ ,
+        euft:XZ ,
+        euft:Z ,
+        euft:ZIP ;
+    skos:historyNote """File type list sourced from http://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type File sourced by Dan Brough on 20201110 converted to TTL using http://www.easyrdf.org/converter listed each file type as a TopConcept of the Concept Scheme obtained file type concept items from http://publications.europa.eu/resource/authority/file-type and converted to TTL""" ;
+    skos:prefLabel "File type"@en ;
+.

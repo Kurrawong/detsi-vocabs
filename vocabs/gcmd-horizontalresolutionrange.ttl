@@ -1,0 +1,135 @@
+PREFIX : <https://gcmd.earthdata.nasa.gov/kms/concept/>
+PREFIX cs: <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/horizontalresolutionrange>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+cs:
+    a skos:ConceptScheme ;
+    schema:creator <https://linked.data.gov.au/org/detsi> ;
+    schema:dateCreated "2020-12-02"^^xsd:date ;
+    schema:dateModified "2025-06-10"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/detsi> ;
+    skos:definition "This is a copy of the GCMD Earth horizontal resolution range vocab at Research Vocabularies Australia."@en ;
+    skos:historyNote """2025-06: Made VocPub valid. Added the ConceptScheme. Replaced single top concept with next level concepts. Used prefLabel for definitions where missing.""" ;
+    skos:hasTopConcept 
+        :abf43d91-a65d-4b3b-a6dd-593e211b2c7b ,
+        :8d520e8b-e1c6-4c18-bf8a-7a41b006f66f ,
+        :3b36beea-9637-4213-bdbe-42e878ca14df ,
+        :9e5ebee1-3ba2-4522-8d90-7ddf47987581 ,
+        :437daa1f-f584-4afc-9104-b245f3a3d26d ,
+        :75c9d806-9e29-40f5-b479-4c63c90f77a9 ,
+        :c19001e4-dfbf-491b-b6d5-c4d0cee8f2fe ,
+        :8d197170-3639-4850-b012-0cae4a288e2b ,
+        :08e4b31c-0be3-49cd-9374-caac345e7402 ,
+        :e5c4876e-47b7-4d53-90a2-081a6b150140 ,
+        :35a7a6f2-69fe-4ba7-a2b5-91f83f52afb3 ,
+        :2207b375-113b-4499-a5a6-0ae6edc2aae8 ,
+        :6dd8224f-944e-4798-ac48-44c23a567eeb ,
+        :e2d588c7-76a5-4655-bfaf-bf66874b61c4 ;
+    skos:prefLabel "GCMD Horizontal Data Resolution Keywords"@en
+.
+
+
+:6dd8224f-944e-4798-ac48-44c23a567eeb
+        a skos:Concept ;
+        skos:topConceptOf cs: ;
+        skos:inScheme cs: ;
+        skos:prefLabel "1 km - < 10 km or approximately .01 degree - < .09 degree"@en .
+
+:35a7a6f2-69fe-4ba7-a2b5-91f83f52afb3
+        a skos:Concept ;
+        skos:topConceptOf cs: ;
+        skos:changeNote "2013-03-19 10:34:03.0 [gee-cee] corrected spacing in valid. RC. update PrefLabel (50 km  - < 100 km or approximately .5 degree - < 1 degree);" ;
+        skos:inScheme cs: ;
+        skos:prefLabel "50 km  - < 100 km or approximately .5 degree - < 1 degree"@en .
+
+:e5c4876e-47b7-4d53-90a2-081a6b150140
+        a skos:Concept ;
+        skos:topConceptOf cs: ;
+        skos:inScheme cs: ;
+        skos:prefLabel "250 meters - < 500 meters"@en .
+
+:75c9d806-9e29-40f5-b479-4c63c90f77a9
+        a skos:Concept ;
+        skos:topConceptOf cs: ;
+        skos:inScheme cs: ;
+        skos:prefLabel "Point Resolution"@en .
+
+:9e5ebee1-3ba2-4522-8d90-7ddf47987581
+        a skos:Concept ;
+        skos:topConceptOf cs: ;
+        skos:inScheme cs: ;
+        skos:prefLabel "500 meters - < 1 km"@en .
+
+:3b36beea-9637-4213-bdbe-42e878ca14df
+        a skos:Concept ;
+        skos:topConceptOf cs: ;
+        skos:inScheme cs: ;
+        skos:prefLabel "10 km - < 50 km or approximately .09 degree - < .5 degree"@en .
+
+:8d197170-3639-4850-b012-0cae4a288e2b
+        a skos:Concept ;
+        skos:topConceptOf cs: ;
+        skos:inScheme cs: ;
+        skos:prefLabel "100 meters - < 250 meters"@en .
+
+:2207b375-113b-4499-a5a6-0ae6edc2aae8
+        a skos:Concept ;
+        skos:topConceptOf cs: ;
+        skos:inScheme cs: ;
+        skos:prefLabel "100 km - < 250 km or approximately 1 degree - < 2.5 degrees"@en .
+
+:abf43d91-a65d-4b3b-a6dd-593e211b2c7b
+        a skos:Concept ;
+        skos:topConceptOf cs: ;
+        skos:inScheme cs: ;
+        skos:prefLabel "1 meter - < 30 meters"@en .
+
+:8d520e8b-e1c6-4c18-bf8a-7a41b006f66f
+        a skos:Concept ;
+        skos:topConceptOf cs: ;
+        skos:inScheme cs: ;
+        skos:prefLabel "250 km - <  500 km  or approximately  2.5 degrees - < 5.0 degrees"@en .
+
+:c19001e4-dfbf-491b-b6d5-c4d0cee8f2fe
+        a skos:Concept ;
+        skos:topConceptOf cs: ;
+        skos:inScheme cs: ;
+        skos:prefLabel "> 1000 km or > 10 degrees"@en .
+
+:08e4b31c-0be3-49cd-9374-caac345e7402
+        a skos:Concept ;
+        skos:topConceptOf cs: ;
+        skos:inScheme cs: ;
+        skos:prefLabel "< 1 meter"@en .
+
+:e2d588c7-76a5-4655-bfaf-bf66874b61c4
+        a skos:Concept ;
+        skos:topConceptOf cs: ;
+        skos:inScheme cs: ;
+        skos:prefLabel "500 km - < 1000 km or approximately 5 degrees - < 10 degrees"@en .
+
+:437daa1f-f584-4afc-9104-b245f3a3d26d
+        a skos:Concept ;
+        skos:topConceptOf cs: ;
+        skos:inScheme cs: ;
+        skos:prefLabel "30 meters - < 100 meters"@en .
+
+:1499785c-8b74-45f4-bbf7-19d2d4e43b2f skos:definition "Horizontal Resolution Ranges" .
+:6dd8224f-944e-4798-ac48-44c23a567eeb skos:definition "1 km - < 10 km or approximately .01 degree - < .09 degree" .
+:35a7a6f2-69fe-4ba7-a2b5-91f83f52afb3 skos:definition "50 km  - < 100 km or approximately .5 degree - < 1 degree" .
+:e5c4876e-47b7-4d53-90a2-081a6b150140 skos:definition "250 meters - < 500 meters" .
+:75c9d806-9e29-40f5-b479-4c63c90f77a9 skos:definition "Point Resolution" .
+:9e5ebee1-3ba2-4522-8d90-7ddf47987581 skos:definition "500 meters - < 1 km" .
+:3b36beea-9637-4213-bdbe-42e878ca14df skos:definition "10 km - < 50 km or approximately .09 degree - < .5 degree" .
+:8d197170-3639-4850-b012-0cae4a288e2b skos:definition "100 meters - < 250 meters" .
+:2207b375-113b-4499-a5a6-0ae6edc2aae8 skos:definition "100 km - < 250 km or approximately 1 degree - < 2.5 degrees" .
+:abf43d91-a65d-4b3b-a6dd-593e211b2c7b skos:definition "1 meter - < 30 meters" .
+:8d520e8b-e1c6-4c18-bf8a-7a41b006f66f skos:definition "250 km - <  500 km  or approximately  2.5 degrees - < 5.0 degrees" .
+:c19001e4-dfbf-491b-b6d5-c4d0cee8f2fe skos:definition "> 1000 km or > 10 degrees" .
+:08e4b31c-0be3-49cd-9374-caac345e7402 skos:definition "< 1 meter" .
+:e2d588c7-76a5-4655-bfaf-bf66874b61c4 skos:definition "500 km - < 1000 km or approximately 5 degrees - < 10 degrees" .
+:437daa1f-f584-4afc-9104-b245f3a3d26d skos:definition "30 meters - < 100 meters" .

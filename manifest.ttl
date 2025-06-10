@@ -15,30 +15,49 @@ PREFIX schema: <https://schema.org/>
         ] ,
         [
             prof:hasArtifact
-                "vocabs/DataCite-resourceTypes.ttl" ,
-                "vocabs/dq-iso-25012.ttl" ,
-                "vocabs/qesd-obs-props.ttl" ,
+                "vocabs/MD_MaintenanceFrequencyCode.ttl" ,
+                "vocabs/MD_ProgressCode.ttl" ,
+                "vocabs/MD_SpatialRepresentationTypeCode.ttl" ,
                 "vocabs/dataset-relationships.ttl" ,
-                "vocabs/dq-nsw-data-quality-assessment.ttl" ,
-                "vocabs/qesd-quantitykind.ttl" ,
                 "vocabs/dq-iso-19157.ttl" ,
-                "vocabs/qesd-unitofmeasure.ttl" ;
+                "vocabs/dq-iso-25012.ttl" ,
+                "vocabs/dq-nsw-data-quality-assessment.ttl" ,
+                "vocabs/europa-file-types.ttl" ,
+                "vocabs/ga_service-type_v1-1.ttl" ,
+                "vocabs/gcmd-horizontalresolutionrange.ttl" ,
+                "vocabs/gcmd-sciencekeywords.ttl" ,
+                "vocabs/gcmd-temporalresolutionrange.ttl" ,
+                "vocabs/gsq-roles.ttl" ,
+                "vocabs/qesd-qkd.ttl" ,
+                "vocabs/qesd-uom.ttl" ,
+                "vocabs/qg-agent.ttl" ,
+                "vocabs/qg-security-classification.ttl" ,
+                "vocabs/qld-crs.ttl" ,
+                "vocabs/qld-data-licenses.ttl" ,
+                "vocabs/qld-obsprop.ttl" ,
+                "vocabs/resource-types.ttl" ;
             prof:hasRole mrr:ResourceData ;
             schema:description "DETSI vocabs" ;
             schema:name "Resource Data" ;
             dcterms:conformsTo <https://w3id.org/profile/vocpub> ;
         ] ,
         [
-            prof:hasArtifact "vocabs/iso639-language-code.ttl" ;
+            prof:hasArtifact "vocabs/LanguageCode.ttl" ;
             prof:hasRole mrr:ResourceData ;
             schema:description "Vocabulary objects, conforming to a variant of the VocPub Profile of SKOS - multiple prefLabels not enforced" ;
             schema:name "Resource Data - multi-label" ;
             dcterms:conformsTo "scripts/vocpub-variant.ttl" ;
         ] ,
         [
+            prof:hasArtifact "agents.ttl" ;
+            prof:hasRole mrr:IncompleteCatalogueAndResourceLabels ;
+            schema:description "An RDF file containing Agent information for labelling" ;
+            schema:name "Agents" ;
+        ] ,
+        [
             prof:hasArtifact "labels.ttl" ;
-            prof:hasRole mrr:CompleteCatalogueAndResourceLabels ;
-            schema:description "An RDF file containing all the labels for the container content" ;
+            prof:hasRole mrr:IncompleteCatalogueAndResourceLabels ;
+            schema:description "An RDF file containing many labels for the catalogue's content" ;
             schema:name "Labels" ;
         ] ;
 .

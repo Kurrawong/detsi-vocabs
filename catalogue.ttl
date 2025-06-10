@@ -21,10 +21,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 This catalogue was was created in 2024""" ;
     schema:codeRepository "https://github.com/kurrawong/detsi-vocabs" ;
     schema:contributor <https://kurrawong.ai> ;
-    schema:creator <https://linked.data.gov.au/org/icsm> ;
+    schema:creator <https://linked.data.gov.au/org/detsi> ;
     schema:dateCreated "2017"^^xsd:gYear ;
-    schema:dateModified "2025-06-03"^^xsd:date ;
+    schema:dateModified "2025-06-10"^^xsd:date ;
     schema:description "DETSI's vocabularies of controlled terms from the Department" ;
     schema:name "DETSI Vocabularies" ;
-    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+    schema:publisher <https://linked.data.gov.au/org/detsi> ;
 .

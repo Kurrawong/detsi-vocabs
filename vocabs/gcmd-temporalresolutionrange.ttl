@@ -1,0 +1,237 @@
+PREFIX : <https://gcmd.earthdata.nasa.gov/kms/concept/>
+PREFIX cs: <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/temporalresolutionrange>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+cs:
+    a skos:ConceptScheme ;
+    schema:creator <https://linked.data.gov.au/org/detsi> ;
+    schema:dateCreated "2020-12-02"^^xsd:date ;
+    schema:dateModified "2025-06-10"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/detsi> ;
+    skos:definition "This is a copy of the GCMD Earth temporal resolution range vocab at Research Vocabularies Australia."@en ;
+    skos:historyNote """2025-06: Made VocPub valid. Added the ConceptScheme. Replaced single top concept with next level concepts. Used prefLabel for definitions where missing.""" ;
+    skos:hasTopConcept 
+        :027dee16-b361-481e-868d-add966eb5b71 ,
+        :1ac968ef-a90a-4ffc-adbf-ea0c0d69a7f9 ,
+        :2de882f0-d84a-471e-8fb5-9f8a1c7913c1 ,
+        :31765761-b153-478a-92b3-1088997fd74b ,
+        :3d97e993-dc6a-41ff-8a49-3e837c1fc2b1 ,
+        :40e09855-fb48-4a7d-9851-d6e809e6c309 ,
+        :42a2f639-d1c3-4e82-a8b8-63f0f4a60ac6 ,
+        :48ff676f-836c-4cff-bc88-4c4cc06b2e1b ,
+        :6f3ef789-a98a-403d-b976-63e0f0e6cdad ,
+        :7afdb8ba-a504-45b6-b301-730e3c69d23a ,
+        :7b2a303c-3cb7-4961-9851-650548964674 ,
+        :7c5420a6-94e2-40ca-9dff-20309090d327 ,
+        :8900c323-8789-4403-91e9-c399de369935 ,
+        :8c8c70b1-f6c5-4f34-89b5-510049b8c8ab ,
+        :93c0fe11-a6a6-49b2-886f-4c281848126c ,
+        :99ef187e-6940-4c10-8d65-00d4426d493b ,
+        :af931dca-9a7d-4ba9-b40f-2a21e31f2d5b ,
+        :bca20202-2b06-4657-a425-5b0e416bce0c ,
+        :e0040d4b-e398-4b65-bd42-d39434b5cc95 ,
+        :f308a8db-40ea-4932-a58c-fb0a093959dc ,
+        :f86e464a-cf9d-4e15-a39b-501855d1dc5a ;
+    skos:prefLabel "GCMD Temporal Data Resolution Keywords"@en ;
+.
+
+:027dee16-b361-481e-868d-add966eb5b71
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hourly Climatology"@en ;
+.
+
+:1ac968ef-a90a-4ffc-adbf-ea0c0d69a7f9
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Daily - < Weekly"@en ;
+.
+
+:2de882f0-d84a-471e-8fb5-9f8a1c7913c1
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Weekly Climatology"@en ;
+.
+
+:31765761-b153-478a-92b3-1088997fd74b
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hourly - < Daily"@en ;
+.
+
+:3d97e993-dc6a-41ff-8a49-3e837c1fc2b1
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Decadal"@en ;
+.
+
+:40e09855-fb48-4a7d-9851-d6e809e6c309
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Annual"@en ;
+.
+
+:42a2f639-d1c3-4e82-a8b8-63f0f4a60ac6
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "< 1 second"@en ;
+.
+
+:48ff676f-836c-4cff-bc88-4c4cc06b2e1b
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "1 second - < 1 minute"@en ;
+.
+
+:6f3ef789-a98a-403d-b976-63e0f0e6cdad
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:changeNote
+        """2024-05-30 15:22:58.0 [sritz] Insert Concept
+add broader relation (Multi-Year [6f3ef789-a98a-403d-b976-63e0f0e6cdad,1693852] - Temporal Resolution Ranges [502ad03c-dba8-4b32-8af5-13fa947c3988,1689014]);
+""" ,
+        """2024-05-30 15:26:12.0 [sritz]
+insert Definition (id: null
+text: Data whose temporal range spans across multiple years.
+language code: en);
+""" ;
+    skos:definition "Data whose temporal range spans across multiple years."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Multi-Year"@en ;
+.
+
+:7afdb8ba-a504-45b6-b301-730e3c69d23a
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:changeNote """2017-06-01 09:44:47.0 [tstevens] Insert Concept
+add broader relation (Subannual [7afdb8ba-a504-45b6-b301-730e3c69d23a,309625] - Temporal Resolution Ranges [502ad03c-dba8-4b32-8af5-13fa947c3988,296627]);
+""" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Subannual"@en ;
+.
+
+:7b2a303c-3cb7-4961-9851-650548964674
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Weekly - < Monthly"@en ;
+.
+
+:7c5420a6-94e2-40ca-9dff-20309090d327
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:changeNote """2017-06-01 09:44:34.0 [tstevens] Insert Concept
+add broader relation (Seasonal [7c5420a6-94e2-40ca-9dff-20309090d327,309621] - Temporal Resolution Ranges [502ad03c-dba8-4b32-8af5-13fa947c3988,296627]);
+""" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Seasonal"@en ;
+.
+
+:8900c323-8789-4403-91e9-c399de369935
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Monthly - < Annual"@en ;
+.
+
+:8c8c70b1-f6c5-4f34-89b5-510049b8c8ab
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Monthly Climatology"@en ;
+.
+
+:93c0fe11-a6a6-49b2-886f-4c281848126c
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:changeNote """2024-06-26 11:15:11.0 [tstevens] Insert Concept
+add broader relation (Varies [93c0fe11-a6a6-49b2-886f-4c281848126c,1724105] - Temporal Resolution Ranges [502ad03c-dba8-4b32-8af5-13fa947c3988,1719265]);
+""" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Varies"@en ;
+.
+
+:99ef187e-6940-4c10-8d65-00d4426d493b
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:changeNote
+        """2016-06-09 11:16:04.0 [saritz] Insert Concept
+add broader relation (Diurnal [99ef187e-6940-4c10-8d65-00d4426d493b,188031] - Temporal Resolution Ranges [502ad03c-dba8-4b32-8af5-13fa947c3988,176435]);
+""" ,
+        """2016-06-09 11:17:43.0 [saritz]
+insert Definition (id: null
+text: A diurnal cycle is any pattern that recurs every 24 hours as a result of one full rotation of the Earth[1] with respect to the Sun.
+language code: en);
+""" ;
+    skos:definition "A diurnal cycle is any pattern that recurs every 24 hours as a result of one full rotation of the Earth[1] with respect to the Sun."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Diurnal"@en ;
+    schema:citation "http://en.mimi.hu/meteorology/diurnal_cycle.html"^^xsd:anyURI ;
+.
+
+:af931dca-9a7d-4ba9-b40f-2a21e31f2d5b
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Annual Climatology"@en ;
+.
+
+:bca20202-2b06-4657-a425-5b0e416bce0c
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "1 minute - < 1 hour"@en ;
+.
+
+:e0040d4b-e398-4b65-bd42-d39434b5cc95
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Pentad Climatology"@en ;
+.
+
+:f308a8db-40ea-4932-a58c-fb0a093959dc
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Climate Normal (30-year climatology)"@en ;
+.
+
+:f86e464a-cf9d-4e15-a39b-501855d1dc5a
+    a skos:Concept ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Daily Climatology"@en ;
+.
+
+:027dee16-b361-481e-868d-add966eb5b71 skos:definition "Hourly Climatology" .
+:1ac968ef-a90a-4ffc-adbf-ea0c0d69a7f9 skos:definition "Daily - < Weekly" .
+:2de882f0-d84a-471e-8fb5-9f8a1c7913c1 skos:definition "Weekly Climatology" .
+:31765761-b153-478a-92b3-1088997fd74b skos:definition "Hourly - < Daily" .
+:3d97e993-dc6a-41ff-8a49-3e837c1fc2b1 skos:definition "Decadal" .
+:40e09855-fb48-4a7d-9851-d6e809e6c309 skos:definition "Annual" .
+:42a2f639-d1c3-4e82-a8b8-63f0f4a60ac6 skos:definition "< 1 second" .
+:48ff676f-836c-4cff-bc88-4c4cc06b2e1b skos:definition "1 second - < 1 minute" .
+:7afdb8ba-a504-45b6-b301-730e3c69d23a skos:definition "Subannual" .
+:7b2a303c-3cb7-4961-9851-650548964674 skos:definition "Weekly - < Monthly" .
+:7c5420a6-94e2-40ca-9dff-20309090d327 skos:definition "Seasonal" .
+:8900c323-8789-4403-91e9-c399de369935 skos:definition "Monthly - < Annual" .
+:8c8c70b1-f6c5-4f34-89b5-510049b8c8ab skos:definition "Monthly Climatology" .
+:93c0fe11-a6a6-49b2-886f-4c281848126c skos:definition "Varies" .
+:af931dca-9a7d-4ba9-b40f-2a21e31f2d5b skos:definition "Annual Climatology" .
+:bca20202-2b06-4657-a425-5b0e416bce0c skos:definition "1 minute - < 1 hour" .
+:e0040d4b-e398-4b65-bd42-d39434b5cc95 skos:definition "Pentad Climatology" .
+:f308a8db-40ea-4932-a58c-fb0a093959dc skos:definition "Climate Normal (30-year climatology)" .
+:f86e464a-cf9d-4e15-a39b-501855d1dc5a skos:definition "Daily Climatology" .
+:502ad03c-dba8-4b32-8af5-13fa947c3988 skos:definition "Temporal Resolution Ranges" .
