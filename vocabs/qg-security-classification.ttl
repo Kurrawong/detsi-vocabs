@@ -65,7 +65,7 @@ cs:
     a skos:ConceptScheme ;
     schema:creator <https://linked.data.gov.au/org/detsi> ;
     schema:dateCreated "2020-11-11"^^xsd:date ;
-    schema:dateModified "2023-03-10"^^xsd:date ;
+    schema:dateModified "2025-06-10"^^xsd:date ;
     skos:historyNote "Queensland Government Information Security Policy (IS18:2018) and the Queensland Government Information Security Classification Framework (QGSCIF)"@en ;
     schema:publisher <https://linked.data.gov.au/org/detsi> ;
     skos:definition "This is a vocabulary collection used by the Queensland Government to determine the security classifications for the dataset.  It is used by the dataset classification and access restrictions property."@en ;
