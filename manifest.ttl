@@ -1,19 +1,36 @@
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX mrr: <https://prez.dev/ManifestResourceRoles/>
-PREFIX prez: <https://prez.dev/>
 PREFIX prof: <http://www.w3.org/ns/dx/prof/>
 PREFIX schema: <https://schema.org/>
 
-[]
-    a prez:Manifest ;
-    prof:hasResource
+[]    a <https://prez.dev/Manifest> ;
+    prof:hasResource 
         [
-            prof:hasArtifact "catalogue.ttl" ;
-            prof:hasRole mrr:CatalogueData ;
-            schema:description "The definition of, and metadata for, the container which here is a catalogue" ;
-            schema:name "Catalogue Definition"
+            prof:hasArtifact "agents.ttl" ;
+            prof:hasRole <https://prez.dev/ManifestResourceRoles/IncompleteCatalogueAndResourceLabels> ;
+            schema:description "An RDF file containing Agent information for labelling" ;
+            schema:name "Agents" ;
         ] ,
         [
+            prof:hasArtifact "labels.ttl" ;
+            prof:hasRole <https://prez.dev/ManifestResourceRoles/IncompleteCatalogueAndResourceLabels> ;
+            schema:description "An RDF file containing many labels for the catalogue's content" ;
+            schema:name "Labels" ;
+        ] ,
+        [
+            prof:hasArtifact "catalogue.ttl" ;
+            prof:hasRole <https://prez.dev/ManifestResourceRoles/CatalogueData> ;
+            schema:description "The definition of, and metadata for, the container which here is a catalogue" ;
+            schema:name "Catalogue Definition" ;
+        ] ,
+        [
+            dcterms:conformsTo "scripts/vocpub-variant.ttl" ;
+            prof:hasArtifact "vocabs/LanguageCode.ttl" ;
+            prof:hasRole <https://prez.dev/ManifestResourceRoles/ResourceData> ;
+            schema:description "Vocabulary objects, conforming to a variant of the VocPub Profile of SKOS - multiple prefLabels not enforced" ;
+            schema:name "Resource Data - multi-label" ;
+        ] ,
+        [
+            dcterms:conformsTo <https://w3id.org/profile/vocpub> ;
             prof:hasArtifact
                 "vocabs/MD_MaintenanceFrequencyCode.ttl" ,
                 "vocabs/MD_ProgressCode.ttl" ,
@@ -36,28 +53,8 @@ PREFIX schema: <https://schema.org/>
                 "vocabs/qld-data-licenses.ttl" ,
                 "vocabs/qld-obsprop.ttl" ,
                 "vocabs/resource-types.ttl" ;
-            prof:hasRole mrr:ResourceData ;
+            prof:hasRole <https://prez.dev/ManifestResourceRoles/ResourceData> ;
             schema:description "DETSI vocabs" ;
             schema:name "Resource Data" ;
-            dcterms:conformsTo <https://w3id.org/profile/vocpub> ;
-        ] ,
-        [
-            prof:hasArtifact "vocabs/LanguageCode.ttl" ;
-            prof:hasRole mrr:ResourceData ;
-            schema:description "Vocabulary objects, conforming to a variant of the VocPub Profile of SKOS - multiple prefLabels not enforced" ;
-            schema:name "Resource Data - multi-label" ;
-            dcterms:conformsTo "scripts/vocpub-variant.ttl" ;
-        ] ,
-        [
-            prof:hasArtifact "agents.ttl" ;
-            prof:hasRole mrr:IncompleteCatalogueAndResourceLabels ;
-            schema:description "An RDF file containing Agent information for labelling" ;
-            schema:name "Agents" ;
-        ] ,
-        [
-            prof:hasArtifact "labels.ttl" ;
-            prof:hasRole mrr:IncompleteCatalogueAndResourceLabels ;
-            schema:description "An RDF file containing many labels for the catalogue's content" ;
-            schema:name "Labels" ;
         ] ;
 .
