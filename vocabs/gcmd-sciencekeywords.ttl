@@ -19797,7 +19797,7 @@ language code: en);""" ;
     skos:definition """Afforestation: "the establishment of trees on an area that has lacked forest
 cover for a very long time or has never been forested. "
 Reforestation: " the natural or artificial restocking (i.e., planting, seeding)
-of an area with forest trees. Also called forest regeneration. """"@en ;
+of an area with forest trees. Also called forest regeneration. """@en ;
     skos:inScheme cs: ;
     skos:prefLabel "AFFORESTATION/REFORESTATION"@en ;
 .
@@ -19861,7 +19861,7 @@ update Definition (EOSDIS Parameter Keyword Definitions, https://earthdata.nasa.
 :b3fcccdd-745f-4299-94b3-e72e37f551be
     a skos:Concept ;
     skos:broader :22ec2f9b-1f1a-469b-bc09-851d58637ff4 ;
-    skos:definition """"An agent that damages trees by destroying leaves or needles. """"@en ;
+    skos:definition """An agent that damages trees by destroying leaves or needles. """@en ;
     skos:inScheme cs: ;
     skos:prefLabel "DEFOLIANTS"@en ;
 .

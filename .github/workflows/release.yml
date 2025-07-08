@@ -1,0 +1,155 @@
+# This workflow publishes a DETSI Prez container image with the vocab data baked in.
+# It is triggered when a GitHub release is published.
+# It builds the container image, runs a vulnerability scan, runs a smoke test,
+# and pushes the container image to GHCR.
+#
+# TODO: Add step to update the azure container app to use the new image.
+
+name: Release
+
+on:
+  release:
+    types:
+      - published
+
+env:
+  CONTAINER_REGISTRY: ghcr.io
+  CONTAINER_IMAGE_NAME: detsi-prez
+  CONTAINER_IMAGE_PLATFORMS: linux/amd64,linux/arm64
+
+jobs:
+  push-to-ghcr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+
+      - name: Docker metadata
+        id: metadata
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/kurrawong/${{ env.CONTAINER_IMAGE_NAME }}
+          tags: |
+            type=semver,pattern={{version}},value=${{ github.event.release.tag_name }}
+            type=semver,pattern={{major}}.{{minor}},value=${{ github.event.release.tag_name }}
+            type=semver,pattern={{major}},value=${{ github.event.release.tag_name }}
+
+      - name: Setup QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Setup Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build container image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: false
+          load: true
+          tags: ${{ steps.metadata.outputs.tags }}
+          labels: ${{ steps.metadata.outputs.labels }}
+          platforms: ${{ env.CONTAINER_IMAGE_PLATFORMS }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Extract primary image tag
+        id: image
+        run: echo "name=$(echo '${{ steps.metadata.outputs.tags }}' | head -n 1)" >> $GITHUB_OUTPUT
+
+      - name: Run Trivy vulnerability scan
+        uses: aquasecurity/trivy-action@0.32.0
+        with:
+          image-ref: ${{ steps.image.outputs.name }}
+          format: "table"
+          exit-code: "1"
+          ignore-unfixed: true
+          vuln-type: "os,library"
+          severity: "CRITICAL,HIGH"
+
+      - name: Container image smoke test
+        run: |
+          set -e
+          IMAGE_NAME=$(echo "${{ steps.metadata.outputs.tags }}" | head -n 1)
+          TEST_SUCCESS=false
+
+          cleanup() {
+            echo "Cleaning up..."
+            if [ "$(docker ps -q -f name=smoke-test-container)" ]; then
+              docker logs smoke-test-container
+              docker stop smoke-test-container
+            fi
+          }
+
+                    echo "Starting container for smoke test using image: $IMAGE_NAME"
+
+          # Use different approaches for act vs GitHub Actions
+          if [ "$ACT" = "true" ]; then
+            echo "Running with act - using fixed port mapping"
+            docker run --platform=linux/amd64 -d --rm --name smoke-test-container -e SPARQL_REPO_TYPE=pyoxigraph -e ENABLE_SPARQL_ENDPOINT=true -e LOCAL_RDF_DIR=/app/rdf -p 8000:8000 "$IMAGE_NAME"
+            BASE_URL="http://localhost:8000"
+          else
+            echo "Running in GitHub Actions - using dynamic port mapping"
+            docker run --platform=linux/amd64 -d --rm --name smoke-test-container -e SPARQL_REPO_TYPE=pyoxigraph -e ENABLE_SPARQL_ENDPOINT=true -e LOCAL_RDF_DIR=/app/rdf -p 8000 "$IMAGE_NAME"
+            
+            HOST_PORT_MAPPING=$(docker port smoke-test-container 8000 | head -n 1)
+            if [ -z "$HOST_PORT_MAPPING" ]; then
+              echo "Failed to get port mapping for smoke-test-container"
+              cleanup
+              exit 1
+            fi
+            HOST_PORT=${HOST_PORT_MAPPING##*:}
+            BASE_URL="http://localhost:$HOST_PORT"
+          fi
+
+          echo "Container is listening on $BASE_URL"
+
+          echo "Waiting for container to become healthy..."
+          for i in {1..12}; do
+            if curl -s -f "$BASE_URL/health" > /dev/null; then
+              echo "Container is healthy. Checking for data..."
+              count=$(curl -s -X POST "$BASE_URL/sparql" \
+                -H "Content-Type: application/x-www-form-urlencoded" \
+                -H "Accept: application/sparql-results+json" \
+                --data-urlencode "query=SELECT (count(*) as ?count) WHERE { ?s a <http://www.w3.org/2004/02/skos/core#Concept> }" \
+                | jq -r '.results.bindings[0].count.value')
+
+              if [ "$count" -gt 0 ]; then
+                echo "Data check passed! Found $count SKOS concepts."
+                TEST_SUCCESS=true
+                break
+              else
+                echo "Data check failed, no SKOS concepts found. Retrying..."
+              fi
+            fi
+            echo "Attempt $i: Health check or data check failed. Retrying in 5 seconds..."
+            sleep 5
+          done
+
+          cleanup
+
+          if [ "$TEST_SUCCESS" = "false" ]; then
+            echo "Smoke test failed after all attempts."
+            exit 1
+          fi
+
+      - name: Log in to GitHub Container Registry
+        if: ${{ !env.ACT }}
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push container image to GHCR
+        if: ${{ !env.ACT }}
+        uses: docker/build-push-action@v6
+        with:
+          push: true
+          tags: ${{ steps.metadata.outputs.tags }}
+          labels: ${{ steps.metadata.outputs.labels }}
+          platforms: ${{ env.CONTAINER_IMAGE_PLATFORMS }}
+          cache-from: type=gha

@@ -53,3 +53,23 @@ tasks:
           exit 1
         fi
       done
+
+  prez:build:
+    cmd: docker build --platform=linux/amd64 -t detsi-prez .
+
+  prez:run:
+    cmd: |
+      docker run --env SPARQL_REPO_TYPE=pyoxigraph \
+       --env ENABLE_SPARQL_ENDPOINT=true \
+       --env SPARQL_ENDPOINT_PORT=8080 \
+       --env LOCAL_RDF_DIR=/app/rdf \
+       --platform=linux/amd64 \
+       --rm -it -p 8000:8000 detsi-prez
+
+  ci:test:
+    cmd: |
+      act \
+        --container-architecture linux/amd64 \
+        --workflows .github/workflows/release.yml \
+        -e .github/act/release-event.json \
+        --container-daemon-socket /var/run/docker.sock
