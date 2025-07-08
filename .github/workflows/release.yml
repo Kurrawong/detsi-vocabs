@@ -16,6 +16,8 @@ concurrency:
 
 permissions:
   id-token: write
+  packages: write
+  contents: read
 
 env:
   CONTAINER_REGISTRY: ghcr.io
@@ -154,6 +156,9 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+          # Alternative: Use PAT if GITHUB_TOKEN doesn't have org permissions
+          # username: ${{ github.repository_owner }}
+          # password: ${{ secrets.GHCR_PAT }}
 
       - name: Push container image to GHCR
         if: ${{ !env.ACT }}
