@@ -3,7 +3,7 @@
 version: "3"
 
 vars:
-  COMPOSE_FILE: docker/docker-compose.yml
+  COMPOSE_FILE: docker-compose.yml
   FUSEKI_DATASET: detsi
   VOCPUB_VERSION: "4.10"
 
