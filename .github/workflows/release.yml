@@ -47,8 +47,6 @@ jobs:
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
           platforms: ${{ env.CONTAINER_IMAGE_PLATFORMS }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
 
       - name: Extract primary image tag
         id: image
@@ -146,4 +144,3 @@ jobs:
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
           platforms: ${{ env.CONTAINER_IMAGE_PLATFORMS }}
-          cache-from: type=gha
