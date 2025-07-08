@@ -2,8 +2,6 @@
 # It is triggered when a GitHub release is published.
 # It builds the container image, runs a vulnerability scan, runs a smoke test,
 # and pushes the container image to GHCR.
-#
-# TODO: Add step to update the azure container app to use the new image.
 
 name: Release
 
@@ -12,6 +10,10 @@ on:
     types:
       - published
 
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
 permissions:
   id-token: write
 
@@ -19,11 +21,15 @@ env:
   CONTAINER_REGISTRY: ghcr.io
   CONTAINER_IMAGE_NAME: detsi-prez
   CONTAINER_IMAGE_PLATFORMS: linux/amd64
+  AZURE_RESOURCE_GROUP: ${{ vars.AZURE_RESOURCE_GROUP }}
+  AZURE_CONTAINER_APP_NAME: ${{ vars.AZURE_CONTAINER_APP_NAME }}
 
 jobs:
   push-to-ghcr:
     environment: production
     runs-on: ubuntu-latest
+    outputs:
+      image-name: ${{ steps.image.outputs.name }}
     steps:
       - uses: actions/checkout@v4
 
@@ -162,7 +168,7 @@ jobs:
   deploy-to-azure:
     environment: production
     runs-on: ubuntu-latest
-    # needs: push-to-ghcr
+    needs: push-to-ghcr
     steps:
       - name: Azure login
         uses: azure/login@v2
@@ -171,20 +177,9 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-      - name: Azure CLI script
-        uses: azure/cli@v2
+      - name: Deploy to Container Apps
+        uses: azure/container-apps-deploy-action@v1
         with:
-          azcliversion: latest
-          inlineScript: |
-            echo "Testing Azure authentication and permissions..."
-            az account show
-            echo "Testing resource group access..."
-            az group list --query "[?name=='rg-detsi-prez-test']" --output table
-            echo "Testing container app environment access..."
-            az containerapp env list --resource-group rg-detsi-prez-test --output table
-            echo "Testing container app access..."
-            az containerapp list --resource-group rg-detsi-prez-test --output table
-            echo "Testing specific container app..."
-            az containerapp show --name ca-detsi-prez-test-prez-api --resource-group rg-detsi-prez-test --output table
-            echo "Testing DNS zone access..."
-            az network dns zone list --resource-group rg-detsi-prez-test --output table
+          resourceGroup: ${{ env.AZURE_RESOURCE_GROUP }}
+          containerAppName: ${{ env.AZURE_CONTAINER_APP_NAME }}
+          imageToDeploy: ${{ needs.push-to-ghcr.outputs.image-name }}
