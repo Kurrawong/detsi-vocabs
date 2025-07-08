@@ -3,7 +3,7 @@
 version: "3"
 
 vars:
-  COMPOSE_FILE: docker/docker-compose.yml
+  COMPOSE_FILE: docker-compose.yml
   FUSEKI_DATASET: detsi
   VOCPUB_VERSION: "4.10"
 
@@ -59,9 +59,9 @@ tasks:
 
   prez:run:
     cmd: |
-      docker run --env SPARQL_REPO_TYPE=pyoxigraph \
+      docker run \
+       --env SPARQL_REPO_TYPE=pyoxigraph \
        --env ENABLE_SPARQL_ENDPOINT=true \
-       --env SPARQL_ENDPOINT_PORT=8080 \
        --env LOCAL_RDF_DIR=/app/rdf \
        --platform=linux/amd64 \
        --rm -it -p 8000:8000 detsi-prez
