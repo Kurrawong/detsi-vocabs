@@ -73,3 +73,12 @@ tasks:
         --workflows .github/workflows/release.yml \
         -e .github/act/release-event.json \
         --container-daemon-socket /var/run/docker.sock
+
+  ci:test-static-web-app:
+    cmd: |
+      act \
+        --container-architecture linux/amd64 \
+        --workflows .github/workflows/release.yml \
+        -e .github/act/release-event.json \
+        --container-daemon-socket /var/run/docker.sock \
+        --job deploy-to-azure-static-web-app

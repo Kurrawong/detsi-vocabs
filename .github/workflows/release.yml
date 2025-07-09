@@ -25,6 +25,7 @@ env:
   CONTAINER_IMAGE_PLATFORMS: linux/amd64
   AZURE_RESOURCE_GROUP: ${{ vars.AZURE_RESOURCE_GROUP }}
   AZURE_CONTAINER_APP_NAME: ${{ vars.AZURE_CONTAINER_APP_NAME }}
+  AZURE_STATIC_WEB_APP_NAME: ${{ vars.AZURE_STATIC_WEB_APP_NAME }}
   PREZ_UI_TAG: v4.1.2
 
 jobs:
@@ -243,11 +244,24 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
+      - name: Get deployment token
+        id: get_token
+        if: ${{ !env.ACT }}
+        run: |
+          # Get the deployment token dynamically
+          DEPLOYMENT_TOKEN=$(az staticwebapp secrets list --name "${{ env.AZURE_STATIC_WEB_APP_NAME }}" --resource-group "${{ env.AZURE_RESOURCE_GROUP }}" --query "properties.apiKey" -o tsv)
+
+          # Mask the token in logs for security
+          echo "::add-mask::$DEPLOYMENT_TOKEN"
+
+          # Set as a job output (masked)
+          echo "token=$DEPLOYMENT_TOKEN" >> $GITHUB_OUTPUT
+
       - name: Deploy to Static Web App
         uses: Azure/static-web-apps-deploy@v1
         if: ${{ !env.ACT }}
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          azure_static_web_apps_api_token: ${{ steps.get_token.outputs.token }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           skip_app_build: true
