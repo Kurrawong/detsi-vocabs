@@ -25,6 +25,7 @@ env:
   CONTAINER_IMAGE_PLATFORMS: linux/amd64
   AZURE_RESOURCE_GROUP: ${{ vars.AZURE_RESOURCE_GROUP }}
   AZURE_CONTAINER_APP_NAME: ${{ vars.AZURE_CONTAINER_APP_NAME }}
+  PREZ_UI_TAG: v4.1.2
 
 jobs:
   push-to-ghcr:
@@ -167,7 +168,7 @@ jobs:
           platforms: ${{ env.CONTAINER_IMAGE_PLATFORMS }}
           cache-from: type=gha
 
-  deploy-to-azure:
+  deploy-to-azure-container-apps:
     environment: production
     runs-on: ubuntu-latest
     needs: push-to-ghcr
@@ -185,3 +186,71 @@ jobs:
           resourceGroup: ${{ env.AZURE_RESOURCE_GROUP }}
           containerAppName: ${{ env.AZURE_CONTAINER_APP_NAME }}
           imageToDeploy: ${{ needs.push-to-ghcr.outputs.image-name }}
+
+  deploy-to-azure-static-web-app:
+    environment: production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.18.0"
+          cache: "npm"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: "9.0.5"
+          run_install: false
+
+      - name: Clone Prez UI repository
+        run: |
+          git clone --single-branch --branch ${{ env.PREZ_UI_TAG }} https://github.com/rdflib/prez-ui.git prez-ui
+
+      - name: Install dependencies
+        run: |
+          cd prez-ui
+          pnpm install
+
+      - name: Build Prez packages
+        run: |
+          cd prez-ui/packages/prez-lib
+          pnpm build
+          cd ../prez-components
+          pnpm build
+
+      - name: Build Prez UI
+        run: |
+          cd prez-ui/packages/prez-ui
+          NODE_OPTIONS="--max-old-space-size=4096" \
+          NUXT_PUBLIC_PREZ_API_ENDPOINT=${{ vars.NUXT_PUBLIC_PREZ_API_ENDPOINT }} \
+          pnpm -- nuxt generate
+        env:
+          NODE_ENV: production
+
+      - name: Copy static web app config
+        run: |
+          # Copy staticwebapp.config.json if it exists in the project root
+          if [ -f "staticwebapp.config.json" ]; then
+            cp staticwebapp.config.json prez-ui/packages/prez-ui/.output/public/staticwebapp.config.json
+          fi
+
+      - name: Azure login
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Deploy to Static Web App
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          skip_app_build: true
+          app_location: "prez-ui/packages/prez-ui/.output/public"
+          output_location: ""
