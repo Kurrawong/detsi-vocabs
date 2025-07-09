@@ -194,6 +194,8 @@ jobs:
     environment: production
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -229,12 +231,9 @@ jobs:
         env:
           NODE_ENV: production
 
-      - name: Copy static web app config
+      - name: Copy static web app config into build output
         run: |
-          # Copy staticwebapp.config.json if it exists in the project root
-          if [ -f "staticwebapp.config.json" ]; then
-            cp staticwebapp.config.json prez-ui/packages/prez-ui/.output/public/staticwebapp.config.json
-          fi
+          cp staticwebapp.config.json prez-ui/packages/prez-ui/.output/public/staticwebapp.config.json
 
       - name: Azure login
         uses: azure/login@v2
