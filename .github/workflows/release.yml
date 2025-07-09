@@ -175,6 +175,7 @@ jobs:
     steps:
       - name: Azure login
         uses: azure/login@v2
+        if: ${{ !env.ACT }}
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
@@ -182,6 +183,7 @@ jobs:
 
       - name: Deploy to Container Apps
         uses: azure/container-apps-deploy-action@v1
+        if: ${{ !env.ACT }}
         with:
           resourceGroup: ${{ env.AZURE_RESOURCE_GROUP }}
           containerAppName: ${{ env.AZURE_CONTAINER_APP_NAME }}
@@ -191,15 +193,10 @@ jobs:
     environment: production
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20.18.0"
-          cache: "npm"
-
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
@@ -240,6 +237,7 @@ jobs:
 
       - name: Azure login
         uses: azure/login@v2
+        if: ${{ !env.ACT }}
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
@@ -247,6 +245,7 @@ jobs:
 
       - name: Deploy to Static Web App
         uses: Azure/static-web-apps-deploy@v1
+        if: ${{ !env.ACT }}
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
