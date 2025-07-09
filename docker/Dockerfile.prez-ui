@@ -1,6 +1,7 @@
 ARG NODE_VERSION=20.18.0
 ARG PNPM_VERSION=9.0.5
 ARG NUXT_PUBLIC_PREZ_API_ENDPOINT=http://localhost:8000
+ARG PREZ_UI_TAG=v4.1.2
 
 #
 # JS
@@ -8,7 +9,9 @@ ARG NUXT_PUBLIC_PREZ_API_ENDPOINT=http://localhost:8000
 FROM node:${NODE_VERSION} AS js
 
 ARG NUXT_PUBLIC_PREZ_API_ENDPOINT
+ARG PREZ_UI_TAG
 ENV NUXT_PUBLIC_PREZ_API_ENDPOINT=$NUXT_PUBLIC_PREZ_API_ENDPOINT
+ENV PREZ_UI_TAG=$PREZ_UI_TAG
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
@@ -18,7 +21,7 @@ RUN corepack cache clean
 # RUN corepack enable
 RUN corepack install --global pnpm@${PNPM_VERSION}
 
-RUN git clone --single-branch --branch main https://github.com/rdflib/prez-ui.git /app
+RUN git clone --single-branch --branch $PREZ_UI_TAG https://github.com/rdflib/prez-ui.git /app
 WORKDIR /app
 RUN pnpm install
 WORKDIR /app/packages/prez-lib
