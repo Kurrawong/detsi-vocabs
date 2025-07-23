@@ -60,9 +60,8 @@ tasks:
   prez:run:
     cmd: |
       docker run \
-       --env SPARQL_REPO_TYPE=pyoxigraph \
+       --env SPARQL_REPO_TYPE=pyoxigraph_persistent \
        --env ENABLE_SPARQL_ENDPOINT=true \
-       --env LOCAL_RDF_DIR=/app/rdf \
        --platform=linux/amd64 \
        --rm -it -p 8000:8000 detsi-prez
 
@@ -82,3 +81,12 @@ tasks:
         -e .github/act/release-event.json \
         --container-daemon-socket /var/run/docker.sock \
         --job deploy-to-azure-static-web-app
+
+  ci:test-container-app:
+    cmd: |
+      act \
+        --container-architecture linux/amd64 \
+        --workflows .github/workflows/release.yml \
+        -e .github/act/release-event.json \
+        --container-daemon-socket /var/run/docker.sock \
+        --job deploy-to-azure-container-apps
