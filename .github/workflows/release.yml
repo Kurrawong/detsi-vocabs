@@ -189,6 +189,9 @@ jobs:
           resourceGroup: ${{ env.AZURE_RESOURCE_GROUP }}
           containerAppName: ${{ env.AZURE_CONTAINER_APP_NAME }}
           imageToDeploy: ${{ needs.push-to-ghcr.outputs.image-name }}
+          environmentVariables: |
+            SPARQL_REPO_TYPE=pyoxigraph_persistent
+            ENABLE_SPARQL_ENDPOINT=true
 
   deploy-to-azure-static-web-app:
     environment: production
