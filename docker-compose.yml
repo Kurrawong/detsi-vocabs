@@ -1,20 +1,4 @@
 services:
-  # fuseki:
-  #   build:
-  #     context: ./docker
-  #     dockerfile: Dockerfile.fuseki
-  #   ports:
-  #     - 3030:3030
-  #   volumes:
-  #     - fuseki_data:/fuseki
-
-  #   healthcheck:
-  #     test: ["CMD", "curl", "-f", "http://localhost:3030/$/ping"]
-  #     interval: 10s
-  #     timeout: 5s
-  #     retries: 5
-  #     start_period: 5s
-
   prez:
     build:
       context: .
@@ -22,9 +6,8 @@ services:
     ports:
       - 8000:8000
     environment:
-      - SPARQL_REPO_TYPE=pyoxigraph
+      - SPARQL_REPO_TYPE=pyoxigraph_persistent
       - ENABLE_SPARQL_ENDPOINT=true
-      - LOCAL_RDF_DIR=/app/rdf
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
       interval: 10s

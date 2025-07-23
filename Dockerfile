@@ -1,6 +1,6 @@
 ARG PYTHON_VERSION=3.13
-ARG PREZ_VERSION=4.11.2
-ARG OXIGRAPH_DATA_DIR=oxigraph_data
+ARG PREZ_VERSION=4.14.2
+ARG OXIGRAPH_DATA_DIR=pyoxigraph_data_dir
 
 #
 # Build
@@ -28,5 +28,3 @@ FROM ghcr.io/rdflib/prez:${PREZ_VERSION}
 ARG OXIGRAPH_DATA_DIR
 ENV OXIGRAPH_DATA_DIR=${OXIGRAPH_DATA_DIR}
 COPY --from=build /app/${OXIGRAPH_DATA_DIR} ${OXIGRAPH_DATA_DIR}
-# TODO: remove this once prez supports oxigraph disk store
-COPY --from=build /app/data rdf

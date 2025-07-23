@@ -99,16 +99,16 @@ jobs:
             fi
           }
 
-                    echo "Starting container for smoke test using image: $IMAGE_NAME"
+          echo "Starting container for smoke test using image: $IMAGE_NAME"
 
           # Use different approaches for act vs GitHub Actions
           if [ "$ACT" = "true" ]; then
             echo "Running with act - using fixed port mapping"
-            docker run --platform=linux/amd64 -d --rm --name smoke-test-container -e SPARQL_REPO_TYPE=pyoxigraph -e ENABLE_SPARQL_ENDPOINT=true -e LOCAL_RDF_DIR=/app/rdf -p 8000:8000 "$IMAGE_NAME"
+            docker run --platform=linux/amd64 -d --rm --name smoke-test-container -e SPARQL_REPO_TYPE=pyoxigraph_persistent -e ENABLE_SPARQL_ENDPOINT=true -p 8000:8000 "$IMAGE_NAME"
             BASE_URL="http://localhost:8000"
           else
             echo "Running in GitHub Actions - using dynamic port mapping"
-            docker run --platform=linux/amd64 -d --rm --name smoke-test-container -e SPARQL_REPO_TYPE=pyoxigraph -e ENABLE_SPARQL_ENDPOINT=true -e LOCAL_RDF_DIR=/app/rdf -p 8000 "$IMAGE_NAME"
+            docker run --platform=linux/amd64 -d --rm --name smoke-test-container -e SPARQL_REPO_TYPE=pyoxigraph_persistent -e ENABLE_SPARQL_ENDPOINT=true -p 8000 "$IMAGE_NAME"
             
             HOST_PORT_MAPPING=$(docker port smoke-test-container 8000 | head -n 1)
             if [ -z "$HOST_PORT_MAPPING" ]; then
@@ -189,6 +189,9 @@ jobs:
           resourceGroup: ${{ env.AZURE_RESOURCE_GROUP }}
           containerAppName: ${{ env.AZURE_CONTAINER_APP_NAME }}
           imageToDeploy: ${{ needs.push-to-ghcr.outputs.image-name }}
+          environmentVariables: |
+            SPARQL_REPO_TYPE=pyoxigraph_persistent
+            ENABLE_SPARQL_ENDPOINT=true
 
   deploy-to-azure-static-web-app:
     environment: production
