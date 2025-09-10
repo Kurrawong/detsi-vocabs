@@ -230,7 +230,7 @@ jobs:
 
       - name: Copy static web app config into build output
         run: |
-          cp staticwebapp.config.json prez-ui/.output/public/staticwebapp.config.json
+          cp prez-ui-staticwebapp/staticwebapp.config.json prez-ui/.output/public/staticwebapp.config.json
 
       - name: Azure login
         uses: azure/login@v2
