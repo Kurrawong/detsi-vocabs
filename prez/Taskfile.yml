@@ -5,7 +5,7 @@ version: "3"
 tasks:
   uv:sync:
     desc: Sync python dependencies
-    cmd: uv sync
+    cmd: uv sync --locked --all-extras --dev
 
   uv:export:
     desc: Export python dependencies to requirements.txt

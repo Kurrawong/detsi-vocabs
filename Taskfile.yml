@@ -40,7 +40,7 @@ tasks:
 
   ci:test:
     cmd: |
-      act \
+      gh act \
         --container-architecture linux/amd64 \
         --workflows .github/workflows/release.yml \
         -e .github/act/release-event.json \
@@ -48,9 +48,18 @@ tasks:
 
   ci:test-static-web-app:
     cmd: |
-      act \
+      gh act \
         --container-architecture linux/amd64 \
         --workflows .github/workflows/release.yml \
         -e .github/act/release-event.json \
         --container-daemon-socket /var/run/docker.sock \
         --job deploy-to-azure-static-web-app
+
+  ci:test-function-app:
+    cmd: |
+      gh act \
+        --container-architecture linux/amd64 \
+        --workflows .github/workflows/release.yml \
+        -e .github/act/release-event.json \
+        --container-daemon-socket /var/run/docker.sock \
+        --job deploy-to-azure-function-app
