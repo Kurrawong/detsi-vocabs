@@ -58,6 +58,9 @@ jobs:
       - name: Generate requirements.txt
         run: task uv:export
 
+      - name: Create and install azure function app python packages
+        run: uv pip install --target "./.python_packages/lib/site-packages" -r ./requirements.txt
+
       - name: Build the oxigraph data
         run: task vocabs:build
 
