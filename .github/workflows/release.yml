@@ -22,7 +22,7 @@ env:
   AZURE_FUNCTION_APP_NAME: ${{ vars.AZURE_FUNCTION_APP_NAME }}
   AZURE_FUNCTION_APP_PROJECT_PATH: prez
   AZURE_STATIC_WEB_APP_NAME: ${{ vars.AZURE_STATIC_WEB_APP_NAME }}
-  PREZ_UI_GIT_TAG: david/parsing-issue
+  PREZ_UI_GIT_TAG: 0.1.1
   PREZ_UI_REPO_URL: https://github.com/Kurrawong/detsi-prez-ui
 
 jobs:
