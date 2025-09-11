@@ -1,0 +1,18 @@
+[project]
+name = "detsi-prez"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "azure-functions>=1.23.0",
+    "prez",
+]
+
+[dependency-groups]
+dev = [
+    "oxigraph>=0.4.11",
+]
+
+[tool.uv.sources]
+prez = { git = "https://github.com/RDFLib/prez.git", rev = "v4.17.0" }

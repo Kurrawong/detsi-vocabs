@@ -1,0 +1,22 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  uv:sync:
+    desc: Sync python dependencies
+    cmd: uv sync
+
+  uv:export:
+    desc: Export python dependencies to requirements.txt
+    cmd: uv export --output-file requirements.txt -q
+
+  vocabs:build:
+    desc: Build the oxigraph data
+    cmds:
+      - uv run oxigraph load --location pyoxigraph_data_dir --format text/turtle --file ../vocabs/* --file ../agents.ttl --file ../catalogue.ttl --file ../labels.ttl --file ../manifest.ttl
+      - uv run oxigraph optimize --location pyoxigraph_data_dir
+
+  dev:
+    desc: Run the development server
+    cmd: uv run func start

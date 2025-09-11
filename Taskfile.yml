@@ -2,9 +2,13 @@
 
 version: "3"
 
+includes:
+  prez:
+    taskfile: ./prez/Taskfile.yml
+    dir: ./prez
+
 vars:
   COMPOSE_FILE: docker-compose.yml
-  FUSEKI_DATASET: detsi
   VOCPUB_VERSION: "4.10"
 
 tasks:
@@ -15,33 +19,13 @@ tasks:
     cmd: docker compose -f {{.COMPOSE_FILE}} build
 
   stack:up:
-    cmd: FUSEKI_DATASET={{.FUSEKI_DATASET}} docker compose -f {{.COMPOSE_FILE}} up -d
+    cmd: docker compose -f {{.COMPOSE_FILE}} up -d
 
   stack:down:
     cmd: docker compose -f {{.COMPOSE_FILE}} down
 
   stack:clean:
     cmd: docker compose -f {{.COMPOSE_FILE}} down -v
-
-  stack:create-ds:
-    desc: Create the detsi dataset
-    cmd: kurra db create http://localhost:3030 --config docker/config.ttl
-
-  stack:load-data:
-    cmds:
-      - kurra file upload background-resources/ http://localhost:3030/{{.FUSEKI_DATASET}}
-      - kurra file upload vocabularies/ http://localhost:3030/{{.FUSEKI_DATASET}}
-      - kurra file upload prez/ http://localhost:3030/{{.FUSEKI_DATASET}}
-      - |
-        curl -X POST http://localhost:3030/{{.FUSEKI_DATASET}}/update \
-          -H "Content-Type: application/sparql-update" \
-          --data-binary "$(cat prez-queries/namespaces.rq)"
-
-  stack:up:init:
-    cmds:
-      - task: stack:up
-      - task: stack:create-ds
-      - task: stack:load-data
 
   validate:
     cmd: |
@@ -53,17 +37,6 @@ tasks:
           exit 1
         fi
       done
-
-  prez:build:
-    cmd: docker build --platform=linux/amd64 -t detsi-prez .
-
-  prez:run:
-    cmd: |
-      docker run \
-       --env SPARQL_REPO_TYPE=pyoxigraph_persistent \
-       --env ENABLE_SPARQL_ENDPOINT=true \
-       --platform=linux/amd64 \
-       --rm -it -p 8000:8000 detsi-prez
 
   ci:test:
     cmd: |
@@ -81,12 +54,3 @@ tasks:
         -e .github/act/release-event.json \
         --container-daemon-socket /var/run/docker.sock \
         --job deploy-to-azure-static-web-app
-
-  ci:test-container-app:
-    cmd: |
-      act \
-        --container-architecture linux/amd64 \
-        --workflows .github/workflows/release.yml \
-        -e .github/act/release-event.json \
-        --container-daemon-socket /var/run/docker.sock \
-        --job deploy-to-azure-container-apps
