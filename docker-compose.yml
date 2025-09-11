@@ -1,25 +1,9 @@
 services:
-  prez:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - 8000:8000
-    environment:
-      - SPARQL_REPO_TYPE=pyoxigraph_persistent
-      - ENABLE_SPARQL_ENDPOINT=true
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-      start_period: 5s
-
   prez-ui:
     build:
-      context: ./docker
-      dockerfile: Dockerfile.prez-ui
+      context: ./prez-ui-docker
+      dockerfile: Dockerfile
       args:
-        - NUXT_PUBLIC_PREZ_API_ENDPOINT=http://localhost:8000
+        - NUXT_PUBLIC_PREZ_API_ENDPOINT=http://localhost:7071
     ports:
       - 3000:3000

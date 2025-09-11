@@ -1,3 +1,0 @@
-FROM ghcr.io/kurrawong/fuseki:5.2.0-1
-
-COPY shiro.ini /fuseki/shiro.ini
