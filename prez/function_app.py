@@ -1,9 +1,12 @@
-from patched_asgi_function_wrapper import AsgiFunctionApp
-import azure.functions as func
+import shutil
 import os
 import sys
 import pathlib
 import logging
+
+import azure.functions as func
+
+from patched_asgi_function_wrapper import AsgiFunctionApp
 
 cwd = pathlib.Path(__file__).parent
 if cwd.name == "azure":
@@ -41,12 +44,33 @@ elif env_auth_level == "ANONYMOUS":
 else:
     auth_level = func.AuthLevel.FUNCTION
 
+# Setup pyoxigraph data directory before creating the app
+
+# This is expected to exist in the packaged function app
+packaged_data_dir = pathlib.Path(__file__).parent / "pyoxigraph_data_dir"
+if not packaged_data_dir.exists():
+    raise RuntimeError(
+        "pyoxigraph_data_dir does not exist in the packaged function app")
+
+pyoxigraph_data_dir_str = os.getenv("PYOXIGRAPH_DATA_DIR", None)
+if pyoxigraph_data_dir_str is None:
+    raise RuntimeError(
+        "PYOXIGRAPH_DATA_DIR environment variable is not set")
+
+# Check if the directory exists at PYOXIGRAPH_DATA_DIR environment variable
+# The directory needs to be a writable directory. E.g., /tmp/pyoxigraph_data_dir
+pyoxigraph_data_dir = pathlib.Path(pyoxigraph_data_dir_str)
+if not pyoxigraph_data_dir.exists():
+    logging.info(
+        f"Copying pyoxigraph_data_dir from {packaged_data_dir} to {pyoxigraph_data_dir}")
+    shutil.copytree(packaged_data_dir, pyoxigraph_data_dir)
+
 prez_app = assemble_app(root_path=ROOT_PATH)
 
 app = AsgiFunctionApp(app=prez_app, http_auth_level=auth_level)
 
 if __name__ == "__main__":
-    from azure.functions import HttpRequest, Context
+    from azure.functions import HttpRequest
     import asyncio
 
     req = HttpRequest("GET", "/catalogs", headers={}, body=b"")
