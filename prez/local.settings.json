@@ -6,7 +6,8 @@
     "AzureWebJobsStorage": "",
     "UseDevelopmentStorage": true,
     "SPARQL_REPO_TYPE": "pyoxigraph_persistent",
-    "ENABLE_SPARQL_ENDPOINT": "true"
+    "ENABLE_SPARQL_ENDPOINT": "true",
+    "PYOXIGRAPH_DATA_DIR": "/tmp/pyoxigraph_data_dir"
   },
   "Host": {
     "LocalHttpPort": 7071,
