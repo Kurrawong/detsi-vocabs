@@ -1,0 +1,9 @@
+services:
+  prez-ui:
+    build:
+      context: ./prez-ui-docker
+      dockerfile: Dockerfile
+      args:
+        - NUXT_PUBLIC_PREZ_API_ENDPOINT=http://localhost:7071
+    ports:
+      - 3000:3000

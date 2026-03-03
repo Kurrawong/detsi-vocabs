@@ -1,0 +1,150 @@
+# This workflow publishes a DETSI Prez function app with the vocab data baked in.
+# It is triggered when a GitHub release is published.
+
+name: Release
+
+on:
+  release:
+    types:
+      - published
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+permissions:
+  id-token: write
+  packages: write
+  contents: read
+
+env:
+  AZURE_RESOURCE_GROUP: ${{ vars.AZURE_RESOURCE_GROUP }}
+  AZURE_FUNCTION_APP_NAME: ${{ vars.AZURE_FUNCTION_APP_NAME }}
+  AZURE_FUNCTION_APP_PROJECT_PATH: prez
+  AZURE_STATIC_WEB_APP_NAME: ${{ vars.AZURE_STATIC_WEB_APP_NAME }}
+  PREZ_UI_GIT_TAG: 0.1.3
+  PREZ_UI_REPO_URL: https://github.com/Kurrawong/detsi-prez-ui
+
+jobs:
+  deploy-to-azure-function-app:
+    environment: production
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: prez
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: "Set up Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: "prez/pyproject.toml"
+
+      - name: Install Task
+        uses: arduino/setup-task@v2
+        with:
+          version: 3.x
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.8.17"
+          enable-cache: true
+
+      - name: Install the project
+        run: task uv:sync
+
+      - name: Generate requirements.txt
+        run: task uv:export
+
+      - name: Create and install azure function app python packages
+        run: uv pip install --target "./.python_packages/lib/site-packages" -r ./requirements.txt
+
+      - name: Build the oxigraph data
+        run: task vocabs:build
+
+      - name: Azure login
+        uses: azure/login@v2
+        if: ${{ !env.ACT }}
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Upload function app package
+        uses: Azure/functions-action@v1
+        if: ${{ !env.ACT }}
+        with:
+          app-name: ${{ env.AZURE_FUNCTION_APP_NAME }}
+          package: "${{ env.AZURE_FUNCTION_APP_PROJECT_PATH }}"
+
+  deploy-to-azure-static-web-app:
+    environment: production
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.18.0"
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: "9.0.5"
+          run_install: false
+
+      - name: Clone Prez UI repository
+        run: |
+          git clone --single-branch --branch ${{ env.PREZ_UI_GIT_TAG }} ${{ env.PREZ_UI_REPO_URL }}.git prez-ui
+
+      - name: Install dependencies
+        run: |
+          cd prez-ui
+          pnpm install
+
+      - name: Build Prez UI
+        run: |
+          cd prez-ui
+          NODE_OPTIONS="--max-old-space-size=4096" \
+          NUXT_PUBLIC_PREZ_API_ENDPOINT=${{ vars.NUXT_PUBLIC_PREZ_API_ENDPOINT }} \
+          pnpm -- nuxt generate
+        env:
+          NODE_ENV: production
+
+      - name: Copy static web app config into build output
+        run: |
+          cp prez-ui-staticwebapp/staticwebapp.config.json prez-ui/.output/public/staticwebapp.config.json
+
+      - name: Azure login
+        uses: azure/login@v2
+        if: ${{ !env.ACT }}
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Get deployment token
+        id: get_token
+        if: ${{ !env.ACT }}
+        run: |
+          # Get the deployment token dynamically
+          DEPLOYMENT_TOKEN=$(az staticwebapp secrets list --name "${{ env.AZURE_STATIC_WEB_APP_NAME }}" --resource-group "${{ env.AZURE_RESOURCE_GROUP }}" --query "properties.apiKey" -o tsv)
+
+          # Mask the token in logs for security
+          echo "::add-mask::$DEPLOYMENT_TOKEN"
+
+          # Set as a job output (masked)
+          echo "token=$DEPLOYMENT_TOKEN" >> $GITHUB_OUTPUT
+
+      - name: Deploy to Static Web App
+        uses: Azure/static-web-apps-deploy@v1
+        if: ${{ !env.ACT }}
+        with:
+          azure_static_web_apps_api_token: ${{ steps.get_token.outputs.token }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          skip_app_build: true
+          app_location: "prez-ui/.output/public"
+          output_location: ""
