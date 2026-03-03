@@ -10,8 +10,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 tern-cv:00062fdb-3f49-4d06-8ca0-804a154418ba
     a skos:Concept ;
-    schema:dateCreated "2020-08-28T12:23:18+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-08-28T04:28:26.703000+00:00"^^xsd:datetime ;
+    schema:dateCreated "2020-08-28"^^xsd:date ;
+    schema:dateModified "2020-08-28"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:123f2efe-3891-4764-9047-609c8b30e925 ;
@@ -22,7 +22,7 @@ tern-cv:00062fdb-3f49-4d06-8ca0-804a154418ba
 
 tern-cv:0079402f-aa8c-4c2c-ac0b-fd240405d369
     a skos:Concept ;
-    schema:dateModified "2020-07-09T22:48:21.912000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -33,8 +33,8 @@ tern-cv:0079402f-aa8c-4c2c-ac0b-fd240405d369
 
 tern-cv:00c2b397-b61b-4dbe-8f07-7444c00a6af2
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T00:19:18"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T00:19:46"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -45,8 +45,8 @@ tern-cv:00c2b397-b61b-4dbe-8f07-7444c00a6af2
 
 tern-cv:01847226-c42a-4904-bbb8-dc69519bc5b4
     a skos:Concept ;
-    schema:dateCreated "2021-04-21T06:30:18"^^xsd:datetime ;
-    schema:dateModified "2021-04-28T03:02:32"^^xsd:datetime ;
+    schema:dateCreated "2021-04-21"^^xsd:date ;
+    schema:dateModified "2021-04-28"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -57,8 +57,8 @@ tern-cv:01847226-c42a-4904-bbb8-dc69519bc5b4
 
 tern-cv:01a87ba3-0f0d-4854-8196-3e3d80010faf
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T03:04:49"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:3a03227d-1b66-4c63-b7aa-f9ccbb70d1cf ;
@@ -69,8 +69,8 @@ tern-cv:01a87ba3-0f0d-4854-8196-3e3d80010faf
 
 tern-cv:0209017c-b3eb-41bc-bf21-38c10c5ee063
     a skos:Concept ;
-    schema:dateCreated "2020-09-15T01:32:55.136000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-09-15T01:38:54.396000+00:00"^^xsd:datetime ;
+    schema:dateCreated "2020-09-15"^^xsd:date ;
+    schema:dateModified "2020-09-15"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -81,8 +81,8 @@ tern-cv:0209017c-b3eb-41bc-bf21-38c10c5ee063
 
 tern-cv:035d3a8f-1d73-4990-850a-18fd80120f43
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T06:01:08"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T06:03:18"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -93,8 +93,8 @@ tern-cv:035d3a8f-1d73-4990-850a-18fd80120f43
 
 tern-cv:03c6e286-27b4-4671-bb9b-ae0819a28eaf
     a skos:Concept ;
-    schema:dateCreated "2020-10-28T06:37:47"^^xsd:datetime ;
-    schema:dateModified "2021-01-04T23:42:33"^^xsd:datetime ;
+    schema:dateCreated "2020-10-28"^^xsd:date ;
+    schema:dateModified "2021-01-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -105,8 +105,8 @@ tern-cv:03c6e286-27b4-4671-bb9b-ae0819a28eaf
 
 tern-cv:0416e086-9568-48d5-9a12-bf90fd1889c4
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T06:15:09"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T06:16:53"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -117,8 +117,8 @@ tern-cv:0416e086-9568-48d5-9a12-bf90fd1889c4
 
 tern-cv:04674274-a548-4301-aba6-9813645226ed
     a skos:Concept ;
-    schema:dateCreated "2020-06-02T04:42:32.047000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-10-07T01:36:02"^^xsd:datetime ;
+    schema:dateCreated "2020-06-02"^^xsd:date ;
+    schema:dateModified "2020-10-07"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -129,7 +129,7 @@ tern-cv:04674274-a548-4301-aba6-9813645226ed
 
 tern-cv:04a4c009-2a51-4bdb-96dd-0bfd1bed8826
     a skos:Concept ;
-    schema:dateModified "2021-02-26T05:07:02"^^xsd:datetime ;
+    schema:dateModified "2021-02-26"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -140,7 +140,7 @@ tern-cv:04a4c009-2a51-4bdb-96dd-0bfd1bed8826
 
 tern-cv:05304603-1f89-4734-b929-57d7c64a56db
     a skos:Concept ;
-    schema:dateModified "2020-07-09T03:28:44.827000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -151,8 +151,8 @@ tern-cv:05304603-1f89-4734-b929-57d7c64a56db
 
 tern-cv:05f1c7c3-e252-4f7b-853a-3ad199de2c2e
     a skos:Concept ;
-    schema:dateCreated "2020-06-19T15:03:14+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-12-18T23:31:39"^^xsd:datetime ;
+    schema:dateCreated "2020-06-19"^^xsd:date ;
+    schema:dateModified "2020-12-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -163,8 +163,8 @@ tern-cv:05f1c7c3-e252-4f7b-853a-3ad199de2c2e
 
 tern-cv:07132d22-6c49-48b7-9dee-da17a424a583
     a skos:Concept ;
-    schema:dateCreated "2020-06-02T00:02:10.010000+00:00"^^xsd:datetime ;
-    schema:dateModified "2021-02-16T23:25:49"^^xsd:datetime ;
+    schema:dateCreated "2020-06-02"^^xsd:date ;
+    schema:dateModified "2021-02-16"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:09296da0-c645-4165-950c-780c21b3c140 ;
@@ -175,7 +175,7 @@ tern-cv:07132d22-6c49-48b7-9dee-da17a424a583
 
 tern-cv:07abcf97-542d-4c2f-9fb1-c7c7508f484c
     a skos:Concept ;
-    schema:dateCreated "2021-03-29T07:22:47"^^xsd:datetime ;
+    schema:dateCreated "2021-03-29"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:8fa1c4bd-73b3-432a-ab49-9ee89928e6d9 ;
@@ -186,8 +186,8 @@ tern-cv:07abcf97-542d-4c2f-9fb1-c7c7508f484c
 
 tern-cv:08dde64e-5f1b-48c3-8ed3-3469780cbf24
     a skos:Concept ;
-    schema:dateCreated "2020-05-08T01:44:42.096000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-12-18T23:40:28"^^xsd:datetime ;
+    schema:dateCreated "2020-05-08"^^xsd:date ;
+    schema:dateModified "2020-12-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -198,8 +198,8 @@ tern-cv:08dde64e-5f1b-48c3-8ed3-3469780cbf24
 
 tern-cv:0986ce8c-4a8c-4132-91f9-b7380d45ce73
     a skos:Concept ;
-    schema:dateCreated "2021-04-08T00:58:05"^^xsd:datetime ;
-    schema:dateModified "2021-04-22T03:21:29"^^xsd:datetime ;
+    schema:dateCreated "2021-04-08"^^xsd:date ;
+    schema:dateModified "2021-04-22"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:definition "Position of an organisms or object inside plot, x coordinate."@en ;
@@ -210,8 +210,8 @@ tern-cv:0986ce8c-4a8c-4132-91f9-b7380d45ce73
 
 tern-cv:09aae763-babb-4926-b1ed-52630195564d
     a skos:Concept ;
-    schema:dateCreated "2021-02-09T02:00:10"^^xsd:datetime ;
-    schema:dateModified "2021-03-12T06:09:39"^^xsd:datetime ;
+    schema:dateCreated "2021-02-09"^^xsd:date ;
+    schema:dateModified "2021-03-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:6e2ede4b-1e6f-4ea0-93d9-6597c5666d62 ;
@@ -222,7 +222,7 @@ tern-cv:09aae763-babb-4926-b1ed-52630195564d
 
 tern-cv:0a35c80d-f8b7-4a73-b2bf-d90c3872850f
     a skos:Concept ;
-    schema:dateModified "2020-08-12T06:48:13.242000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-08-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -233,7 +233,7 @@ tern-cv:0a35c80d-f8b7-4a73-b2bf-d90c3872850f
 
 tern-cv:0a92253d-a07b-4762-b653-4c363650cb44
     a skos:Concept ;
-    schema:dateModified "2021-03-16T01:04:11"^^xsd:datetime ;
+    schema:dateModified "2021-03-16"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:29bd4356-5638-49c0-8d3e-57598ac2ea6c ;
@@ -244,8 +244,8 @@ tern-cv:0a92253d-a07b-4762-b653-4c363650cb44
 
 tern-cv:0b0869d5-c2f5-48cd-b8c0-e42e90ae808a
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T01:08:57"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:c06b51c6-8290-40bf-b192-b0dc2b44fde1 ;
@@ -256,8 +256,8 @@ tern-cv:0b0869d5-c2f5-48cd-b8c0-e42e90ae808a
 
 tern-cv:0b093c5b-2c67-4d22-8a49-85fb3b89553d
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T23:40:06"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T23:40:46"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -268,8 +268,8 @@ tern-cv:0b093c5b-2c67-4d22-8a49-85fb3b89553d
 
 tern-cv:0b96bc02-0a9b-43b9-81fa-de13bf46a5ff
     a skos:Concept ;
-    schema:dateCreated "2020-06-02T00:12:46.606000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-11-19T04:57:49"^^xsd:datetime ;
+    schema:dateCreated "2020-06-02"^^xsd:date ;
+    schema:dateModified "2020-11-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:83ac0278-51cd-4d1a-8e05-7c1fc68cf020 ;
@@ -280,7 +280,7 @@ tern-cv:0b96bc02-0a9b-43b9-81fa-de13bf46a5ff
 
 tern-cv:0bbd7fcd-0782-4efc-96e6-1f0f7669c655
     a skos:Concept ;
-    schema:dateModified "2020-06-12T06:25:18.890000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-06-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -291,8 +291,8 @@ tern-cv:0bbd7fcd-0782-4efc-96e6-1f0f7669c655
 
 tern-cv:0bd7d3ce-9c2e-45ab-84b1-04003c0458d9
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T02:32:15"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T02:33:36"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -303,7 +303,7 @@ tern-cv:0bd7d3ce-9c2e-45ab-84b1-04003c0458d9
 
 tern-cv:0fa08b3b-1204-4af4-ad4a-e976ba1cd945
     a skos:Concept ;
-    schema:dateModified "2020-06-17T05:05:47.634000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-06-17"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -314,7 +314,7 @@ tern-cv:0fa08b3b-1204-4af4-ad4a-e976ba1cd945
 
 tern-cv:1046ab56-a29d-4a39-be33-db55bfafa32a
     a skos:Concept ;
-    schema:dateModified "2020-06-12T02:14:07.637000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-06-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -325,7 +325,7 @@ tern-cv:1046ab56-a29d-4a39-be33-db55bfafa32a
 
 tern-cv:119c166f-b952-47ca-8616-b16e45ce5286
     a skos:Concept ;
-    schema:dateModified "2020-12-18T23:42:38"^^xsd:datetime ;
+    schema:dateModified "2020-12-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -336,7 +336,7 @@ tern-cv:119c166f-b952-47ca-8616-b16e45ce5286
 
 tern-cv:11c8f833-5cbd-4fc0-98f8-b1f0367c44e0
     a skos:Concept ;
-    schema:dateModified "2020-07-09T21:32:45.012000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -347,8 +347,8 @@ tern-cv:11c8f833-5cbd-4fc0-98f8-b1f0367c44e0
 
 tern-cv:11decfe8-bbac-48f1-9773-f7694eff0498
     a skos:Concept ;
-    schema:dateCreated "2021-04-12T01:51:22"^^xsd:datetime ;
-    schema:dateModified "2021-04-12T04:07:25"^^xsd:datetime ;
+    schema:dateCreated "2021-04-12"^^xsd:date ;
+    schema:dateModified "2021-04-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -359,7 +359,7 @@ tern-cv:11decfe8-bbac-48f1-9773-f7694eff0498
 
 tern-cv:13417a72-f4c3-4cf2-94bc-5120e0f4347f
     a skos:Concept ;
-    schema:dateModified "2020-12-24T01:10:56"^^xsd:datetime ;
+    schema:dateModified "2020-12-24"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -370,8 +370,8 @@ tern-cv:13417a72-f4c3-4cf2-94bc-5120e0f4347f
 
 tern-cv:13dabcca-eaf5-46ee-96bf-7364031c3b73
     a skos:Concept ;
-    schema:dateCreated "2020-06-02T00:14:08.982000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-11-19T05:07:05"^^xsd:datetime ;
+    schema:dateCreated "2020-06-02"^^xsd:date ;
+    schema:dateModified "2020-11-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:83ac0278-51cd-4d1a-8e05-7c1fc68cf020 ;
@@ -382,7 +382,7 @@ tern-cv:13dabcca-eaf5-46ee-96bf-7364031c3b73
 
 tern-cv:18a1be66-3340-4db1-9731-a8ceb4118db9
     a skos:Concept ;
-    schema:dateModified "2020-12-18T23:44:32"^^xsd:datetime ;
+    schema:dateModified "2020-12-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:29bd4356-5638-49c0-8d3e-57598ac2ea6c ;
@@ -393,8 +393,8 @@ tern-cv:18a1be66-3340-4db1-9731-a8ceb4118db9
 
 tern-cv:195c45af-505c-4df4-98c3-d43867af01c2
     a skos:Concept ;
-    schema:dateCreated "2021-04-21T06:30:18"^^xsd:datetime ;
-    schema:dateModified "2021-04-28T03:04:31"^^xsd:datetime ;
+    schema:dateCreated "2021-04-21"^^xsd:date ;
+    schema:dateModified "2021-04-28"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -405,8 +405,8 @@ tern-cv:195c45af-505c-4df4-98c3-d43867af01c2
 
 tern-cv:1a7c69c6-8d8b-49c9-9f65-f3e288a6c33c
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T03:03:30"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:3a03227d-1b66-4c63-b7aa-f9ccbb70d1cf ;
@@ -417,7 +417,7 @@ tern-cv:1a7c69c6-8d8b-49c9-9f65-f3e288a6c33c
 
 tern-cv:1aa6aa3b-eb0a-47f0-9bc1-61c0b375fe73
     a skos:Concept ;
-    schema:dateModified "2021-03-18T04:57:37"^^xsd:datetime ;
+    schema:dateModified "2021-03-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:41a27c10-6dff-4ddc-9f8b-14e87fafc786 ;
@@ -428,7 +428,7 @@ tern-cv:1aa6aa3b-eb0a-47f0-9bc1-61c0b375fe73
 
 tern-cv:1b1b8e39-095c-4572-a5b8-316744f7a4a2
     a skos:Concept ;
-    schema:dateModified "2020-12-18T23:47:16"^^xsd:datetime ;
+    schema:dateModified "2020-12-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -439,8 +439,8 @@ tern-cv:1b1b8e39-095c-4572-a5b8-316744f7a4a2
 
 tern-cv:1beaac85-44c0-4097-aa11-8d44f6381bc9
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T01:29:32"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:700daf25-0a3f-461e-a799-be80ef2f8cd4 ;
@@ -451,8 +451,8 @@ tern-cv:1beaac85-44c0-4097-aa11-8d44f6381bc9
 
 tern-cv:1c2a4e34-eafc-4180-b7d3-e284e3d239ec
     a skos:Concept ;
-    schema:dateCreated "2020-06-02T04:42:02.869000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-10-07T01:36:19"^^xsd:datetime ;
+    schema:dateCreated "2020-06-02"^^xsd:date ;
+    schema:dateModified "2020-10-07"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -463,8 +463,8 @@ tern-cv:1c2a4e34-eafc-4180-b7d3-e284e3d239ec
 
 tern-cv:1cb8ec7b-9aa5-4ac7-927a-7032684b600c
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T00:02:53"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T00:03:28"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -475,8 +475,8 @@ tern-cv:1cb8ec7b-9aa5-4ac7-927a-7032684b600c
 
 tern-cv:1e56b253-6497-49b8-9805-0eae69da1d9b
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T05:48:05"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T06:07:17"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -487,7 +487,7 @@ tern-cv:1e56b253-6497-49b8-9805-0eae69da1d9b
 
 tern-cv:1eeb07ce-9d72-4143-97e5-f12043a6b924
     a skos:Concept ;
-    schema:dateModified "2021-02-09T00:49:45"^^xsd:datetime ;
+    schema:dateModified "2021-02-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -498,7 +498,7 @@ tern-cv:1eeb07ce-9d72-4143-97e5-f12043a6b924
 
 tern-cv:2023575a-f0f9-40cc-b211-febbb652da22
     a skos:Concept ;
-    schema:dateModified "2020-06-08T06:50:23.518000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-06-08"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -509,8 +509,8 @@ tern-cv:2023575a-f0f9-40cc-b211-febbb652da22
 
 tern-cv:22a1a113-5453-4725-84df-cfd7e6a51890
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T01:31:48"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:a54f0994-bac3-42e4-83d3-46c33affd8a9 ;
@@ -521,7 +521,7 @@ tern-cv:22a1a113-5453-4725-84df-cfd7e6a51890
 
 tern-cv:22bc900e-09ee-44a8-a7fd-6acb512ab31b
     a skos:Concept ;
-    schema:dateModified "2020-06-12T03:31:08.413000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-06-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -532,8 +532,8 @@ tern-cv:22bc900e-09ee-44a8-a7fd-6acb512ab31b
 
 tern-cv:2535509e-507a-4a49-aa11-712860c50520
     a skos:Concept ;
-    schema:dateCreated "2020-06-02T00:08:53.773000+00:00"^^xsd:datetime ;
-    schema:dateModified "2021-02-16T23:25:27"^^xsd:datetime ;
+    schema:dateCreated "2020-06-02"^^xsd:date ;
+    schema:dateModified "2021-02-16"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:09296da0-c645-4165-950c-780c21b3c140 ;
@@ -554,7 +554,7 @@ tern-cv:26526741-5aa1-4cfa-9512-1d3182ea3b13
 
 tern-cv:26c05fcc-9088-4c45-860b-9030b35c859f
     a skos:Concept ;
-    schema:dateModified "2020-07-09T03:40:10.366000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -565,8 +565,8 @@ tern-cv:26c05fcc-9088-4c45-860b-9030b35c859f
 
 tern-cv:2a04912b-7940-4de1-9325-3902ec62d274
     a skos:Concept ;
-    schema:dateCreated "2021-04-19T05:26:23"^^xsd:datetime ;
-    schema:dateModified "2021-04-19T05:28:12"^^xsd:datetime ;
+    schema:dateCreated "2021-04-19"^^xsd:date ;
+    schema:dateModified "2021-04-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -577,8 +577,8 @@ tern-cv:2a04912b-7940-4de1-9325-3902ec62d274
 
 tern-cv:2adc6b97-40f4-4331-8631-031008cb43d4
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T02:33:53"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T02:34:27"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -589,8 +589,8 @@ tern-cv:2adc6b97-40f4-4331-8631-031008cb43d4
 
 tern-cv:2b192e25-ee32-463b-941a-6a80b4cf5efd
     a skos:Concept ;
-    schema:dateCreated "2020-06-02T04:38:54.283000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-06-15T04:36:57.540000+00:00"^^xsd:datetime ;
+    schema:dateCreated "2020-06-02"^^xsd:date ;
+    schema:dateModified "2020-06-15"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -601,7 +601,7 @@ tern-cv:2b192e25-ee32-463b-941a-6a80b4cf5efd
 
 tern-cv:2b32fef0-eee4-4734-b3ea-01f3f0dfb807
     a skos:Concept ;
-    schema:dateModified "2020-12-18T23:59:11"^^xsd:datetime ;
+    schema:dateModified "2020-12-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -612,7 +612,7 @@ tern-cv:2b32fef0-eee4-4734-b3ea-01f3f0dfb807
 
 tern-cv:2b5ac7b3-b4bf-4a06-97d6-8dee8b32d72d
     a skos:Concept ;
-    schema:dateModified "2020-06-11T06:11:04.103000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-06-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:29bd4356-5638-49c0-8d3e-57598ac2ea6c ;
@@ -623,8 +623,8 @@ tern-cv:2b5ac7b3-b4bf-4a06-97d6-8dee8b32d72d
 
 tern-cv:2c122d40-d404-4dcb-964a-ceda57ab5215
     a skos:Concept ;
-    schema:dateCreated "2020-09-29T10:56:13+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-10-07T06:46:47"^^xsd:datetime ;
+    schema:dateCreated "2020-09-29"^^xsd:date ;
+    schema:dateModified "2020-10-07"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -635,7 +635,7 @@ tern-cv:2c122d40-d404-4dcb-964a-ceda57ab5215
 
 tern-cv:2cf66d7b-6625-44d5-85d9-91f350afe7f0
     a skos:Concept ;
-    schema:dateModified "2021-03-18T05:16:50"^^xsd:datetime ;
+    schema:dateModified "2021-03-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:bb5c1354-8d70-47b2-b333-87e3bf1157d6 ;
@@ -646,7 +646,7 @@ tern-cv:2cf66d7b-6625-44d5-85d9-91f350afe7f0
 
 tern-cv:2d99f42e-9773-43aa-945a-bb1fe0c47a1a
     a skos:Concept ;
-    schema:dateModified "2020-07-01T07:13:29.055000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-01"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -657,8 +657,8 @@ tern-cv:2d99f42e-9773-43aa-945a-bb1fe0c47a1a
 
 tern-cv:2e210a48-3c1c-4ef6-8449-9d836f8d8b31
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T06:07:54"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T06:13:58"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -669,7 +669,7 @@ tern-cv:2e210a48-3c1c-4ef6-8449-9d836f8d8b31
 
 tern-cv:2e3b3cff-501b-43c2-9b36-18d4e5294c33
     a skos:Concept ;
-    schema:dateModified "2020-06-11T04:51:08.015000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-06-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -680,8 +680,8 @@ tern-cv:2e3b3cff-501b-43c2-9b36-18d4e5294c33
 
 tern-cv:2e57142c-817d-420b-a097-e62f379afecc
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-19T04:52:53"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:3a03227d-1b66-4c63-b7aa-f9ccbb70d1cf ;
@@ -692,8 +692,8 @@ tern-cv:2e57142c-817d-420b-a097-e62f379afecc
 
 tern-cv:2ed9a76c-195e-4c9c-aa7f-94339c0835b2
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T01:42:07"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T01:43:30"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -704,8 +704,8 @@ tern-cv:2ed9a76c-195e-4c9c-aa7f-94339c0835b2
 
 tern-cv:2f4c1e8a-7acd-4b79-b16b-04913233cc07
     a skos:Concept ;
-    schema:dateCreated "2021-05-21T00:00:00"^^xsd:datetime ;
-    schema:dateModified "2021-05-24T01:23:54"^^xsd:datetime ;
+    schema:dateCreated "2021-05-21"^^xsd:date ;
+    schema:dateModified "2021-05-24"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -716,8 +716,8 @@ tern-cv:2f4c1e8a-7acd-4b79-b16b-04913233cc07
 
 tern-cv:2f86eccf-9cab-4c45-905b-b8f769d65950
     a skos:Concept ;
-    schema:dateCreated "2020-06-17T01:19:52.305000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-07-09T03:21:21.484000+00:00"^^xsd:datetime ;
+    schema:dateCreated "2020-06-17"^^xsd:date ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -728,8 +728,8 @@ tern-cv:2f86eccf-9cab-4c45-905b-b8f769d65950
 
 tern-cv:2fb464d4-feac-4e1b-b0ef-bb12e2d68480
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T23:29:37"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T23:45:40"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -740,8 +740,8 @@ tern-cv:2fb464d4-feac-4e1b-b0ef-bb12e2d68480
 
 tern-cv:313c3883-ae2a-4367-b4b4-1bb95f9d5b05
     a skos:Concept ;
-    schema:dateCreated "2020-06-19T15:03:14+00:00"^^xsd:datetime ;
-    schema:dateModified "2021-05-21T06:30:36"^^xsd:datetime ;
+    schema:dateCreated "2020-06-19"^^xsd:date ;
+    schema:dateModified "2021-05-21"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -752,8 +752,8 @@ tern-cv:313c3883-ae2a-4367-b4b4-1bb95f9d5b05
 
 tern-cv:3504a016-8231-40f6-8447-96e5ba279aa1
     a skos:Concept ;
-    schema:dateCreated "2020-08-28T12:49:58+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-08-28T04:28:18.583000+00:00"^^xsd:datetime ;
+    schema:dateCreated "2020-08-28"^^xsd:date ;
+    schema:dateModified "2020-08-28"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:123f2efe-3891-4764-9047-609c8b30e925 ;
@@ -764,8 +764,8 @@ tern-cv:3504a016-8231-40f6-8447-96e5ba279aa1
 
 tern-cv:35506cfc-c7f0-4cb4-be3d-54e41e4ac691
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T23:47:01"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T23:53:24"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -776,8 +776,8 @@ tern-cv:35506cfc-c7f0-4cb4-be3d-54e41e4ac691
 
 tern-cv:376865de-c13b-41ae-a8ff-d564da40abb7
     a skos:Concept ;
-    schema:dateCreated "2021-05-21T00:00:00"^^xsd:datetime ;
-    schema:dateModified "2021-05-24T02:04:41"^^xsd:datetime ;
+    schema:dateCreated "2021-05-21"^^xsd:date ;
+    schema:dateModified "2021-05-24"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:123f2efe-3891-4764-9047-609c8b30e925 ;
@@ -788,8 +788,8 @@ tern-cv:376865de-c13b-41ae-a8ff-d564da40abb7
 
 tern-cv:39edcda9-ec99-47f7-9c73-5accc2e7aa72
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T02:10:47"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T02:31:19"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -800,8 +800,8 @@ tern-cv:39edcda9-ec99-47f7-9c73-5accc2e7aa72
 
 tern-cv:3c21b608-9164-4e65-913b-ed29801b6ed6
     a skos:Concept ;
-    schema:dateCreated "2020-10-28T06:38:29"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T07:12:54"^^xsd:datetime ;
+    schema:dateCreated "2020-10-28"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -812,8 +812,8 @@ tern-cv:3c21b608-9164-4e65-913b-ed29801b6ed6
 
 tern-cv:3da7a464-609c-4294-9814-5f3aea0eb265
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T05:53:10"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T05:57:50"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -824,8 +824,8 @@ tern-cv:3da7a464-609c-4294-9814-5f3aea0eb265
 
 tern-cv:3f11b33a-bdee-4c19-b9a0-47a1f894a0d3
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T05:58:19"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T05:59:40"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -836,8 +836,8 @@ tern-cv:3f11b33a-bdee-4c19-b9a0-47a1f894a0d3
 
 tern-cv:3f898b54-a260-4810-be35-f6b52c691345
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T23:31:28"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T23:37:52"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -848,8 +848,8 @@ tern-cv:3f898b54-a260-4810-be35-f6b52c691345
 
 tern-cv:403a2c01-b81d-42a2-b5ad-a733351e6fb9
     a skos:Concept ;
-    schema:dateCreated "2020-09-29T10:56:13+00:00"^^xsd:datetime ;
-    schema:dateModified "2021-01-05T00:06:48"^^xsd:datetime ;
+    schema:dateCreated "2020-09-29"^^xsd:date ;
+    schema:dateModified "2021-01-05"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -860,8 +860,8 @@ tern-cv:403a2c01-b81d-42a2-b5ad-a733351e6fb9
 
 tern-cv:40d04abb-0a50-43b8-8f19-2e1b5454fb11
     a skos:Concept ;
-    schema:dateCreated "2020-06-01T06:24:11.532000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-09-18T05:18:01.783000+00:00"^^xsd:datetime ;
+    schema:dateCreated "2020-06-01"^^xsd:date ;
+    schema:dateModified "2020-09-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -872,7 +872,7 @@ tern-cv:40d04abb-0a50-43b8-8f19-2e1b5454fb11
 
 tern-cv:40da61bc-aa52-4de7-b473-c660833c260e
     a skos:Concept ;
-    schema:dateModified "2020-12-19T07:16:48"^^xsd:datetime ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -883,8 +883,8 @@ tern-cv:40da61bc-aa52-4de7-b473-c660833c260e
 
 tern-cv:4392769d-ab14-4575-af5a-103e133eee3f
     a skos:Concept ;
-    schema:dateCreated "2020-10-28T05:33:01"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T07:19:06"^^xsd:datetime ;
+    schema:dateCreated "2020-10-28"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:7dc7ae5c-f074-4536-9032-f59eba3f9270 ;
@@ -895,7 +895,7 @@ tern-cv:4392769d-ab14-4575-af5a-103e133eee3f
 
 tern-cv:43ed01cc-0089-4a6b-8754-0990dd0f697b
     a skos:Concept ;
-    schema:dateModified "2021-05-12T01:22:03"^^xsd:datetime ;
+    schema:dateModified "2021-05-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -906,7 +906,7 @@ tern-cv:43ed01cc-0089-4a6b-8754-0990dd0f697b
 
 tern-cv:4534b9ea-e779-455f-b8af-9fc6241e67fc
     a skos:Concept ;
-    schema:dateModified "2020-07-09T22:45:35.495000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -917,7 +917,7 @@ tern-cv:4534b9ea-e779-455f-b8af-9fc6241e67fc
 
 tern-cv:46911a2e-826e-49bd-8150-830dd6a72cf3
     a skos:Concept ;
-    schema:dateModified "2021-05-10T00:39:11"^^xsd:datetime ;
+    schema:dateModified "2021-05-10"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:8fa1c4bd-73b3-432a-ab49-9ee89928e6d9 ;
@@ -928,7 +928,7 @@ tern-cv:46911a2e-826e-49bd-8150-830dd6a72cf3
 
 tern-cv:46b1c8c4-5524-41df-bce2-e936e53e51f0
     a skos:Concept ;
-    schema:dateModified "2021-02-16T03:09:49"^^xsd:datetime ;
+    schema:dateModified "2021-02-16"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -939,7 +939,7 @@ tern-cv:46b1c8c4-5524-41df-bce2-e936e53e51f0
 
 tern-cv:48f31b89-9367-4059-8c2b-cb3e0f1d9045
     a skos:Concept ;
-    schema:dateModified "2020-07-09T03:52:56.581000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -950,8 +950,8 @@ tern-cv:48f31b89-9367-4059-8c2b-cb3e0f1d9045
 
 tern-cv:49938851-6433-46bb-b070-56f1601a3033
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T23:42:24"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T00:01:11"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -962,8 +962,8 @@ tern-cv:49938851-6433-46bb-b070-56f1601a3033
 
 tern-cv:4c19f603-572e-471c-82eb-230f822c263d
     a skos:Concept ;
-    schema:dateCreated "2021-04-21T06:30:18"^^xsd:datetime ;
-    schema:dateModified "2021-04-28T03:03:32"^^xsd:datetime ;
+    schema:dateCreated "2021-04-21"^^xsd:date ;
+    schema:dateModified "2021-04-28"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -974,7 +974,7 @@ tern-cv:4c19f603-572e-471c-82eb-230f822c263d
 
 tern-cv:4c5bf815-1d39-4a5e-a761-82eeed617608
     a skos:Concept ;
-    schema:dateModified "2020-07-09T04:44:15.411000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -985,8 +985,8 @@ tern-cv:4c5bf815-1d39-4a5e-a761-82eeed617608
 
 tern-cv:4c6a55a6-3ea2-485f-82bc-c5b89a95a605
     a skos:Concept ;
-    schema:dateCreated "2021-04-20T05:23:43"^^xsd:datetime ;
-    schema:dateModified "2021-04-20T05:27:07"^^xsd:datetime ;
+    schema:dateCreated "2021-04-20"^^xsd:date ;
+    schema:dateModified "2021-04-20"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -997,8 +997,8 @@ tern-cv:4c6a55a6-3ea2-485f-82bc-c5b89a95a605
 
 tern-cv:4cb6258b-e46d-48e8-8f6c-8ec1d2c6cbf0
     a skos:Concept ;
-    schema:dateCreated "2020-08-28T12:31:47+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-08-28T04:28:35.756000+00:00"^^xsd:datetime ;
+    schema:dateCreated "2020-08-28"^^xsd:date ;
+    schema:dateModified "2020-08-28"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:123f2efe-3891-4764-9047-609c8b30e925 ;
@@ -1009,8 +1009,8 @@ tern-cv:4cb6258b-e46d-48e8-8f6c-8ec1d2c6cbf0
 
 tern-cv:4da6fe3c-5219-4ad6-97b1-df0225483de5
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T04:17:58"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T04:18:55"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1021,8 +1021,8 @@ tern-cv:4da6fe3c-5219-4ad6-97b1-df0225483de5
 
 tern-cv:50b9def1-660b-4274-b10e-6dbe57243305
     a skos:Concept ;
-    schema:dateCreated "2020-11-09T04:58:07"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T07:22:09"^^xsd:datetime ;
+    schema:dateCreated "2020-11-09"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:definition "Measures concern with the study of genes, genetic variation, and heredity in organisms."@en ;
@@ -1033,8 +1033,8 @@ tern-cv:50b9def1-660b-4274-b10e-6dbe57243305
 
 tern-cv:52d0752f-a8b9-40fc-9ba5-1d34cb602f62
     a skos:Concept ;
-    schema:dateCreated "2021-04-20T04:43:01"^^xsd:datetime ;
-    schema:dateModified "2021-04-21T05:23:22"^^xsd:datetime ;
+    schema:dateCreated "2021-04-20"^^xsd:date ;
+    schema:dateModified "2021-04-21"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -1045,7 +1045,7 @@ tern-cv:52d0752f-a8b9-40fc-9ba5-1d34cb602f62
 
 tern-cv:54b40732-25dc-4471-86ca-55e6d7c54b79
     a skos:Concept ;
-    schema:dateModified "2020-07-09T03:15:00.451000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -1056,8 +1056,8 @@ tern-cv:54b40732-25dc-4471-86ca-55e6d7c54b79
 
 tern-cv:54fd271e-d0a9-4e82-967a-c013c47760d9
     a skos:Concept ;
-    schema:dateCreated "2021-02-11T02:05:22"^^xsd:datetime ;
-    schema:dateModified "2021-02-11T02:06:36"^^xsd:datetime ;
+    schema:dateCreated "2021-02-11"^^xsd:date ;
+    schema:dateModified "2021-02-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:9e03a73d-8e89-4187-9f96-0306aad93458 ;
@@ -1068,8 +1068,8 @@ tern-cv:54fd271e-d0a9-4e82-967a-c013c47760d9
 
 tern-cv:56195246-ec5d-4050-a1c6-af786fbec715
     a skos:Concept ;
-    schema:dateCreated "2021-02-01T04:37:24"^^xsd:datetime ;
-    schema:dateModified "2021-05-17T01:17:13"^^xsd:datetime ;
+    schema:dateCreated "2021-02-01"^^xsd:date ;
+    schema:dateModified "2021-05-17"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:8fa1c4bd-73b3-432a-ab49-9ee89928e6d9 ;
@@ -1080,8 +1080,8 @@ tern-cv:56195246-ec5d-4050-a1c6-af786fbec715
 
 tern-cv:564e7135-e4f5-4114-b522-13686007291f
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T06:03:44"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T06:05:28"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1092,8 +1092,8 @@ tern-cv:564e7135-e4f5-4114-b522-13686007291f
 
 tern-cv:5653af0e-f853-4b98-b4c9-f8626456d314
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T00:00:26"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T00:02:33"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1104,8 +1104,8 @@ tern-cv:5653af0e-f853-4b98-b4c9-f8626456d314
 
 tern-cv:5701d307-bbea-415a-8857-fbf27d5b93ed
     a skos:Concept ;
-    schema:dateCreated "2021-04-07T01:57:09"^^xsd:datetime ;
-    schema:dateModified "2021-04-07T02:10:10"^^xsd:datetime ;
+    schema:dateCreated "2021-04-07"^^xsd:date ;
+    schema:dateModified "2021-04-07"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -1116,7 +1116,7 @@ tern-cv:5701d307-bbea-415a-8857-fbf27d5b93ed
 
 tern-cv:57524a84-ddfa-4dfd-8bfe-878dcd826226
     a skos:Concept ;
-    schema:dateModified "2021-04-23T08:20:21"^^xsd:datetime ;
+    schema:dateModified "2021-04-23"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:41a27c10-6dff-4ddc-9f8b-14e87fafc786 ;
@@ -1127,7 +1127,7 @@ tern-cv:57524a84-ddfa-4dfd-8bfe-878dcd826226
 
 tern-cv:5a7ea957-5b52-4e3b-adb0-660091fa0e4f
     a skos:Concept ;
-    schema:dateModified "2020-06-11T02:19:40.899000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-06-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -1138,8 +1138,8 @@ tern-cv:5a7ea957-5b52-4e3b-adb0-660091fa0e4f
 
 tern-cv:5a7f318c-c91f-4477-b680-73b3de954fbe
     a skos:Concept ;
-    schema:dateCreated "2021-04-20T05:15:42"^^xsd:datetime ;
-    schema:dateModified "2021-04-20T05:18:14"^^xsd:datetime ;
+    schema:dateCreated "2021-04-20"^^xsd:date ;
+    schema:dateModified "2021-04-20"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -1150,8 +1150,8 @@ tern-cv:5a7f318c-c91f-4477-b680-73b3de954fbe
 
 tern-cv:5cba467e-a595-42fd-a177-2ac8e83ce17d
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T03:07:46"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:3a03227d-1b66-4c63-b7aa-f9ccbb70d1cf ;
@@ -1162,8 +1162,8 @@ tern-cv:5cba467e-a595-42fd-a177-2ac8e83ce17d
 
 tern-cv:5ddf2cec-0842-492f-b0fc-b507c421c4b3
     a skos:Concept ;
-    schema:dateCreated "2021-05-21T00:00:00"^^xsd:datetime ;
-    schema:dateModified "2021-05-24T01:22:02"^^xsd:datetime ;
+    schema:dateCreated "2021-05-21"^^xsd:date ;
+    schema:dateModified "2021-05-24"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1174,7 +1174,7 @@ tern-cv:5ddf2cec-0842-492f-b0fc-b507c421c4b3
 
 tern-cv:5de10b81-3c57-46d2-9486-b5372566b1ae
     a skos:Concept ;
-    schema:dateModified "2020-07-09T03:49:52.238000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -1185,7 +1185,7 @@ tern-cv:5de10b81-3c57-46d2-9486-b5372566b1ae
 
 tern-cv:5f2a89bd-06b5-48a0-83af-32f035a29f0c
     a skos:Concept ;
-    schema:dateModified "2020-07-09T03:55:13.861000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -1196,8 +1196,8 @@ tern-cv:5f2a89bd-06b5-48a0-83af-32f035a29f0c
 
 tern-cv:6033d979-5b22-40f9-a081-19b9980fa396
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T06:15:57"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T01:41:12"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1208,8 +1208,8 @@ tern-cv:6033d979-5b22-40f9-a081-19b9980fa396
 
 tern-cv:61a29f86-c1ee-4730-bcb4-8394746baf67
     a skos:Concept ;
-    schema:dateCreated "2021-04-19T05:30:09"^^xsd:datetime ;
-    schema:dateModified "2021-04-19T05:31:21"^^xsd:datetime ;
+    schema:dateCreated "2021-04-19"^^xsd:date ;
+    schema:dateModified "2021-04-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -1220,7 +1220,7 @@ tern-cv:61a29f86-c1ee-4730-bcb4-8394746baf67
 
 tern-cv:63e33292-75e9-447d-8646-f84b2b11952b
     a skos:Concept ;
-    schema:dateModified "2020-12-24T01:13:45"^^xsd:datetime ;
+    schema:dateModified "2020-12-24"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -1231,7 +1231,7 @@ tern-cv:63e33292-75e9-447d-8646-f84b2b11952b
 
 tern-cv:647833d8-bba7-4115-b264-f9fc36c9195c
     a skos:Concept ;
-    schema:dateModified "2020-07-09T04:40:49.294000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:29bd4356-5638-49c0-8d3e-57598ac2ea6c ;
@@ -1242,7 +1242,7 @@ tern-cv:647833d8-bba7-4115-b264-f9fc36c9195c
 
 tern-cv:65795a49-1f8f-4644-b088-2438301bbe0e
     a skos:Concept ;
-    schema:dateModified "2021-02-09T01:40:39"^^xsd:datetime ;
+    schema:dateModified "2021-02-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -1263,8 +1263,8 @@ tern-cv:66d5552f-fa72-4032-8ac5-e087b214b770
 
 tern-cv:675a343f-63bd-420c-b45a-5beddbc9d19e
     a skos:Concept ;
-    schema:dateCreated "2020-06-02T00:10:08.052000+00:00"^^xsd:datetime ;
-    schema:dateModified "2021-02-16T23:25:36"^^xsd:datetime ;
+    schema:dateCreated "2020-06-02"^^xsd:date ;
+    schema:dateModified "2021-02-16"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:09296da0-c645-4165-950c-780c21b3c140 ;
@@ -1275,8 +1275,8 @@ tern-cv:675a343f-63bd-420c-b45a-5beddbc9d19e
 
 tern-cv:68add852-0a47-4412-8f8c-52bd8d0151b1
     a skos:Concept ;
-    schema:dateCreated "2020-11-09T04:56:37"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T07:25:07"^^xsd:datetime ;
+    schema:dateCreated "2020-11-09"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:definition "Measures related to the cultivation of plants and livestock."@en ;
@@ -1287,8 +1287,8 @@ tern-cv:68add852-0a47-4412-8f8c-52bd8d0151b1
 
 tern-cv:6c2bde95-4b97-4b63-a42b-7a2c253e6e3b
     a skos:Concept ;
-    schema:dateCreated "2020-06-01T06:15:12.569000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-09-18T05:17:49.121000+00:00"^^xsd:datetime ;
+    schema:dateCreated "2020-06-01"^^xsd:date ;
+    schema:dateModified "2020-09-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -1299,8 +1299,8 @@ tern-cv:6c2bde95-4b97-4b63-a42b-7a2c253e6e3b
 
 tern-cv:6c73ea38-c3d6-49bf-b6e9-4042d09bbee0
     a skos:Concept ;
-    schema:dateCreated "2021-04-22T03:15:39"^^xsd:datetime ;
-    schema:dateModified "2021-04-22T03:23:33"^^xsd:datetime ;
+    schema:dateCreated "2021-04-22"^^xsd:date ;
+    schema:dateModified "2021-04-22"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -1311,8 +1311,8 @@ tern-cv:6c73ea38-c3d6-49bf-b6e9-4042d09bbee0
 
 tern-cv:6cd4c83a-6e69-4271-ae58-d9dd82ecd20b
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T00:22:51"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T00:23:46"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1323,8 +1323,8 @@ tern-cv:6cd4c83a-6e69-4271-ae58-d9dd82ecd20b
 
 tern-cv:6d57155a-1df0-4689-b3ed-551290a3517b
     a skos:Concept ;
-    schema:dateCreated "2021-03-26T15:46:43+00:00"^^xsd:datetime ;
-    schema:dateModified "2021-03-26T15:46:43"^^xsd:datetime ;
+    schema:dateCreated "2021-03-26"^^xsd:date ;
+    schema:dateModified "2021-03-26"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1335,8 +1335,8 @@ tern-cv:6d57155a-1df0-4689-b3ed-551290a3517b
 
 tern-cv:6e0b10ba-b6f2-4d2f-8a86-6873c565e95d
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T05:41:43"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T06:07:04"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1347,8 +1347,8 @@ tern-cv:6e0b10ba-b6f2-4d2f-8a86-6873c565e95d
 
 tern-cv:70c1e9c4-2949-4e49-a8ef-6c4c45dd5b65
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T03:06:15"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:3a03227d-1b66-4c63-b7aa-f9ccbb70d1cf ;
@@ -1359,8 +1359,8 @@ tern-cv:70c1e9c4-2949-4e49-a8ef-6c4c45dd5b65
 
 tern-cv:7402efec-a7ef-4f9c-a0ac-ccee0aeef26d
     a skos:Concept ;
-    schema:dateCreated "2021-05-21T00:00:00"^^xsd:datetime ;
-    schema:dateModified "2021-05-24T00:44:12"^^xsd:datetime ;
+    schema:dateCreated "2021-05-21"^^xsd:date ;
+    schema:dateModified "2021-05-24"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1371,7 +1371,7 @@ tern-cv:7402efec-a7ef-4f9c-a0ac-ccee0aeef26d
 
 tern-cv:743b223a-ef67-45e2-ab01-02c395434690
     a skos:Concept ;
-    schema:dateModified "2020-12-19T07:27:25"^^xsd:datetime ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -1382,8 +1382,8 @@ tern-cv:743b223a-ef67-45e2-ab01-02c395434690
 
 tern-cv:74c71500-0bae-43c9-8db0-bd6940899af1
     a skos:Concept ;
-    schema:dateCreated "2020-12-09T23:49:34"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T06:24:10"^^xsd:datetime ;
+    schema:dateCreated "2020-12-09"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -1394,8 +1394,8 @@ tern-cv:74c71500-0bae-43c9-8db0-bd6940899af1
 
 tern-cv:75208020-a087-4b31-89a3-c3028382b5eb
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T00:17:25"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T00:18:01"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1406,7 +1406,7 @@ tern-cv:75208020-a087-4b31-89a3-c3028382b5eb
 
 tern-cv:76806e0f-61a2-447c-8177-7e666637e23a
     a skos:Concept ;
-    schema:dateModified "2021-03-12T06:15:46"^^xsd:datetime ;
+    schema:dateModified "2021-03-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:d62a4664-89a1-49a1-9ef0-f30ee2c6d22b ;
@@ -1417,7 +1417,7 @@ tern-cv:76806e0f-61a2-447c-8177-7e666637e23a
 
 tern-cv:78b617e9-cd18-40b7-ad38-efc30579e680
     a skos:Concept ;
-    schema:dateModified "2021-01-05T00:08:19"^^xsd:datetime ;
+    schema:dateModified "2021-01-05"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:29bd4356-5638-49c0-8d3e-57598ac2ea6c ;
@@ -1438,7 +1438,7 @@ tern-cv:7b3f70df-5c55-4b2b-9b45-ea978d9d3759
 
 tern-cv:7fa47d4b-1139-4d24-8ef2-8732ff64de4a
     a skos:Concept ;
-    schema:dateModified "2020-07-09T09:01:40.521000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:29bd4356-5638-49c0-8d3e-57598ac2ea6c ;
@@ -1449,8 +1449,8 @@ tern-cv:7fa47d4b-1139-4d24-8ef2-8732ff64de4a
 
 tern-cv:7fc3a450-a0e8-41c9-8597-2e017102bcc1
     a skos:Concept ;
-    schema:dateCreated "2020-06-19T15:46:43+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-10-26T06:37:17"^^xsd:datetime ;
+    schema:dateCreated "2020-06-19"^^xsd:date ;
+    schema:dateModified "2020-10-26"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1462,11 +1462,9 @@ tern-cv:7fc3a450-a0e8-41c9-8597-2e017102bcc1
 tern-cv:803a7efd-71b6-4e4b-b018-4fe884f86491
     a skos:Concept ;
     schema:dateCreated
-        "2021-02-03T06:15:57"^^xsd:datetime ,
-        "2021-02-03T07:25:56"^^xsd:datetime ;
+        "2021-02-03"^^xsd:date ;
     schema:dateModified
-        "2021-02-04T00:29:49"^^xsd:datetime ,
-        "2021-02-04T00:54:28"^^xsd:datetime ;
+        "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:700daf25-0a3f-461e-a799-be80ef2f8cd4 ;
@@ -1477,7 +1475,7 @@ tern-cv:803a7efd-71b6-4e4b-b018-4fe884f86491
 
 tern-cv:809b2517-819e-4c8f-92e8-7dd11a95cc72
     a skos:Concept ;
-    schema:dateModified "2021-03-18T06:52:37"^^xsd:datetime ;
+    schema:dateModified "2021-03-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:bb5c1354-8d70-47b2-b333-87e3bf1157d6 ;
@@ -1488,8 +1486,8 @@ tern-cv:809b2517-819e-4c8f-92e8-7dd11a95cc72
 
 tern-cv:8213a995-6c5b-4008-9b42-4376ce8fffee
     a skos:Concept ;
-    schema:dateCreated "2020-08-28T12:42:00+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-08-28T04:28:10.277000+00:00"^^xsd:datetime ;
+    schema:dateCreated "2020-08-28"^^xsd:date ;
+    schema:dateModified "2020-08-28"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:123f2efe-3891-4764-9047-609c8b30e925 ;
@@ -1500,8 +1498,8 @@ tern-cv:8213a995-6c5b-4008-9b42-4376ce8fffee
 
 tern-cv:825b15c9-5f3f-4b24-9b71-baeb565d4201
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T00:20:14"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T00:20:46"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1512,8 +1510,8 @@ tern-cv:825b15c9-5f3f-4b24-9b71-baeb565d4201
 
 tern-cv:82bca582-f0c2-480e-be0b-c33b19d80e73
     a skos:Concept ;
-    schema:dateCreated "2021-02-01T04:46:09"^^xsd:datetime ;
-    schema:dateModified "2021-05-10T01:37:18"^^xsd:datetime ;
+    schema:dateCreated "2021-02-01"^^xsd:date ;
+    schema:dateModified "2021-05-10"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:8fa1c4bd-73b3-432a-ab49-9ee89928e6d9 ;
@@ -1524,7 +1522,7 @@ tern-cv:82bca582-f0c2-480e-be0b-c33b19d80e73
 
 tern-cv:843f9a0b-8feb-437f-8a9c-441672698945
     a skos:Concept ;
-    schema:dateModified "2020-07-09T09:14:42.007000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -1535,7 +1533,7 @@ tern-cv:843f9a0b-8feb-437f-8a9c-441672698945
 
 tern-cv:85417909-7db2-4216-b886-3aa2780be29e
     a skos:Concept ;
-    schema:dateModified "2021-01-05T00:19:13"^^xsd:datetime ;
+    schema:dateModified "2021-01-05"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -1546,8 +1544,8 @@ tern-cv:85417909-7db2-4216-b886-3aa2780be29e
 
 tern-cv:869b3963-b276-48ac-a0b0-5d6e108eef50
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T00:15:39"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T00:17:03"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1558,8 +1556,8 @@ tern-cv:869b3963-b276-48ac-a0b0-5d6e108eef50
 
 tern-cv:87ed6ce4-3354-4a3f-ba15-2b7cb0caf3da
     a skos:Concept ;
-    schema:dateCreated "2021-04-08T01:34:59"^^xsd:datetime ;
-    schema:dateModified "2021-04-22T03:20:15"^^xsd:datetime ;
+    schema:dateCreated "2021-04-08"^^xsd:date ;
+    schema:dateModified "2021-04-22"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:definition "Position of an organism or object inside of plot, y coordinate."@en ;
@@ -1570,7 +1568,7 @@ tern-cv:87ed6ce4-3354-4a3f-ba15-2b7cb0caf3da
 
 tern-cv:88b78054-2c46-43e4-9222-db33a79c1a3b
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T01:41:16"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1581,8 +1579,8 @@ tern-cv:88b78054-2c46-43e4-9222-db33a79c1a3b
 
 tern-cv:894a2121-45ee-44d2-abfc-6ebae35d94c4
     a skos:Concept ;
-    schema:dateCreated "2021-04-08T06:25:33"^^xsd:datetime ;
-    schema:dateModified "2021-04-08T06:27:01"^^xsd:datetime ;
+    schema:dateCreated "2021-04-08"^^xsd:date ;
+    schema:dateModified "2021-04-08"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1593,8 +1591,8 @@ tern-cv:894a2121-45ee-44d2-abfc-6ebae35d94c4
 
 tern-cv:89ed531e-0ea0-49d6-8386-ef80c75f0f4f
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T00:18:29"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T00:19:01"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1605,8 +1603,8 @@ tern-cv:89ed531e-0ea0-49d6-8386-ef80c75f0f4f
 
 tern-cv:8b26b66b-9e39-47eb-807f-621f1119377d
     a skos:Concept ;
-    schema:dateCreated "2020-12-09T06:52:28"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T07:34:08"^^xsd:datetime ;
+    schema:dateCreated "2020-12-09"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:7dc7ae5c-f074-4536-9032-f59eba3f9270 ;
@@ -1617,8 +1615,8 @@ tern-cv:8b26b66b-9e39-47eb-807f-621f1119377d
 
 tern-cv:8d763d15-1aa9-4369-a77b-a0ea4bd3d6ca
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T00:21:01"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T00:21:26"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1629,7 +1627,7 @@ tern-cv:8d763d15-1aa9-4369-a77b-a0ea4bd3d6ca
 
 tern-cv:8e2ee0f0-c6a7-4b8b-a05d-d7d3dae8c580
     a skos:Concept ;
-    schema:dateModified "2020-07-09T06:47:45.014000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -1640,7 +1638,7 @@ tern-cv:8e2ee0f0-c6a7-4b8b-a05d-d7d3dae8c580
 
 tern-cv:8e943bc6-f8af-4a77-9724-b4dd0058f815
     a skos:Concept ;
-    schema:dateModified "2020-07-09T22:40:40.059000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -1651,7 +1649,7 @@ tern-cv:8e943bc6-f8af-4a77-9724-b4dd0058f815
 
 tern-cv:8e9797d9-d5f5-4c5b-8d0a-388cb3dd6253
     a skos:Concept ;
-    schema:dateModified "2021-01-05T00:22:14"^^xsd:datetime ;
+    schema:dateModified "2021-01-05"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1662,8 +1660,8 @@ tern-cv:8e9797d9-d5f5-4c5b-8d0a-388cb3dd6253
 
 tern-cv:8f398304-d6c1-475e-bb12-72fc90d3a69c
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T01:10:53"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:700daf25-0a3f-461e-a799-be80ef2f8cd4 ;
@@ -1674,8 +1672,8 @@ tern-cv:8f398304-d6c1-475e-bb12-72fc90d3a69c
 
 tern-cv:90380980-9914-4dd8-8d83-008fb6adeb24
     a skos:Concept ;
-    schema:dateCreated "2021-04-08T00:18:33"^^xsd:datetime ;
-    schema:dateModified "2021-04-08T00:43:31"^^xsd:datetime ;
+    schema:dateCreated "2021-04-08"^^xsd:date ;
+    schema:dateModified "2021-04-08"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -1686,8 +1684,8 @@ tern-cv:90380980-9914-4dd8-8d83-008fb6adeb24
 
 tern-cv:903b2a07-47df-451e-b533-f4c34732e631
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T02:00:16"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:fc383c4d-b8d2-4dbf-b897-5f511208ada1 ;
@@ -1698,8 +1696,8 @@ tern-cv:903b2a07-47df-451e-b533-f4c34732e631
 
 tern-cv:91988f41-89de-4522-9f04-c8bf6bd68bfe
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T06:24:38"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T06:37:39"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1710,8 +1708,8 @@ tern-cv:91988f41-89de-4522-9f04-c8bf6bd68bfe
 
 tern-cv:919d93eb-d7f1-40b3-86ed-91426d925013
     a skos:Concept ;
-    schema:dateCreated "2021-05-07T00:29:09"^^xsd:datetime ;
-    schema:dateModified "2021-05-07T00:33:18"^^xsd:datetime ;
+    schema:dateCreated "2021-05-07"^^xsd:date ;
+    schema:dateModified "2021-05-07"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:8fa1c4bd-73b3-432a-ab49-9ee89928e6d9 ;
@@ -1722,7 +1720,7 @@ tern-cv:919d93eb-d7f1-40b3-86ed-91426d925013
 
 tern-cv:92ac64e0-d019-4d66-9857-86d82fce7513
     a skos:Concept ;
-    schema:dateModified "2020-07-09T08:51:53.231000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -1733,7 +1731,7 @@ tern-cv:92ac64e0-d019-4d66-9857-86d82fce7513
 
 tern-cv:931507d7-0fb6-4fd9-932c-3015f83af9ab
     a skos:Concept ;
-    schema:dateModified "2020-07-12T00:20:43.939000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -1744,7 +1742,7 @@ tern-cv:931507d7-0fb6-4fd9-932c-3015f83af9ab
 
 tern-cv:939bdeec-f2ce-453c-8315-b36b639a4347
     a skos:Concept ;
-    schema:dateModified "2020-06-17T02:03:31.749000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-06-17"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -1755,7 +1753,7 @@ tern-cv:939bdeec-f2ce-453c-8315-b36b639a4347
 
 tern-cv:959de812-0e1a-414d-b75f-4113d69fd49e
     a skos:Concept ;
-    schema:dateModified "2020-07-09T22:42:33.562000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -1766,8 +1764,8 @@ tern-cv:959de812-0e1a-414d-b75f-4113d69fd49e
 
 tern-cv:968ce393-cc9c-49d0-b910-d64f54e5cdf8
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T06:15:41"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T06:17:28"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1778,8 +1776,8 @@ tern-cv:968ce393-cc9c-49d0-b910-d64f54e5cdf8
 
 tern-cv:97bc6039-73be-4a1b-bf29-54e4cb097ef3
     a skos:Concept ;
-    schema:dateCreated "2020-06-02T00:11:44.372000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-11-19T04:46:31"^^xsd:datetime ;
+    schema:dateCreated "2020-06-02"^^xsd:date ;
+    schema:dateModified "2020-11-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:83ac0278-51cd-4d1a-8e05-7c1fc68cf020 ;
@@ -1790,8 +1788,8 @@ tern-cv:97bc6039-73be-4a1b-bf29-54e4cb097ef3
 
 tern-cv:993bad16-f465-4363-900e-b73637f7bdb8
     a skos:Concept ;
-    schema:dateCreated "2021-05-21T00:00:00"^^xsd:datetime ;
-    schema:dateModified "2021-05-24T02:01:27"^^xsd:datetime ;
+    schema:dateCreated "2021-05-21"^^xsd:date ;
+    schema:dateModified "2021-05-24"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:123f2efe-3891-4764-9047-609c8b30e925 ;
@@ -1802,8 +1800,8 @@ tern-cv:993bad16-f465-4363-900e-b73637f7bdb8
 
 tern-cv:998a886b-d40d-43cd-ac1a-0a682018b4e5
     a skos:Concept ;
-    schema:dateCreated "2020-10-28T05:33:30"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T07:39:55"^^xsd:datetime ;
+    schema:dateCreated "2020-10-28"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:7dc7ae5c-f074-4536-9032-f59eba3f9270 ;
@@ -1814,7 +1812,7 @@ tern-cv:998a886b-d40d-43cd-ac1a-0a682018b4e5
 
 tern-cv:9b2ab960-da97-473a-81af-d50ab6041739
     a skos:Concept ;
-    schema:dateModified "2021-03-18T04:53:16"^^xsd:datetime ;
+    schema:dateModified "2021-03-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:8fa1c4bd-73b3-432a-ab49-9ee89928e6d9 ;
@@ -1825,7 +1823,7 @@ tern-cv:9b2ab960-da97-473a-81af-d50ab6041739
 
 tern-cv:9b704e6e-9475-4609-9b51-bf596d60c1ff
     a skos:Concept ;
-    schema:dateModified "2021-03-19T02:29:32"^^xsd:datetime ;
+    schema:dateModified "2021-03-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:8fa1c4bd-73b3-432a-ab49-9ee89928e6d9 ;
@@ -1836,8 +1834,8 @@ tern-cv:9b704e6e-9475-4609-9b51-bf596d60c1ff
 
 tern-cv:9b9f21a8-1f49-4cee-b537-3297bc706500
     a skos:Concept ;
-    schema:dateCreated "2020-09-29T16:52:07+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T07:44:38"^^xsd:datetime ;
+    schema:dateCreated "2020-09-29"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -1848,8 +1846,8 @@ tern-cv:9b9f21a8-1f49-4cee-b537-3297bc706500
 
 tern-cv:a3ad8f31-6896-416e-8ac6-bc61b93aaab5
     a skos:Concept ;
-    schema:dateCreated "2021-02-18T01:50:11"^^xsd:datetime ;
-    schema:dateModified "2021-02-18T01:54:47"^^xsd:datetime ;
+    schema:dateCreated "2021-02-18"^^xsd:date ;
+    schema:dateModified "2021-02-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -1860,8 +1858,8 @@ tern-cv:a3ad8f31-6896-416e-8ac6-bc61b93aaab5
 
 tern-cv:a40230bc-c1e9-4309-b883-c4ead1d143ce
     a skos:Concept ;
-    schema:dateCreated "2020-05-27T05:59:12.356000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-07-09T04:17:58.694000+00:00"^^xsd:datetime ;
+    schema:dateCreated "2020-05-27"^^xsd:date ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:29bd4356-5638-49c0-8d3e-57598ac2ea6c ;
@@ -1872,7 +1870,7 @@ tern-cv:a40230bc-c1e9-4309-b883-c4ead1d143ce
 
 tern-cv:a5596b19-095b-4f96-bf56-89ec679854c2
     a skos:Concept ;
-    schema:dateModified "2020-06-12T04:06:53.659000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-06-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -1883,7 +1881,7 @@ tern-cv:a5596b19-095b-4f96-bf56-89ec679854c2
 
 tern-cv:a5cdedc4-6bdf-4f2d-922b-5d17ae957735
     a skos:Concept ;
-    schema:dateModified "2021-03-18T01:41:19"^^xsd:datetime ;
+    schema:dateModified "2021-03-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:41a27c10-6dff-4ddc-9f8b-14e87fafc786 ;
@@ -1894,8 +1892,8 @@ tern-cv:a5cdedc4-6bdf-4f2d-922b-5d17ae957735
 
 tern-cv:a609ef3e-0baf-4164-96b0-e5d100f56c2f
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T23:38:37"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T23:39:40"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1906,7 +1904,7 @@ tern-cv:a609ef3e-0baf-4164-96b0-e5d100f56c2f
 
 tern-cv:aa440954-9001-482c-8d0d-e4686ae3533d
     a skos:Concept ;
-    schema:dateCreated "2021-04-12T23:30:17"^^xsd:datetime ;
+    schema:dateCreated "2021-04-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -1917,7 +1915,7 @@ tern-cv:aa440954-9001-482c-8d0d-e4686ae3533d
 
 tern-cv:aa7d5f61-99e6-4e34-8a46-40ac5fbd7b14
     a skos:Concept ;
-    schema:dateModified "2021-04-28T02:59:20"^^xsd:datetime ;
+    schema:dateModified "2021-04-28"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:9e03a73d-8e89-4187-9f96-0306aad93458 ;
@@ -1928,8 +1926,8 @@ tern-cv:aa7d5f61-99e6-4e34-8a46-40ac5fbd7b14
 
 tern-cv:ab4ef0b1-bae1-476e-84c5-612e18282022
     a skos:Concept ;
-    schema:dateCreated "2020-05-27T04:53:57.237000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T07:46:21"^^xsd:datetime ;
+    schema:dateCreated "2020-05-27"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:7dc7ae5c-f074-4536-9032-f59eba3f9270 ;
@@ -1940,8 +1938,8 @@ tern-cv:ab4ef0b1-bae1-476e-84c5-612e18282022
 
 tern-cv:abb0ee19-b2e8-42f3-8a25-d1f39ca3ebc3
     a skos:Concept ;
-    schema:dateCreated "2021-04-07T01:33:53"^^xsd:datetime ;
-    schema:dateModified "2021-04-07T01:41:38"^^xsd:datetime ;
+    schema:dateCreated "2021-04-07"^^xsd:date ;
+    schema:dateModified "2021-04-07"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -1952,8 +1950,8 @@ tern-cv:abb0ee19-b2e8-42f3-8a25-d1f39ca3ebc3
 
 tern-cv:abce4dbb-e9e8-41ab-8f6d-fd4f63e2fb2a
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T00:21:57"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T00:22:29"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -1964,7 +1962,7 @@ tern-cv:abce4dbb-e9e8-41ab-8f6d-fd4f63e2fb2a
 
 tern-cv:add0c5d2-6db5-48e4-9ad3-d789ba9fe0a2
     a skos:Concept ;
-    schema:dateModified "2021-04-28T00:02:50"^^xsd:datetime ;
+    schema:dateModified "2021-04-28"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -1975,7 +1973,7 @@ tern-cv:add0c5d2-6db5-48e4-9ad3-d789ba9fe0a2
 
 tern-cv:b053c016-d21f-4180-aaf5-f7f6f892325d
     a skos:Concept ;
-    schema:dateModified "2020-12-24T01:17:57"^^xsd:datetime ;
+    schema:dateModified "2020-12-24"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:7dc7ae5c-f074-4536-9032-f59eba3f9270 ;
@@ -1986,7 +1984,7 @@ tern-cv:b053c016-d21f-4180-aaf5-f7f6f892325d
 
 tern-cv:b192dc62-970b-4815-a99b-59b3f659b404
     a skos:Concept ;
-    schema:dateModified "2020-12-19T07:50:18"^^xsd:datetime ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -1997,8 +1995,8 @@ tern-cv:b192dc62-970b-4815-a99b-59b3f659b404
 
 tern-cv:b216e89a-94a2-4e59-ba6b-b92edd028c47
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T04:18:16"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T04:19:37"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -2009,8 +2007,8 @@ tern-cv:b216e89a-94a2-4e59-ba6b-b92edd028c47
 
 tern-cv:b31f9f9d-090f-46e7-b03c-36ca696621f5
     a skos:Concept ;
-    schema:dateCreated "2020-10-28T05:34:02"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T07:50:54"^^xsd:datetime ;
+    schema:dateCreated "2020-10-28"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:7dc7ae5c-f074-4536-9032-f59eba3f9270 ;
@@ -2021,7 +2019,7 @@ tern-cv:b31f9f9d-090f-46e7-b03c-36ca696621f5
 
 tern-cv:b992af7a-414f-4278-a905-59ae1e04e35c
     a skos:Concept ;
-    schema:dateModified "2020-06-10T06:38:22.421000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-06-10"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -2032,8 +2030,8 @@ tern-cv:b992af7a-414f-4278-a905-59ae1e04e35c
 
 tern-cv:bb942400-8bc5-4831-bcf5-7a891ef00ef4
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T01:09:07"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:12797115-2e0f-479f-8d06-1700da3ac394 ;
@@ -2044,8 +2042,8 @@ tern-cv:bb942400-8bc5-4831-bcf5-7a891ef00ef4
 
 tern-cv:bc921a02-a757-4071-b39a-383af90d31cd
     a skos:Concept ;
-    schema:dateCreated "2021-04-20T04:57:18"^^xsd:datetime ;
-    schema:dateModified "2021-04-20T05:01:42"^^xsd:datetime ;
+    schema:dateCreated "2021-04-20"^^xsd:date ;
+    schema:dateModified "2021-04-20"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:e88ad59e-0d19-4796-b0be-f7ec3edd7624 ;
@@ -2056,8 +2054,8 @@ tern-cv:bc921a02-a757-4071-b39a-383af90d31cd
 
 tern-cv:be0a9365-32ae-4c82-ac87-d65ff3a4dae7
     a skos:Concept ;
-    schema:dateCreated "2021-04-07T01:48:30"^^xsd:datetime ;
-    schema:dateModified "2021-04-07T01:52:32"^^xsd:datetime ;
+    schema:dateCreated "2021-04-07"^^xsd:date ;
+    schema:dateModified "2021-04-07"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -2068,7 +2066,7 @@ tern-cv:be0a9365-32ae-4c82-ac87-d65ff3a4dae7
 
 tern-cv:be409d33-8091-44da-899d-56e30e4a1cfa
     a skos:Concept ;
-    schema:dateModified "2020-07-01T07:15:09.279000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-01"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -2079,7 +2077,7 @@ tern-cv:be409d33-8091-44da-899d-56e30e4a1cfa
 
 tern-cv:beceaa5a-a296-4385-a55a-3b8c8d5b2369
     a skos:Concept ;
-    schema:dateModified "2020-06-12T02:15:02.882000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-06-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -2090,7 +2088,7 @@ tern-cv:beceaa5a-a296-4385-a55a-3b8c8d5b2369
 
 tern-cv:c0a07e96-0838-44a9-a854-2196680cba01
     a skos:Concept ;
-    schema:dateModified "2020-12-19T07:54:05"^^xsd:datetime ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -2101,7 +2099,7 @@ tern-cv:c0a07e96-0838-44a9-a854-2196680cba01
 
 tern-cv:c1588a6d-d5e4-44b4-8bf4-f04c5425ed89
     a skos:Concept ;
-    schema:dateModified "2020-06-12T04:04:39.229000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-06-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -2112,8 +2110,8 @@ tern-cv:c1588a6d-d5e4-44b4-8bf4-f04c5425ed89
 
 tern-cv:c297eafd-9a76-4098-9860-b9f2c29737cc
     a skos:Concept ;
-    schema:dateCreated "2020-06-25T01:11:28.671000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T07:58:02"^^xsd:datetime ;
+    schema:dateCreated "2020-06-25"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:123f2efe-3891-4764-9047-609c8b30e925 ;
@@ -2124,8 +2122,8 @@ tern-cv:c297eafd-9a76-4098-9860-b9f2c29737cc
 
 tern-cv:c424ab49-a9d8-41e5-b1aa-5607f87264ab
     a skos:Concept ;
-    schema:dateCreated "2021-04-13T04:54:33"^^xsd:datetime ;
-    schema:dateModified "2021-04-13T05:11:31"^^xsd:datetime ;
+    schema:dateCreated "2021-04-13"^^xsd:date ;
+    schema:dateModified "2021-04-13"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -2136,7 +2134,7 @@ tern-cv:c424ab49-a9d8-41e5-b1aa-5607f87264ab
 
 tern-cv:c5ca86b0-c503-4590-87fb-0bc8ff9f1632
     a skos:Concept ;
-    schema:dateModified "2021-02-09T01:42:31"^^xsd:datetime ;
+    schema:dateModified "2021-02-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:123f2efe-3891-4764-9047-609c8b30e925 ;
@@ -2147,8 +2145,8 @@ tern-cv:c5ca86b0-c503-4590-87fb-0bc8ff9f1632
 
 tern-cv:c7a0ab55-d1f5-4901-9dc7-a13c352dee6b
     a skos:Concept ;
-    schema:dateCreated "2020-06-23T05:32:00.747000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T07:58:52"^^xsd:datetime ;
+    schema:dateCreated "2020-06-23"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:123f2efe-3891-4764-9047-609c8b30e925 ;
@@ -2169,7 +2167,7 @@ tern-cv:c86c4e7f-5dc3-4a88-b5f6-88f5bc0973cd
 
 tern-cv:c8d7ad1c-fb3d-48fc-ab15-dac8756f8a42
     a skos:Concept ;
-    schema:dateModified "2020-07-09T03:16:56.803000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -2180,8 +2178,8 @@ tern-cv:c8d7ad1c-fb3d-48fc-ab15-dac8756f8a42
 
 tern-cv:c973b6a5-c2eb-46bf-8f47-6eb8c0ba258f
     a skos:Concept ;
-    schema:dateCreated "2020-06-19T15:46:43+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-10-26T06:35:18"^^xsd:datetime ;
+    schema:dateCreated "2020-06-19"^^xsd:date ;
+    schema:dateModified "2020-10-26"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -2192,8 +2190,8 @@ tern-cv:c973b6a5-c2eb-46bf-8f47-6eb8c0ba258f
 
 tern-cv:ca1335d2-7257-415c-88b9-f7eb265fa64d
     a skos:Concept ;
-    schema:dateCreated "2021-04-12T02:07:10"^^xsd:datetime ;
-    schema:dateModified "2021-04-12T02:54:20"^^xsd:datetime ;
+    schema:dateCreated "2021-04-12"^^xsd:date ;
+    schema:dateModified "2021-04-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -2204,8 +2202,8 @@ tern-cv:ca1335d2-7257-415c-88b9-f7eb265fa64d
 
 tern-cv:cb2a4d5a-090c-431a-88fe-72afe197c35d
     a skos:Concept ;
-    schema:dateCreated "2020-06-23T05:30:41.305000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T07:59:37"^^xsd:datetime ;
+    schema:dateCreated "2020-06-23"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:123f2efe-3891-4764-9047-609c8b30e925 ;
@@ -2216,7 +2214,7 @@ tern-cv:cb2a4d5a-090c-431a-88fe-72afe197c35d
 
 tern-cv:cbff6d0c-c239-4858-8139-9fbd8c8646df
     a skos:Concept ;
-    schema:dateModified "2020-12-24T01:21:17"^^xsd:datetime ;
+    schema:dateModified "2020-12-24"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:7dc7ae5c-f074-4536-9032-f59eba3f9270 ;
@@ -2227,8 +2225,8 @@ tern-cv:cbff6d0c-c239-4858-8139-9fbd8c8646df
 
 tern-cv:ccbfa04b-a70b-4ee8-b3d2-0652d33b8c9e
     a skos:Concept ;
-    schema:dateCreated "2020-06-23T05:32:27.016000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T08:01:24"^^xsd:datetime ;
+    schema:dateCreated "2020-06-23"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:123f2efe-3891-4764-9047-609c8b30e925 ;
@@ -2239,7 +2237,7 @@ tern-cv:ccbfa04b-a70b-4ee8-b3d2-0652d33b8c9e
 
 tern-cv:ccc27eac-2b83-4a8b-badf-df2c00464fad
     a skos:Concept ;
-    schema:dateModified "2020-06-12T02:14:37.328000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-06-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -2250,8 +2248,8 @@ tern-cv:ccc27eac-2b83-4a8b-badf-df2c00464fad
 
 tern-cv:cd11241d-9df9-48b9-88b1-3e6646f21562
     a skos:Concept ;
-    schema:dateCreated "2021-02-01T05:02:46"^^xsd:datetime ;
-    schema:dateModified "2021-03-26T06:01:00"^^xsd:datetime ;
+    schema:dateCreated "2021-02-01"^^xsd:date ;
+    schema:dateModified "2021-03-26"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:8fa1c4bd-73b3-432a-ab49-9ee89928e6d9 ;
@@ -2262,7 +2260,7 @@ tern-cv:cd11241d-9df9-48b9-88b1-3e6646f21562
 
 tern-cv:cd4b88cb-0d79-40e1-80de-bf323eb960e9
     a skos:Concept ;
-    schema:dateModified "2020-07-09T22:44:30.530000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -2273,8 +2271,8 @@ tern-cv:cd4b88cb-0d79-40e1-80de-bf323eb960e9
 
 tern-cv:cd934e78-f84d-4a36-a373-d3e817c306be
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T02:11:31"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:700daf25-0a3f-461e-a799-be80ef2f8cd4 ;
@@ -2285,8 +2283,8 @@ tern-cv:cd934e78-f84d-4a36-a373-d3e817c306be
 
 tern-cv:ceb884dc-f20b-49db-9b27-e2667b87edbb
     a skos:Concept ;
-    schema:dateCreated "2021-03-22T03:28:39"^^xsd:datetime ;
-    schema:dateModified "2021-03-22T04:08:24"^^xsd:datetime ;
+    schema:dateCreated "2021-03-22"^^xsd:date ;
+    schema:dateModified "2021-03-22"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:123f2efe-3891-4764-9047-609c8b30e925 ;
@@ -2297,8 +2295,8 @@ tern-cv:ceb884dc-f20b-49db-9b27-e2667b87edbb
 
 tern-cv:d0e0629e-7000-445a-a14f-40aca1cc6646
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T06:06:50"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T06:14:26"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -2309,8 +2307,8 @@ tern-cv:d0e0629e-7000-445a-a14f-40aca1cc6646
 
 tern-cv:d2a16407-6155-4d3a-85e3-738006934b28
     a skos:Concept ;
-    schema:dateCreated "2021-05-18T06:25:39"^^xsd:datetime ;
-    schema:dateModified "2021-05-18T06:38:22"^^xsd:datetime ;
+    schema:dateCreated "2021-05-18"^^xsd:date ;
+    schema:dateModified "2021-05-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -2321,7 +2319,7 @@ tern-cv:d2a16407-6155-4d3a-85e3-738006934b28
 
 tern-cv:d40b3e6d-db78-4031-b7f3-ed94d538a2af
     a skos:Concept ;
-    schema:dateCreated "2021-03-29T07:21:46"^^xsd:datetime ;
+    schema:dateCreated "2021-03-29"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:8fa1c4bd-73b3-432a-ab49-9ee89928e6d9 ;
@@ -2332,8 +2330,8 @@ tern-cv:d40b3e6d-db78-4031-b7f3-ed94d538a2af
 
 tern-cv:d42a1a60-c606-4967-a09a-26727b9b2bc8
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T06:15:57"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T03:34:41"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -2354,7 +2352,7 @@ tern-cv:d4c0646c-2504-496b-bd01-95c1097b5021
 
 tern-cv:d6dcacd0-08dd-4c84-9331-e35d4047577e
     a skos:Concept ;
-    schema:dateModified "2020-07-09T07:01:36.207000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -2365,8 +2363,8 @@ tern-cv:d6dcacd0-08dd-4c84-9331-e35d4047577e
 
 tern-cv:d7bbfb51-4697-4ca9-9846-2511056e3d9d
     a skos:Concept ;
-    schema:dateCreated "2020-11-06T00:28:07"^^xsd:datetime ;
-    schema:dateModified "2021-01-05T00:32:25"^^xsd:datetime ;
+    schema:dateCreated "2020-11-06"^^xsd:date ;
+    schema:dateModified "2021-01-05"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:0531b8b6-7610-4fbd-9a66-8cd80d357a70 ;
@@ -2377,8 +2375,8 @@ tern-cv:d7bbfb51-4697-4ca9-9846-2511056e3d9d
 
 tern-cv:d82bdbb7-3f9c-4aaa-8a09-759cedec4161
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T01:09:07"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:a54f0994-bac3-42e4-83d3-46c33affd8a9 ;
@@ -2389,8 +2387,8 @@ tern-cv:d82bdbb7-3f9c-4aaa-8a09-759cedec4161
 
 tern-cv:d87a652c-0a30-415c-bef7-e20f75d94002
     a skos:Concept ;
-    schema:dateCreated "2021-04-21T06:37:36"^^xsd:datetime ;
-    schema:dateModified "2021-04-21T07:04:08"^^xsd:datetime ;
+    schema:dateCreated "2021-04-21"^^xsd:date ;
+    schema:dateModified "2021-04-21"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:8fa1c4bd-73b3-432a-ab49-9ee89928e6d9 ;
@@ -2401,8 +2399,8 @@ tern-cv:d87a652c-0a30-415c-bef7-e20f75d94002
 
 tern-cv:da1ffee9-0121-4ef6-9323-1ad90efbb59e
     a skos:Concept ;
-    schema:dateCreated "2020-06-19T15:03:14+00:00"^^xsd:datetime ;
-    schema:dateModified "2021-01-05T00:37:11"^^xsd:datetime ;
+    schema:dateCreated "2020-06-19"^^xsd:date ;
+    schema:dateModified "2021-01-05"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -2413,7 +2411,7 @@ tern-cv:da1ffee9-0121-4ef6-9323-1ad90efbb59e
 
 tern-cv:dccdd389-7a32-4744-9f8e-990aaa151b49
     a skos:Concept ;
-    schema:dateModified "2020-12-19T08:03:44"^^xsd:datetime ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -2424,7 +2422,7 @@ tern-cv:dccdd389-7a32-4744-9f8e-990aaa151b49
 
 tern-cv:dd6cdf8f-0fe0-4d6e-a59c-5a2b6a001f32
     a skos:Concept ;
-    schema:dateModified "2020-07-12T00:16:41.795000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -2435,7 +2433,7 @@ tern-cv:dd6cdf8f-0fe0-4d6e-a59c-5a2b6a001f32
 
 tern-cv:ddb42a17-7409-4dc2-bc7e-4162af242c54
     a skos:Concept ;
-    schema:dateModified "2021-01-12T05:38:17"^^xsd:datetime ;
+    schema:dateModified "2021-01-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -2446,8 +2444,8 @@ tern-cv:ddb42a17-7409-4dc2-bc7e-4162af242c54
 
 tern-cv:de1e9c3a-8ed7-4d91-8b67-37c7488b7478
     a skos:Concept ;
-    schema:dateCreated "2021-04-20T04:58:02"^^xsd:datetime ;
-    schema:dateModified "2021-04-20T05:02:12"^^xsd:datetime ;
+    schema:dateCreated "2021-04-20"^^xsd:date ;
+    schema:dateModified "2021-04-20"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:e88ad59e-0d19-4796-b0be-f7ec3edd7624 ;
@@ -2458,7 +2456,7 @@ tern-cv:de1e9c3a-8ed7-4d91-8b67-37c7488b7478
 
 tern-cv:debeebce-d4cd-4dad-8655-32658af00827
     a skos:Concept ;
-    schema:dateModified "2020-06-08T05:49:25.465000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-06-08"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -2469,8 +2467,8 @@ tern-cv:debeebce-d4cd-4dad-8655-32658af00827
 
 tern-cv:df6d0f0e-81b0-4bf0-a567-382a4f4b8217
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T02:27:46"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T02:31:43"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -2481,8 +2479,8 @@ tern-cv:df6d0f0e-81b0-4bf0-a567-382a4f4b8217
 
 tern-cv:df732786-f97a-44ad-a923-7dcd79ef7238
     a skos:Concept ;
-    schema:dateCreated "2021-04-19T05:19:21"^^xsd:datetime ;
-    schema:dateModified "2021-04-19T05:26:00"^^xsd:datetime ;
+    schema:dateCreated "2021-04-19"^^xsd:date ;
+    schema:dateModified "2021-04-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -2493,7 +2491,7 @@ tern-cv:df732786-f97a-44ad-a923-7dcd79ef7238
 
 tern-cv:e06a20d2-ad09-4cf8-bb4b-9ebd66ed10b7
     a skos:Concept ;
-    schema:dateModified "2020-12-19T08:04:27"^^xsd:datetime ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:7dc7ae5c-f074-4536-9032-f59eba3f9270 ;
@@ -2504,7 +2502,7 @@ tern-cv:e06a20d2-ad09-4cf8-bb4b-9ebd66ed10b7
 
 tern-cv:e0e2725a-2525-409a-b282-cc5b7c881646
     a skos:Concept ;
-    schema:dateModified "2021-03-10T00:10:39"^^xsd:datetime ;
+    schema:dateModified "2021-03-10"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -2515,8 +2513,8 @@ tern-cv:e0e2725a-2525-409a-b282-cc5b7c881646
 
 tern-cv:e1a18f5f-b63e-4a67-b28e-52e6f838ac14
     a skos:Concept ;
-    schema:dateCreated "2021-04-08T01:54:07"^^xsd:datetime ;
-    schema:dateModified "2021-04-08T01:56:21"^^xsd:datetime ;
+    schema:dateCreated "2021-04-08"^^xsd:date ;
+    schema:dateModified "2021-04-08"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -2527,8 +2525,8 @@ tern-cv:e1a18f5f-b63e-4a67-b28e-52e6f838ac14
 
 tern-cv:e27ee9af-4fde-46aa-a068-f847834269a6
     a skos:Concept ;
-    schema:dateCreated "2020-11-06T00:27:04"^^xsd:datetime ;
-    schema:dateModified "2021-01-05T00:38:35"^^xsd:datetime ;
+    schema:dateCreated "2020-11-06"^^xsd:date ;
+    schema:dateModified "2021-01-05"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:0531b8b6-7610-4fbd-9a66-8cd80d357a70 ;
@@ -2539,8 +2537,8 @@ tern-cv:e27ee9af-4fde-46aa-a068-f847834269a6
 
 tern-cv:e349de93-86f4-490b-afdf-1b7fef5603a3
     a skos:Concept ;
-    schema:dateCreated "2020-09-18T05:23:21.978000+00:00"^^xsd:datetime ;
-    schema:dateModified "2021-02-08T01:59:44"^^xsd:datetime ;
+    schema:dateCreated "2020-09-18"^^xsd:date ;
+    schema:dateModified "2021-02-08"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -2551,8 +2549,8 @@ tern-cv:e349de93-86f4-490b-afdf-1b7fef5603a3
 
 tern-cv:e3b19733-defc-417d-9513-f9260b9553af
     a skos:Concept ;
-    schema:dateCreated "2020-10-28T05:32:34"^^xsd:datetime ;
-    schema:dateModified "2020-11-09T02:14:48"^^xsd:datetime ;
+    schema:dateCreated "2020-10-28"^^xsd:date ;
+    schema:dateModified "2020-11-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:7dc7ae5c-f074-4536-9032-f59eba3f9270 ;
@@ -2563,8 +2561,8 @@ tern-cv:e3b19733-defc-417d-9513-f9260b9553af
 
 tern-cv:e3e69168-a959-4b8e-a1ea-2413fc3c2e4e
     a skos:Concept ;
-    schema:dateCreated "2021-04-08T00:42:40"^^xsd:datetime ;
-    schema:dateModified "2021-04-08T01:39:23"^^xsd:datetime ;
+    schema:dateCreated "2021-04-08"^^xsd:date ;
+    schema:dateModified "2021-04-08"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -2575,7 +2573,7 @@ tern-cv:e3e69168-a959-4b8e-a1ea-2413fc3c2e4e
 
 tern-cv:e4789a46-8a2f-4987-8745-a9b048fa66e2
     a skos:Concept ;
-    schema:dateModified "2020-12-19T08:08:31"^^xsd:datetime ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -2586,8 +2584,8 @@ tern-cv:e4789a46-8a2f-4987-8745-a9b048fa66e2
 
 tern-cv:e523389f-7fee-4ec1-8843-c847245ba2fd
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T01:09:53"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:c06b51c6-8290-40bf-b192-b0dc2b44fde1 ;
@@ -2598,7 +2596,7 @@ tern-cv:e523389f-7fee-4ec1-8843-c847245ba2fd
 
 tern-cv:e5b70249-76a8-4087-8ac9-588c7e29b944
     a skos:Concept ;
-    schema:dateModified "2021-03-12T06:14:52"^^xsd:datetime ;
+    schema:dateModified "2021-03-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:6e2ede4b-1e6f-4ea0-93d9-6597c5666d62 ;
@@ -2609,8 +2607,8 @@ tern-cv:e5b70249-76a8-4087-8ac9-588c7e29b944
 
 tern-cv:e8e21a9e-908a-4b99-b2ac-5678d73ba3e3
     a skos:Concept ;
-    schema:dateCreated "2020-06-19T15:46:43+00:00"^^xsd:datetime ;
-    schema:dateModified "2021-03-26T06:03:24"^^xsd:datetime ;
+    schema:dateCreated "2020-06-19"^^xsd:date ;
+    schema:dateModified "2021-03-26"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -2621,7 +2619,7 @@ tern-cv:e8e21a9e-908a-4b99-b2ac-5678d73ba3e3
 
 tern-cv:e926b2ca-2688-486c-aa28-435f91c3c110
     a skos:Concept ;
-    schema:dateModified "2021-03-12T06:15:43"^^xsd:datetime ;
+    schema:dateModified "2021-03-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader <http://linked.data.gov.au/def/tern-cv/c_012ebf32> ;
@@ -2632,8 +2630,8 @@ tern-cv:e926b2ca-2688-486c-aa28-435f91c3c110
 
 tern-cv:e9947c8b-0d88-40d5-842a-4aa32fe6646a
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T00:24:29"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T01:40:37"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -2644,8 +2642,8 @@ tern-cv:e9947c8b-0d88-40d5-842a-4aa32fe6646a
 
 tern-cv:e9d2e691-dd18-4a38-a987-2fa48c7d5562
     a skos:Concept ;
-    schema:dateCreated "2020-10-28T05:31:18"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T08:10:06"^^xsd:datetime ;
+    schema:dateCreated "2020-10-28"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:7dc7ae5c-f074-4536-9032-f59eba3f9270 ;
@@ -2656,8 +2654,8 @@ tern-cv:e9d2e691-dd18-4a38-a987-2fa48c7d5562
 
 tern-cv:ea001a27-3217-45c2-a7b5-96a104986def
     a skos:Concept ;
-    schema:dateCreated "2021-03-29T07:12:53"^^xsd:datetime ;
-    schema:dateModified "2021-03-29T07:14:07"^^xsd:datetime ;
+    schema:dateCreated "2021-03-29"^^xsd:date ;
+    schema:dateModified "2021-03-29"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:8fa1c4bd-73b3-432a-ab49-9ee89928e6d9 ;
@@ -2668,8 +2666,8 @@ tern-cv:ea001a27-3217-45c2-a7b5-96a104986def
 
 tern-cv:eaa90e7f-7e44-47b1-af26-e5606b9e3cea
     a skos:Concept ;
-    schema:dateCreated "2020-06-25T01:09:23.556000+00:00"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T08:10:30"^^xsd:datetime ;
+    schema:dateCreated "2020-06-25"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:123f2efe-3891-4764-9047-609c8b30e925 ;
@@ -2680,7 +2678,7 @@ tern-cv:eaa90e7f-7e44-47b1-af26-e5606b9e3cea
 
 tern-cv:eb29cf16-af57-4c8b-b5ec-8c35db9b9901
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T01:54:30"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -2691,7 +2689,7 @@ tern-cv:eb29cf16-af57-4c8b-b5ec-8c35db9b9901
 
 tern-cv:ec46ef8d-ad37-4b87-b344-f22599ec2207
     a skos:Concept ;
-    schema:dateModified "2020-07-09T06:49:16.928000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -2702,8 +2700,8 @@ tern-cv:ec46ef8d-ad37-4b87-b344-f22599ec2207
 
 tern-cv:f0bcd32d-db46-45c4-b860-a099a5e06603
     a skos:Concept ;
-    schema:dateCreated "2021-04-20T03:07:32"^^xsd:datetime ;
-    schema:dateModified "2021-04-20T03:09:24"^^xsd:datetime ;
+    schema:dateCreated "2021-04-20"^^xsd:date ;
+    schema:dateModified "2021-04-20"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -2714,8 +2712,8 @@ tern-cv:f0bcd32d-db46-45c4-b860-a099a5e06603
 
 tern-cv:f1f46e83-769e-4d50-9212-d180ea72a0f0
     a skos:Concept ;
-    schema:dateCreated "2021-04-07T03:07:31"^^xsd:datetime ;
-    schema:dateModified "2021-04-07T03:08:35"^^xsd:datetime ;
+    schema:dateCreated "2021-04-07"^^xsd:date ;
+    schema:dateModified "2021-04-07"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -2726,7 +2724,7 @@ tern-cv:f1f46e83-769e-4d50-9212-d180ea72a0f0
 
 tern-cv:f2c73e78-8f71-4b41-bfd9-f1cc447593c7
     a skos:Concept ;
-    schema:dateModified "2020-07-09T22:43:47.211000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -2737,8 +2735,8 @@ tern-cv:f2c73e78-8f71-4b41-bfd9-f1cc447593c7
 
 tern-cv:f3f88912-4aab-4d6c-b2ab-7b42ecfaae60
     a skos:Concept ;
-    schema:dateCreated "2021-04-20T05:32:07"^^xsd:datetime ;
-    schema:dateModified "2021-04-20T05:33:08"^^xsd:datetime ;
+    schema:dateCreated "2021-04-20"^^xsd:date ;
+    schema:dateModified "2021-04-20"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -2749,8 +2747,8 @@ tern-cv:f3f88912-4aab-4d6c-b2ab-7b42ecfaae60
 
 tern-cv:f63579ee-a834-4fc9-907a-82d6ae580efe
     a skos:Concept ;
-    schema:dateCreated "2021-05-21T00:00:00"^^xsd:datetime ;
-    schema:dateModified "2021-05-24T01:33:51"^^xsd:datetime ;
+    schema:dateCreated "2021-05-21"^^xsd:date ;
+    schema:dateModified "2021-05-24"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:123f2efe-3891-4764-9047-609c8b30e925 ;
@@ -2761,7 +2759,7 @@ tern-cv:f63579ee-a834-4fc9-907a-82d6ae580efe
 
 tern-cv:f724700d-d590-44dc-876f-9c09c256f196
     a skos:Concept ;
-    schema:dateModified "2020-12-19T08:11:09"^^xsd:datetime ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -2772,8 +2770,8 @@ tern-cv:f724700d-d590-44dc-876f-9c09c256f196
 
 tern-cv:f75ff7d2-d525-4a76-939b-5fa43f1e9d77
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T03:09:25"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:3a03227d-1b66-4c63-b7aa-f9ccbb70d1cf ;
@@ -2784,7 +2782,7 @@ tern-cv:f75ff7d2-d525-4a76-939b-5fa43f1e9d77
 
 tern-cv:f81aa91e-5f57-4e49-bc6e-4d821d1f9de2
     a skos:Concept ;
-    schema:dateModified "2021-03-26T06:11:10"^^xsd:datetime ;
+    schema:dateModified "2021-03-26"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:8fa1c4bd-73b3-432a-ab49-9ee89928e6d9 ;
@@ -2795,8 +2793,8 @@ tern-cv:f81aa91e-5f57-4e49-bc6e-4d821d1f9de2
 
 tern-cv:f9ae2722-732f-472a-8087-999240c6581a
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T00:05:25"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T00:06:14"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -2807,8 +2805,8 @@ tern-cv:f9ae2722-732f-472a-8087-999240c6581a
 
 tern-cv:fb66fbb3-3cca-43cf-bf3c-df047ac68a63
     a skos:Concept ;
-    schema:dateCreated "2021-05-21T00:00:00"^^xsd:datetime ;
-    schema:dateModified "2021-05-24T01:46:13"^^xsd:datetime ;
+    schema:dateCreated "2021-05-21"^^xsd:date ;
+    schema:dateModified "2021-05-24"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:123f2efe-3891-4764-9047-609c8b30e925 ;
@@ -2819,7 +2817,7 @@ tern-cv:fb66fbb3-3cca-43cf-bf3c-df047ac68a63
 
 tern-cv:fb6be3d6-5268-4b1c-8e59-d42cb08108f1
     a skos:Concept ;
-    schema:dateModified "2020-12-19T08:12:23"^^xsd:datetime ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -2830,7 +2828,7 @@ tern-cv:fb6be3d6-5268-4b1c-8e59-d42cb08108f1
 
 tern-cv:fc1155cd-12cd-4355-9b07-051b10a8f4eb
     a skos:Concept ;
-    schema:dateModified "2020-07-09T06:54:56.425000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -2841,8 +2839,8 @@ tern-cv:fc1155cd-12cd-4355-9b07-051b10a8f4eb
 
 tern-cv:fd9ffa6b-cffa-4e14-a536-06ab8e3505d7
     a skos:Concept ;
-    schema:dateCreated "2021-05-19T00:06:34"^^xsd:datetime ;
-    schema:dateModified "2021-05-19T00:15:05"^^xsd:datetime ;
+    schema:dateCreated "2021-05-19"^^xsd:date ;
+    schema:dateModified "2021-05-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7 ;
@@ -2853,7 +2851,7 @@ tern-cv:fd9ffa6b-cffa-4e14-a536-06ab8e3505d7
 
 <http://pid.geoscience.gov.au/def/voc/ga/netcdfldtos/sea_surface_temperature>
     a skos:Concept ;
-    schema:dateModified "2022-08-05T11:24:28"^^xsd:datetime ;
+    schema:dateModified "2022-08-05"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     qudt:hasQuantityKind quantitykind:Temperature ;
     rdfs:isDefinedBy <http://pid.geoscience.gov.au/def/voc/ga/netcdfldtos> ;
@@ -2866,10 +2864,10 @@ tern-cv:fd9ffa6b-cffa-4e14-a536-06ab8e3505d7
 
 <http://vocab.aodn.org.au/def/discovery_parameter/entity/2>
     a skos:Concept ;
-    schema:dateCreated "2015-08-06T06:43:53+00:00"^^xsd:dateTime ;
+    schema:dateCreated "2015-08-06"^^xsd:date ;
     schema:dateModified
-        "2018-02-23T00:23:33+00:00"^^xsd:dateTime ,
-        "2022-08-05T11:24:28"^^xsd:datetime ;
+        "2018-02-23"^^xsd:date ,
+        "2022-08-05"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     qudt:hasQuantityKind quantitykind:Length ;
     rdfs:isDefinedBy <http://vocab.aodn.org.au/def/discovery_parameter/1> ;
@@ -2882,8 +2880,8 @@ tern-cv:fd9ffa6b-cffa-4e14-a536-06ab8e3505d7
 
 <http://vocab.aodn.org.au/def/discovery_parameter/entity/3>
     a skos:Concept ;
-    schema:dateCreated "2015-08-06T06:45:48+00:00"^^xsd:dateTime ;
-    schema:dateModified "2022-08-05T11:24:28"^^xsd:datetime ;
+    schema:dateCreated "2015-08-06"^^xsd:date ;
+    schema:dateModified "2022-08-05"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     qudt:hasQuantityKind quantitykind:Period ;
     rdfs:isDefinedBy <http://vocab.aodn.org.au/def/discovery_parameter/1> ;
@@ -2896,8 +2894,8 @@ tern-cv:fd9ffa6b-cffa-4e14-a536-06ab8e3505d7
 
 <http://vocab.aodn.org.au/def/discovery_parameter/entity/35>
     a skos:Concept ;
-    schema:dateCreated "2018-02-22T05:45:57+00:00"^^xsd:dateTime ;
-    schema:dateModified "2022-08-05T11:24:28"^^xsd:datetime ;
+    schema:dateCreated "2018-02-22"^^xsd:date ;
+    schema:dateModified "2022-08-05"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     qudt:hasQuantityKind quantitykind:Length ;
     rdfs:isDefinedBy <http://vocab.aodn.org.au/def/discovery_parameter/1> ;
@@ -2910,8 +2908,8 @@ tern-cv:fd9ffa6b-cffa-4e14-a536-06ab8e3505d7
 
 <http://vocab.aodn.org.au/def/discovery_parameter/entity/4>
     a skos:Concept ;
-    schema:dateCreated "2015-08-06T06:45:48+00:00"^^xsd:dateTime ;
-    schema:dateModified "2022-08-05T11:24:28"^^xsd:datetime ;
+    schema:dateCreated "2015-08-06"^^xsd:date ;
+    schema:dateModified "2022-08-05"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     qudt:hasQuantityKind quantitykind:Temperature ;
     rdfs:isDefinedBy <http://vocab.aodn.org.au/def/discovery_parameter/1> ;
@@ -2924,8 +2922,8 @@ tern-cv:fd9ffa6b-cffa-4e14-a536-06ab8e3505d7
 
 <http://vocab.aodn.org.au/def/discovery_parameter/entity/417>
     a skos:Concept ;
-    schema:dateCreated "2015-08-06T06:45:48+00:00"^^xsd:dateTime ;
-    schema:dateModified "2022-08-05T11:24:28"^^xsd:datetime ;
+    schema:dateCreated "2015-08-06"^^xsd:date ;
+    schema:dateModified "2022-08-05"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     qudt:hasQuantityKind quantitykind:Period ;
     rdfs:isDefinedBy <http://vocab.aodn.org.au/def/discovery_parameter/1> ;
@@ -7993,8 +7991,8 @@ tern-cv:fd9ffa6b-cffa-4e14-a536-06ab8e3505d7
 
 tern-cv:18d64def-df3b-4fa2-ba2d-967c6e392406
     a skos:Concept ;
-    schema:dateCreated "2020-09-15T01:39:57.818000+00:00"^^xsd:datetime ;
-    schema:dateModified "2021-03-12T00:57:24"^^xsd:datetime ;
+    schema:dateCreated "2020-09-15"^^xsd:date ;
+    schema:dateModified "2021-03-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8007,8 +8005,8 @@ tern-cv:18d64def-df3b-4fa2-ba2d-967c6e392406
 
 tern-cv:1d1a868a-74f9-4d7b-8d70-f97d9530098e
     a skos:Concept ;
-    schema:dateCreated "2021-02-26T03:31:27"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T06:18:42"^^xsd:datetime ;
+    schema:dateCreated "2021-02-26"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8021,8 +8019,8 @@ tern-cv:1d1a868a-74f9-4d7b-8d70-f97d9530098e
 
 tern-cv:1e762c90-28e3-41e9-957f-f4cf672aee44
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T02:14:02"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8035,8 +8033,8 @@ tern-cv:1e762c90-28e3-41e9-957f-f4cf672aee44
 
 tern-cv:28874068-9b9b-49b0-a754-0b7bd988d97c
     a skos:Concept ;
-    schema:dateCreated "2021-02-26T03:37:51"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T06:34:41"^^xsd:datetime ;
+    schema:dateCreated "2021-02-26"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8049,8 +8047,8 @@ tern-cv:28874068-9b9b-49b0-a754-0b7bd988d97c
 
 tern-cv:29241828-9973-4854-a4b9-e972cd58c22a
     a skos:Concept ;
-    schema:dateCreated "2021-03-09T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T05:19:56"^^xsd:datetime ;
+    schema:dateCreated "2021-03-09"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8063,8 +8061,8 @@ tern-cv:29241828-9973-4854-a4b9-e972cd58c22a
 
 tern-cv:3826b5a3-7128-4df3-90f3-8196c4c20d45
     a skos:Concept ;
-    schema:dateCreated "2020-09-15T01:39:32.273000+00:00"^^xsd:datetime ;
-    schema:dateModified "2021-03-12T00:53:41"^^xsd:datetime ;
+    schema:dateCreated "2020-09-15"^^xsd:date ;
+    schema:dateModified "2021-03-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8077,8 +8075,8 @@ tern-cv:3826b5a3-7128-4df3-90f3-8196c4c20d45
 
 tern-cv:3ab5a014-78d0-4424-9329-8dc370701f1a
     a skos:Concept ;
-    schema:dateCreated "2021-03-12T01:58:24"^^xsd:datetime ;
-    schema:dateModified "2021-03-12T01:58:59"^^xsd:datetime ;
+    schema:dateCreated "2021-03-12"^^xsd:date ;
+    schema:dateModified "2021-03-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8091,8 +8089,8 @@ tern-cv:3ab5a014-78d0-4424-9329-8dc370701f1a
 
 tern-cv:486e60ea-affa-45ad-b331-027167d866bf
     a skos:Concept ;
-    schema:dateCreated "2021-03-09T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T04:45:33"^^xsd:datetime ;
+    schema:dateCreated "2021-03-09"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8105,8 +8103,8 @@ tern-cv:486e60ea-affa-45ad-b331-027167d866bf
 
 tern-cv:4e272650-c4f7-412b-b7bf-031af0611acc
     a skos:Concept ;
-    schema:dateCreated "2021-03-09T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T23:50:55"^^xsd:datetime ;
+    schema:dateCreated "2021-03-09"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8119,7 +8117,7 @@ tern-cv:4e272650-c4f7-412b-b7bf-031af0611acc
 
 tern-cv:5a95ac61-94c5-4993-aad2-3e891156efe0
     a skos:Concept ;
-    schema:dateModified "2021-03-11T06:27:23"^^xsd:datetime ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8132,8 +8130,8 @@ tern-cv:5a95ac61-94c5-4993-aad2-3e891156efe0
 
 tern-cv:5d13d5e9-4465-4c75-8a41-60bf84882696
     a skos:Concept ;
-    schema:dateCreated "2021-03-12T02:01:55"^^xsd:datetime ;
-    schema:dateModified "2021-03-12T02:02:41"^^xsd:datetime ;
+    schema:dateCreated "2021-03-12"^^xsd:date ;
+    schema:dateModified "2021-03-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8146,8 +8144,8 @@ tern-cv:5d13d5e9-4465-4c75-8a41-60bf84882696
 
 tern-cv:71934567-a90d-433c-a040-63df566c9faa
     a skos:Concept ;
-    schema:dateCreated "2021-03-09T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T04:43:56"^^xsd:datetime ;
+    schema:dateCreated "2021-03-09"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8160,8 +8158,8 @@ tern-cv:71934567-a90d-433c-a040-63df566c9faa
 
 tern-cv:79b5755c-6de7-42e9-a652-c402faec2826
     a skos:Concept ;
-    schema:dateCreated "2021-03-09T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T23:48:29"^^xsd:datetime ;
+    schema:dateCreated "2021-03-09"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8174,8 +8172,8 @@ tern-cv:79b5755c-6de7-42e9-a652-c402faec2826
 
 tern-cv:7e75402d-e3c6-41dd-9e17-7f44b26bbb10
     a skos:Concept ;
-    schema:dateCreated "2021-02-26T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T06:32:35"^^xsd:datetime ;
+    schema:dateCreated "2021-02-26"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8188,8 +8186,8 @@ tern-cv:7e75402d-e3c6-41dd-9e17-7f44b26bbb10
 
 tern-cv:800cf33b-1c44-435d-89bd-5d80e3e8aba1
     a skos:Concept ;
-    schema:dateCreated "2021-03-09T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T04:46:25"^^xsd:datetime ;
+    schema:dateCreated "2021-03-09"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8202,8 +8200,8 @@ tern-cv:800cf33b-1c44-435d-89bd-5d80e3e8aba1
 
 tern-cv:8c20f342-39fd-4abf-ab97-218c7c1ce499
     a skos:Concept ;
-    schema:dateCreated "2021-03-09T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T04:49:33"^^xsd:datetime ;
+    schema:dateCreated "2021-03-09"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8216,7 +8214,7 @@ tern-cv:8c20f342-39fd-4abf-ab97-218c7c1ce499
 
 tern-cv:8f220426-6b5a-4b8f-a995-8eea263a4a19
     a skos:Concept ;
-    schema:dateModified "2021-03-12T00:59:55"^^xsd:datetime ;
+    schema:dateModified "2021-03-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8229,8 +8227,8 @@ tern-cv:8f220426-6b5a-4b8f-a995-8eea263a4a19
 
 tern-cv:9343e3b9-bca2-48e2-af02-eed8111e0147
     a skos:Concept ;
-    schema:dateCreated "2021-04-21T04:28:02"^^xsd:datetime ;
-    schema:dateModified "2021-04-22T03:29:12"^^xsd:datetime ;
+    schema:dateCreated "2021-04-21"^^xsd:date ;
+    schema:dateModified "2021-04-22"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8243,8 +8241,8 @@ tern-cv:9343e3b9-bca2-48e2-af02-eed8111e0147
 
 tern-cv:a8e12e7f-6052-4e87-a69e-ceb34ad5c45d
     a skos:Concept ;
-    schema:dateCreated "2021-03-09T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T05:35:10"^^xsd:datetime ;
+    schema:dateCreated "2021-03-09"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8257,8 +8255,8 @@ tern-cv:a8e12e7f-6052-4e87-a69e-ceb34ad5c45d
 
 tern-cv:b0dff759-ae91-4801-b520-b27e27215a40
     a skos:Concept ;
-    schema:dateCreated "2021-03-09T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T05:14:22"^^xsd:datetime ;
+    schema:dateCreated "2021-03-09"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8271,8 +8269,8 @@ tern-cv:b0dff759-ae91-4801-b520-b27e27215a40
 
 tern-cv:be1916fa-a0cf-4e86-a0dc-dd49f7a78af7
     a skos:Concept ;
-    schema:dateCreated "2021-02-26T03:39:49"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T06:37:50"^^xsd:datetime ;
+    schema:dateCreated "2021-02-26"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8285,8 +8283,8 @@ tern-cv:be1916fa-a0cf-4e86-a0dc-dd49f7a78af7
 
 tern-cv:c3d26c6f-91b7-4627-91e6-2147fa44ad03
     a skos:Concept ;
-    schema:dateCreated "2021-04-21T07:21:15"^^xsd:datetime ;
-    schema:dateModified "2021-04-22T03:48:01"^^xsd:datetime ;
+    schema:dateCreated "2021-04-21"^^xsd:date ;
+    schema:dateModified "2021-04-22"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8299,8 +8297,8 @@ tern-cv:c3d26c6f-91b7-4627-91e6-2147fa44ad03
 
 tern-cv:c5f99536-8986-418e-932d-ae5d77312adc
     a skos:Concept ;
-    schema:dateCreated "2021-03-09T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-12T00:42:32"^^xsd:datetime ;
+    schema:dateCreated "2021-03-09"^^xsd:date ;
+    schema:dateModified "2021-03-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8324,8 +8322,8 @@ tern-cv:c5f99536-8986-418e-932d-ae5d77312adc
 
 <http://linked.data.gov.au/def/tern-cv/c_fb538aea>
     a skos:Concept ;
-    schema:dateCreated "2021-05-24T01:04:02"^^xsd:datetime ;
-    schema:dateModified "2021-05-24T01:14:28"^^xsd:datetime ;
+    schema:dateCreated "2021-05-24"^^xsd:date ;
+    schema:dateModified "2021-05-24"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8338,8 +8336,8 @@ tern-cv:c5f99536-8986-418e-932d-ae5d77312adc
 
 tern-cv:d33f60ee-1934-4bd8-9919-06c0d54eee1a
     a skos:Concept ;
-    schema:dateCreated "2021-03-09T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T05:20:32"^^xsd:datetime ;
+    schema:dateCreated "2021-03-09"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8352,8 +8350,8 @@ tern-cv:d33f60ee-1934-4bd8-9919-06c0d54eee1a
 
 tern-cv:d5635c66-06d2-48e4-98ff-7e83e8a2b265
     a skos:Concept ;
-    schema:dateCreated "2021-03-09T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T05:24:58"^^xsd:datetime ;
+    schema:dateCreated "2021-03-09"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8366,8 +8364,8 @@ tern-cv:d5635c66-06d2-48e4-98ff-7e83e8a2b265
 
 tern-cv:f3888501-98b1-4a53-a788-20b0f0b8a7e6
     a skos:Concept ;
-    schema:dateCreated "2021-03-09T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T05:13:18"^^xsd:datetime ;
+    schema:dateCreated "2021-03-09"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8380,8 +8378,8 @@ tern-cv:f3888501-98b1-4a53-a788-20b0f0b8a7e6
 
 tern-cv:f57f6bf8-2a5e-47c5-bcc2-4ce7bb4b9dc7
     a skos:Concept ;
-    schema:dateCreated "2021-03-09T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T04:55:35"^^xsd:datetime ;
+    schema:dateCreated "2021-03-09"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8394,8 +8392,8 @@ tern-cv:f57f6bf8-2a5e-47c5-bcc2-4ce7bb4b9dc7
 
 tern-cv:fe9c70d4-415b-4152-b517-a8e7a15e36f7
     a skos:Concept ;
-    schema:dateCreated "2021-03-09T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T04:56:40"^^xsd:datetime ;
+    schema:dateCreated "2021-03-09"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8408,8 +8406,8 @@ tern-cv:fe9c70d4-415b-4152-b517-a8e7a15e36f7
 
 tern-cv:ff4ce8d1-4c2b-4d6e-8aea-be4138fea452
     a skos:Concept ;
-    schema:dateCreated "2021-03-09T03:40:41"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T04:18:34"^^xsd:datetime ;
+    schema:dateCreated "2021-03-09"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8437,7 +8435,7 @@ tern-cv:ff4ce8d1-4c2b-4d6e-8aea-be4138fea452
 
 tern-cv:0531b8b6-7610-4fbd-9a66-8cd80d357a70
     a skos:Concept ;
-    schema:dateModified "2020-07-09T09:12:37.281000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-09"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26 ;
@@ -8451,8 +8449,8 @@ tern-cv:0531b8b6-7610-4fbd-9a66-8cd80d357a70
 
 tern-cv:12797115-2e0f-479f-8d06-1700da3ac394
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T06:15:57"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T01:53:23"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8466,7 +8464,7 @@ tern-cv:12797115-2e0f-479f-8d06-1700da3ac394
 
 tern-cv:20a2ab2e-cdbd-4c56-9e68-9c926fd589eb
     a skos:Concept ;
-    schema:dateModified "2021-03-11T06:28:14"^^xsd:datetime ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8493,8 +8491,8 @@ tern-cv:6e2ede4b-1e6f-4ea0-93d9-6597c5666d62
 
 tern-cv:9e03a73d-8e89-4187-9f96-0306aad93458
     a skos:Concept ;
-    schema:dateCreated "2020-11-09T04:58:47"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T07:45:31"^^xsd:datetime ;
+    schema:dateCreated "2020-11-09"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:definition "Measurable physical characteristic. Its value describes a state of a physical system."@en ;
@@ -8508,7 +8506,7 @@ tern-cv:9e03a73d-8e89-4187-9f96-0306aad93458
 
 tern-cv:c55de6b4-72f2-42ad-ad6e-f611db272e78
     a skos:Concept ;
-    schema:dateModified "2021-03-11T06:30:54"^^xsd:datetime ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8522,8 +8520,8 @@ tern-cv:c55de6b4-72f2-42ad-ad6e-f611db272e78
 
 tern-cv:d62a4664-89a1-49a1-9ef0-f30ee2c6d22b
     a skos:Concept ;
-    schema:dateCreated "2020-11-09T04:57:55"^^xsd:datetime ;
-    schema:dateModified "2021-01-05T00:28:35"^^xsd:datetime ;
+    schema:dateCreated "2020-11-09"^^xsd:date ;
+    schema:dateModified "2021-01-05"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:definition "The external elements and conditions which surround, influence, and affect the life and development of an organism or population."@en ;
@@ -8537,8 +8535,8 @@ tern-cv:d62a4664-89a1-49a1-9ef0-f30ee2c6d22b
 
 tern-cv:e88ad59e-0d19-4796-b0be-f7ec3edd7624
     a skos:Concept ;
-    schema:dateCreated "2021-04-20T04:55:38"^^xsd:datetime ;
-    schema:dateModified "2021-04-20T04:56:39"^^xsd:datetime ;
+    schema:dateCreated "2021-04-20"^^xsd:date ;
+    schema:dateModified "2021-04-20"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -8552,8 +8550,8 @@ tern-cv:e88ad59e-0d19-4796-b0be-f7ec3edd7624
 
 tern-cv:fc383c4d-b8d2-4dbf-b897-5f511208ada1
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T06:15:57"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T01:23:24"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8567,7 +8565,7 @@ tern-cv:fc383c4d-b8d2-4dbf-b897-5f511208ada1
 
 tern-cv:09296da0-c645-4165-950c-780c21b3c140
     a skos:Concept ;
-    schema:dateModified "2020-12-18T23:41:51"^^xsd:datetime ;
+    schema:dateModified "2020-12-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -8582,7 +8580,7 @@ tern-cv:09296da0-c645-4165-950c-780c21b3c140
 
 tern-cv:83ac0278-51cd-4d1a-8e05-7c1fc68cf020
     a skos:Concept ;
-    schema:dateModified "2020-07-12T00:05:53.800000+00:00"^^xsd:datetime ;
+    schema:dateModified "2020-07-12"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2 ;
@@ -8597,8 +8595,8 @@ tern-cv:83ac0278-51cd-4d1a-8e05-7c1fc68cf020
 
 tern-cv:a54f0994-bac3-42e4-83d3-46c33affd8a9
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T06:15:57"^^xsd:datetime ;
-    schema:dateModified "2021-02-19T05:13:32"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8614,8 +8612,8 @@ tern-cv:a54f0994-bac3-42e4-83d3-46c33affd8a9
 
 tern-cv:c06b51c6-8290-40bf-b192-b0dc2b44fde1
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T06:15:57"^^xsd:datetime ;
-    schema:dateModified "2021-02-19T05:11:56"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:41a27c10-6dff-4ddc-9f8b-14e87fafc786 ;
@@ -8665,8 +8663,8 @@ tern-cv:c06b51c6-8290-40bf-b192-b0dc2b44fde1
 
 tern-cv:700daf25-0a3f-461e-a799-be80ef2f8cd4
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T06:15:57"^^xsd:datetime ;
-    schema:dateModified "2021-02-04T03:21:09"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8685,8 +8683,8 @@ tern-cv:700daf25-0a3f-461e-a799-be80ef2f8cd4
 
 tern-cv:29bd4356-5638-49c0-8d3e-57598ac2ea6c
     a skos:Concept ;
-    schema:dateCreated "2020-11-09T04:58:26"^^xsd:datetime ;
-    schema:dateModified "2021-01-04T23:49:32"^^xsd:datetime ;
+    schema:dateCreated "2020-11-09"^^xsd:date ;
+    schema:dateModified "2021-01-04"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:definition "The traits, patterns, and structure of a specific geographic area, including its biological composition, its physical environment, and its anthropogenic or social patterns. An area where interacting ecosystems are grouped and repeated in similar form."@en ;
@@ -8705,8 +8703,8 @@ tern-cv:29bd4356-5638-49c0-8d3e-57598ac2ea6c
 
 tern-cv:3a03227d-1b66-4c63-b7aa-f9ccbb70d1cf
     a skos:Concept ;
-    schema:dateCreated "2021-02-03T07:25:56"^^xsd:datetime ;
-    schema:dateModified "2021-02-19T05:10:28"^^xsd:datetime ;
+    schema:dateCreated "2021-02-03"^^xsd:date ;
+    schema:dateModified "2021-02-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader
@@ -8726,8 +8724,8 @@ tern-cv:3a03227d-1b66-4c63-b7aa-f9ccbb70d1cf
 
 tern-cv:7dc7ae5c-f074-4536-9032-f59eba3f9270
     a skos:Concept ;
-    schema:dateCreated "2020-11-04T05:25:31"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T07:34:22"^^xsd:datetime ;
+    schema:dateCreated "2020-11-04"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:broader tern-cv:d62a4664-89a1-49a1-9ef0-f30ee2c6d22b ;
@@ -8793,8 +8791,8 @@ tern-cv:bb5c1354-8d70-47b2-b333-87e3bf1157d6
 
 tern-cv:41a27c10-6dff-4ddc-9f8b-14e87fafc786
     a skos:Concept ;
-    schema:dateCreated "2020-11-09T04:57:22"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T07:17:47"^^xsd:datetime ;
+    schema:dateCreated "2020-11-09"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:definition "Related to the properties, composition, and structure of matter, the changes in structure and composition of matter, and energy changes."@en ;
@@ -8843,8 +8841,8 @@ tern-cv:6f726a59-c330-44eb-898e-7d42d5fbdada
 
 tern-cv:123f2efe-3891-4764-9047-609c8b30e925
     a skos:Concept ;
-    schema:dateCreated "2020-11-05T06:17:38"^^xsd:datetime ;
-    schema:dateModified "2020-12-18T23:43:32"^^xsd:datetime ;
+    schema:dateCreated "2020-11-05"^^xsd:date ;
+    schema:dateModified "2020-12-18"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:definition "Measures related to the layer of gases surrounding Earth"@en ;
@@ -8967,8 +8965,8 @@ tern-cv:123f2efe-3891-4764-9047-609c8b30e925
 
 tern-cv:777773d0-cfb4-44ff-85e2-08b48e10ac52
     a skos:Concept ;
-    schema:dateCreated "2021-02-26T03:30:24"^^xsd:datetime ;
-    schema:dateModified "2021-03-11T03:53:45"^^xsd:datetime ;
+    schema:dateCreated "2021-02-26"^^xsd:date ;
+    schema:dateModified "2021-03-11"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:definition "disturbance parameters"@en ;
@@ -9149,8 +9147,8 @@ tern-cv:8fa1c4bd-73b3-432a-ab49-9ee89928e6d9
 
 tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26
     a skos:Concept ;
-    schema:dateCreated "2020-11-06T02:30:20"^^xsd:datetime ;
-    schema:dateModified "2021-01-05T00:25:06"^^xsd:datetime ;
+    schema:dateCreated "2020-11-06"^^xsd:date ;
+    schema:dateModified "2021-01-05"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:definition "The top layer of the land surface of the earth that is composed of disintegrated rock particles, humus, water and air."@en ;
@@ -9216,8 +9214,8 @@ tern-cv:99bd0128-54d4-4a2b-8a2c-48010eb07d26
 
 tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2
     a skos:Concept ;
-    schema:dateCreated "2020-11-09T04:57:05"^^xsd:datetime ;
-    schema:dateModified "2021-04-08T00:43:06"^^xsd:datetime ;
+    schema:dateCreated "2020-11-09"^^xsd:date ;
+    schema:dateModified "2021-04-08"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:definition "Living organisms and life."@en ;
@@ -9286,8 +9284,8 @@ tern-cv:2ffe4363-dea1-4188-9f8f-835983d47fe2
 
 tern-cv:45ae73d8-92bd-4261-a05f-7bfac228e1f7
     a skos:Concept ;
-    schema:dateCreated "2020-11-09T04:57:38"^^xsd:datetime ;
-    schema:dateModified "2020-12-19T07:20:26"^^xsd:datetime ;
+    schema:dateCreated "2020-11-09"^^xsd:date ;
+    schema:dateModified "2020-12-19"^^xsd:date ;
     skos:historyNote "Includes terms from TERN Core Vocabulary (https://linkeddata.tern.org.au/viewer/tern)"@en ;
     rdfs:isDefinedBy tern-cv:5699eca7-9ef0-47a6-bcfb-9306e0e2b85e ;
     skos:definition "The flow of energy and matter between organisms and their physical environment within an Earth-System context."@en ;
