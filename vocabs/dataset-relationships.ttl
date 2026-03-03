@@ -2,29 +2,18 @@ PREFIX : <https://linked.data.gov.au/def/dataset-relationships/>
 PREFIX cs: <https://linked.data.gov.au/def/dataset-relationships>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX prov: <http://www.w3.org/ns/prov/#>
+PREFIX prov1: <http://www.w3.org/ns/prov/#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-:generalizationOf
-    a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
-    rdfs:isDefinedBy cs: ;
-    owl:inverseOf prov:specializationOf ;
-    skos:definition "Inverse of Specialization Of"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Is Generalization Of"@en ;
-    skos:topConceptOf cs: ;
-.
-
 dcterms:hasFormat
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
     owl:inverseOf dcterms:isFormatOf ;
     skos:definition "A related resource that is substantially the same as the pre-existing described resource, but in another format."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Has Format"@en ;
     skos:topConceptOf cs: ;
@@ -32,10 +21,10 @@ dcterms:hasFormat
 
 dcterms:hasPart
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
     owl:inverseOf dcterms:isPartOf ;
     skos:definition "A related resource that is included either physically or logically in the described resource."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Has Part"@en ;
     skos:topConceptOf cs: ;
@@ -43,10 +32,10 @@ dcterms:hasPart
 
 dcterms:hasVersion
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
     owl:inverseOf dcterms:isVersionOf ;
     skos:definition "A related resource that is a version, edition, or adaptation of the described resource."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Has Version"@en ;
     skos:topConceptOf cs: ;
@@ -54,10 +43,10 @@ dcterms:hasVersion
 
 dcterms:isFormatOf
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
     owl:inverseOf dcterms:hasFormat ;
     skos:definition "A pre-existing related resource that is substantially the same as the described resource, but in another format."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Is Format Of"@en ;
     skos:topConceptOf cs: ;
@@ -65,10 +54,10 @@ dcterms:isFormatOf
 
 dcterms:isPartOf
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
     owl:inverseOf dcterms:hasPart ;
     skos:definition "A related resource that is included either physically or logically in the described resource."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Is Part Of"@en ;
     skos:topConceptOf cs: ;
@@ -76,10 +65,10 @@ dcterms:isPartOf
 
 dcterms:isReferencedBy
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
     owl:inverseOf dcterms:references ;
     skos:definition "A related resource that references, cites, or otherwise points to the described resource."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Is Referenced By"@en ;
     skos:topConceptOf cs: ;
@@ -87,10 +76,10 @@ dcterms:isReferencedBy
 
 dcterms:isReplacedBy
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
     owl:inverseOf dcterms:replaces ;
     skos:definition "A related resource that supplants, displaces, or supersedes the described resource."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Is Replaced By"@en ;
     skos:topConceptOf cs: ;
@@ -98,10 +87,10 @@ dcterms:isReplacedBy
 
 dcterms:isRequiredBy
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
     owl:inverseOf dcterms:requires ;
     skos:definition "A related resource that requires the described resource to support its function, delivery, or coherence."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Is Required By"@en ;
     skos:topConceptOf cs: ;
@@ -109,10 +98,10 @@ dcterms:isRequiredBy
 
 dcterms:isVersionOf
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
     owl:inverseOf dcterms:hasVersion ;
     skos:definition "A related resource of which the described resource is a version, edition, or adaptation."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Is Version Of"@en ;
     skos:topConceptOf cs: ;
@@ -120,10 +109,10 @@ dcterms:isVersionOf
 
 dcterms:references
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
     owl:inverseOf dcterms:isReferencedBy ;
     skos:definition "A related resource that is referenced, cited, or otherwise pointed to by the described resource."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "References"@en ;
     skos:topConceptOf cs: ;
@@ -131,10 +120,10 @@ dcterms:references
 
 dcterms:replaces
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
     owl:inverseOf dcterms:isReplacedBy ;
     skos:definition "A related resource that is supplanted, displaced, or superseded by the described resource."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Replaces"@en ;
     skos:topConceptOf cs: ;
@@ -142,99 +131,110 @@ dcterms:replaces
 
 dcterms:requires
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
     owl:inverseOf dcterms:isRequiredBy ;
     skos:definition "A related resource that is required by the described resource to support its function, delivery, or coherence."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Requires"@en ;
     skos:topConceptOf cs: ;
 .
 
-prov:alternateOf
+prov1:alternateOf
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
-    owl:inverseOf prov:alternateOf ;
+    owl:inverseOf prov1:alternateOf ;
     skos:definition "Two alternate entities present aspects of the same thing. These aspects may be the same or different, and the alternate entities may or may not overlap in time."@en ;
     skos:editorialNote "alternateOf is inversed to the same term as defined in PROV-O, alternates go will go either way."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Is Alternate Of"@en ;
     skos:topConceptOf cs: ;
 .
 
-prov:influenced
+prov1:influenced
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
-    owl:inverseOf prov:wasInfluencedBy ;
+    owl:inverseOf prov1:wasInfluencedBy ;
     skos:definition "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Influenced"@en ;
     skos:topConceptOf cs: ;
 .
 
-prov:specializationOf
+prov1:specializationOf
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
     owl:inverseOf :generalizationOf ;
     skos:definition "An entity that is a specialization of another shares all aspects of the latter, and additionally presents more specific aspects of the same thing as the latter. In particular, the lifetime of the entity being specialized contains that of any specialization. Examples of aspects include a time period, an abstraction, and a context associated with the entity."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Is Specialization Of"@en ;
     skos:topConceptOf cs: ;
 .
 
-prov:wasDerivedFrom
+prov1:wasDerivedFrom
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
     owl:inverseOf :hadDerivation ;
     skos:definition "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Was Derived From"@en ;
     skos:topConceptOf cs: ;
 .
 
-prov:wasInfluencedBy
+prov1:wasInfluencedBy
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
-    owl:inverseOf prov:influenced ;
+    owl:inverseOf prov1:influenced ;
     skos:definition "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Was Influenced By"@en ;
     skos:topConceptOf cs: ;
 .
 
-prov:wasQuotedFrom
+prov1:wasQuotedFrom
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
     owl:inverseOf :quotedAs ;
     skos:definition "A quotation is the repeat of (some or all of) an entity, such as text or image, by someone who may or may not be its original author. Quotation is a particular case of derivation."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Quoted From"@en ;
     skos:topConceptOf cs: ;
 .
 
-prov:wasRevisionOf
+prov1:wasRevisionOf
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
     owl:inverseOf :hadRevision ;
     skos:definition "A revision is a derivation for which the resulting entity is a revised version of some original. The implication here is that the resulting entity contains substantial content from the original. Revision is a particular case of derivation."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Was Revision Of"@en ;
     skos:topConceptOf cs: ;
 .
 
+:generalizationOf
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    owl:inverseOf prov1:specializationOf ;
+    skos:definition "Inverse of Specialization Of"@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Is Generalization Of"@en ;
+    skos:topConceptOf cs: ;
+.
+
 :hadDerivation
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
-    owl:inverseOf prov:wasDerivedFrom ;
+    owl:inverseOf prov1:wasDerivedFrom ;
     skos:definition "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Was Derivation of"@en ;
     skos:topConceptOf cs: ;
@@ -243,10 +243,10 @@ prov:wasRevisionOf
 
 :hadRevision
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
-    owl:inverseOf prov:wasRevisionOf ;
+    owl:inverseOf prov1:wasRevisionOf ;
     skos:definition "A revision is a derivation for which the resulting entity is a revised version of some original. The implication here is that the resulting entity contains substantial content from the original. Revision is a particular case of derivation."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Had Revision"@en ;
     skos:topConceptOf cs: ;
@@ -254,27 +254,17 @@ prov:wasRevisionOf
 
 :quotedAs
     a skos:Concept ;
-    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     rdfs:isDefinedBy cs: ;
-    owl:inverseOf prov:wasQuotedFrom ;
+    owl:inverseOf prov1:wasQuotedFrom ;
     skos:definition "A quotation is the repeat of (some or all of) an entity, such as text or image, by someone who may or may not be its original author. Quotation is a particular case of derivation."@en ;
+    skos:historyNote "Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O" ;
     skos:inScheme cs: ;
     skos:prefLabel "Quoted As"@en ;
     skos:topConceptOf cs: ;
 .
 
-
-
 cs:
     a skos:ConceptScheme ;
-    schema:creator <https://linked.data.gov.au/org/detsi> ;
-    schema:dateCreated "2020-11-10"^^xsd:date ;
-    schema:publisher <https://linked.data.gov.au/org/detsi> ;
-    schema:dateModified "2025-06-02"^^xsd:date ;
-    skos:historyNote """2025-06 NJC: Updated from DES to DETSI. No content changes.
-
-2023-03: Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O""" ;
-    schema:publisher <https://linked.data.gov.au/org/detsi> ;
     skos:definition "This is a vocabulary collection used by the Queensland Government to determine relationships between catalogued datasets.  It is based on the DCAT qualified relation property https://www.w3.org/TR/vocab-dcat-2/#Property:resource_qualified_relation."@en ;
     skos:hasTopConcept
         dcterms:hasFormat ,
@@ -289,17 +279,23 @@ cs:
         dcterms:references ,
         dcterms:replaces ,
         dcterms:requires ,
-        prov:alternateOf ,
-        prov:influenced ,
-        prov:specializationOf ,
-        prov:wasDerivedFrom ,
-        prov:wasInfluencedBy ,
-        prov:wasQuotedFrom ,
-        prov:wasRevisionOf ,
+        prov1:alternateOf ,
+        prov1:influenced ,
+        prov1:specializationOf ,
+        prov1:wasDerivedFrom ,
+        prov1:wasInfluencedBy ,
+        prov1:wasQuotedFrom ,
+        prov1:wasRevisionOf ,
         :generalizationOf ,
         :hadDerivation ,
         :hadRevision ,
         :quotedAs ;
-    skos:prefLabel "Dataset Relationships"@en ;
-.
+    skos:historyNote """2025-06 NJC: Updated from DES to DETSI. No content changes.
 
+2023-03: Derived from Qualified Relations ISO-19115-DCTERMS and PROV-O""" ;
+    skos:prefLabel "Dataset Relationships"@en ;
+    schema:creator <https://linked.data.gov.au/org/detsi> ;
+    schema:dateCreated "2020-11-10"^^xsd:date ;
+    schema:dateModified "2025-06-02"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/detsi> ;
+.

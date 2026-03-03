@@ -1,64 +1,23 @@
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX org: <http://www.w3.org/ns/org#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prof: <http://www.w3.org/ns/dx/prof/>
-PREFIX prov: <http://www.w3.org/ns/prov/#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
-<https://w3id.org/profile/vocpub> schema:name "VocPub Profile of SKOS" .
-
-<http://qudt.org/2.1/vocab/unit> schema:name "unit" .
-<http://qudt.org/vocab/unit/DAY> schema:name "day" .
-<http://qudt.org/vocab/unit/TON_Metric> schema:name "metric ton" .
-<http://qudt.org/vocab/unit/V> schema:name "volt" .
-
-<http://www.w3.org/ns/dqv#Category> schema:name "Categoryit" .
-<http://www.w3.org/ns/dqv#Dimension> schema:name "Dimension" .
-<http://www.w3.org/ns/dqv#inCategory> schema:name "in category" .
-
-
-<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:132448> schema:name "CHEBI:132448" .
-<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:138089> schema:name "CHEBI:138089" .
-<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35546> schema:name "CHEBI:35546" .
-<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35547> schema:name "CHEBI:35547" .
-<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35549> schema:name "CHEBI:35549" .
-<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:38397> schema:name "CHEBI:38397" .
-<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39426> schema:name "CHEBI:39426" .
-<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:83492> schema:name "CHEBI:83492" .
-<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:83493> schema:name "CHEBI:83493" .
-<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:83507> schema:name "CHEBI:83507" .
-<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:90633> schema:name "CHEBI:90633" .
-
-<https://www.iso.org/standard/32575.html> schema:name "ISO 19157:2013 Geographic information - Data quality" .
-
-schema:DataCatalog
-    schema:description "A collection of datasets" ;
-    schema:name "Data Catalog" ;
-.
-
-schema:hasPart
-    schema:description
-        "Indicates a Resource that is part of this item" ;
-    schema:name
-        "has part" ;
-.
-
-<https://iso25000.com/index.php/en/iso-25000-standards/iso-25012>
-    schema:description "ISO Data Quality model" ;
-    schema:name "ISO/IEC 25012" ;
-.
-
-<http://vocab.aodn.org.au/def/discovery_parameter/1>
-    schema:description "ISO Data Quality model" ;
-    schema:name "ISO/IEC 25012" ;
-.
 
 <http://linked.data.gov.au/def/tern-cv/5699eca7-9ef0-47a6-bcfb-9306e0e2b85e>
     schema:description "This controlled vocabulary covers parameter terms and their descriptions. It can be used for marking up Marine Community Profile metadata and a classified version of the terms is used to control faceted searching in the AODN/IMOS portal." ;
     schema:name "AODN Discovery Parameter Vocabulary" ;
+.
+
+dc:source
+    schema:description "A related resource from which the described resource is derived."@en ;
+    schema:name "Source"@en ;
 .
 
 dcterms:conformsTo
@@ -66,8 +25,37 @@ dcterms:conformsTo
     schema:name "Conforms To" ;
 .
 
+dcterms:created
+    schema:description "Date of creation of the resource." ;
+    schema:name "Date Created" ;
+.
+
+dcterms:creator
+    schema:description "An entity responsible for making the resource." ;
+    schema:name "Creator" ;
+.
+
+dcterms:modified
+    schema:description "Date on which the resource was changed." ;
+    schema:name "Date Modified" ;
+.
+
+dcterms:publisher
+    schema:description "An entity responsible for making the resource available." ;
+    schema:name "Publisher" ;
+.
+
+<http://purl.org/linked-data/registry#status>
+    schema:description "The status of this register entry"@en ;
+    schema:name "status"@en ;
+.
+
 <http://qudt.org/2.1/vocab/quantitykind>
     schema:name "QUDT Quantity Kind Vocabulary Version 2.1.33" ;
+.
+
+<http://qudt.org/2.1/vocab/unit>
+    schema:name "unit" ;
 .
 
 <http://qudt.org/schema/qudt/CountingUnit>
@@ -121,6 +109,23 @@ dcterms:conformsTo
     schema:name "velocity" ;
 .
 
+<http://qudt.org/vocab/unit/DAY>
+    schema:name "day" ;
+.
+
+<http://qudt.org/vocab/unit/TON_Metric>
+    schema:name "metric ton" ;
+.
+
+<http://qudt.org/vocab/unit/V>
+    schema:name "volt" ;
+.
+
+<http://vocab.aodn.org.au/def/discovery_parameter/1>
+    schema:description "ISO Data Quality model" ;
+    schema:name "ISO/IEC 25012" ;
+.
+
 rdfs:comment
     schema:description "A description of the subject resource." ;
     schema:name "comment" ;
@@ -134,6 +139,11 @@ rdfs:isDefinedBy
 rdfs:seeAlso
     schema:description "Further information about the subject resource." ;
     schema:name "see also" ;
+.
+
+owl:NamedIndividual
+    schema:description "The class of named individuals." ;
+    schema:name "NamedIndividual" ;
 .
 
 owl:deprecated
@@ -151,11 +161,19 @@ owl:sameAs
     schema:name "sameAs" ;
 .
 
+owl:versionInfo
+    schema:description "The annotation property that provides version information for an ontology or another OWL construct." ;
+    schema:name "versionInfo" ;
+.
+
+skos:Collection
+    schema:description "A meaningful collection of concepts." ;
+    schema:name "Collection" ;
+.
+
 skos:Concept
-    schema:description
-        "An idea or notion; a unit of thought" ;
-    schema:name
-        "Concept" ;
+    schema:description "An idea or notion; a unit of thought" ;
+    schema:name "Concept" ;
 .
 
 skos:ConceptScheme
@@ -171,6 +189,11 @@ skos:altLabel
 skos:broader
     schema:description "Relates a concept to a concept that is more general in meaning" ;
     schema:name "has broader" ;
+.
+
+skos:changeNote
+    schema:description "A note about a modification to a concept." ;
+    schema:name "change note" ;
 .
 
 skos:closeMatch
@@ -213,6 +236,11 @@ skos:inScheme
     schema:name "is in scheme" ;
 .
 
+skos:member
+    schema:description "Relates a collection to one of its members." ;
+    schema:name "has member" ;
+.
+
 skos:narrower
     schema:description "Relates a concept to a concept that is more specific in meaning" ;
     schema:name "has narrower" ;
@@ -221,6 +249,11 @@ skos:narrower
 skos:notation
     schema:description "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme" ;
     schema:name "notation" ;
+.
+
+skos:note
+    schema:description "A general note, for any purpose." ;
+    schema:name "note" ;
 .
 
 skos:prefLabel
@@ -253,6 +286,18 @@ dcat:Catalog
     schema:name "Catalog" ;
 .
 
+<http://www.w3.org/ns/dqv#Category>
+    schema:name "Categoryit" ;
+.
+
+<http://www.w3.org/ns/dqv#Dimension>
+    schema:name "Dimension" ;
+.
+
+<http://www.w3.org/ns/dqv#inCategory>
+    schema:name "in category" ;
+.
+
 prof:hasArtifact
     schema:description "The URL of a downloadable file with particulars such as its format and role indicated by the Resource Descriptor" ;
     schema:name "has artifact" ;
@@ -268,14 +313,33 @@ prof:hasRole
     schema:name "has role" ;
 .
 
+prov:Organization
+    schema:description "An organization is a social or legal institution such as a company, society, etc." ;
+    schema:name "Organization" ;
+.
+
+<https://iso25000.com/index.php/en/iso-25000-standards/iso-25012>
+    schema:description "ISO Data Quality model" ;
+    schema:name "ISO/IEC 25012" ;
+.
+
 <https://kurrawong.ai>
     schema:description """KurrawongAI is a small, Australian-based company enabling organisations to take control of their data.
 
 We use data modelling, data governance and data systems implementation expertise all based on Semantic Web and Knowledge Graph principles to ensure data is in the richest, most open and most extensible form it can be.
 
 We use knowledge graphs for data storage, as a transfer format, when serialised, and as inputs to advanced reasoning and data processing tasks, such as for Machine Learning and Artificial Intelligence applications.""" ;
-    schema:name
-        "KurrawongAI" ;
+    schema:name "KurrawongAI" ;
+.
+
+astatus:stable
+    schema:description "An entry that is seen as having a reasonable measure of stability, may be used to mark the full adoption of a previously 'experimental' entry."@en ;
+    schema:name "stable"@en ;
+.
+
+<https://linked.data.gov.au/def/vocpub/validator>
+    schema:description "SHACL validator for the VocPub Profile" ;
+    schema:name "VocPub Validator" ;
 .
 
 <https://linked.data.gov.au/org/icsm>
@@ -296,9 +360,19 @@ We use knowledge graphs for data storage, as a transfer format, when serialised,
     schema:name "Complete Catalogue and Resource Labels" ;
 .
 
+<https://prez.dev/ManifestResourceRoles/IncompleteCatalogueAndResourceLabels>
+    schema:description "Some of the labels - possibly including names, descriptions & seeAlso links - for the Catalogue and Resource objects" ;
+    schema:name "Incomplete Catalogue and Resource Labels" ;
+.
+
 <https://prez.dev/ManifestResourceRoles/ResourceData>
     schema:description "Data for the content of the container" ;
     schema:name "Resource Data" ;
+.
+
+schema:DataCatalog
+    schema:description "A collection of datasets" ;
+    schema:name "Data Catalog" ;
 .
 
 schema:Organization
@@ -331,6 +405,11 @@ schema:dateCreated
     schema:name "date created" ;
 .
 
+schema:dateIssued
+    schema:description "The date the ticket was issued." ;
+    schema:name "date issued" ;
+.
+
 schema:dateModified
     schema:description "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed" ;
     schema:name "date modified" ;
@@ -339,6 +418,16 @@ schema:dateModified
 schema:description
     schema:description "A description of the item" ;
     schema:name "description" ;
+.
+
+schema:hasPart
+    schema:description "Indicates a Resource that is part of this item" ;
+    schema:name "has part" ;
+.
+
+schema:isPartOf
+    schema:description "Indicates an item or CreativeWork that this item, or CreativeWork (in some sense), is part of." ;
+    schema:name "is part of" ;
 .
 
 schema:name
@@ -351,9 +440,106 @@ schema:publisher
     schema:name "publisher" ;
 .
 
+schema:status
+    schema:description "The status of the study (enumerated)." ;
+    schema:name "status" ;
+.
+
 schema:url
     schema:description "URL of the item" ;
     schema:name "url" ;
 .
 
+schema:version
+    schema:description "The version of the CreativeWork embodied by a specified resource." ;
+    schema:name "version" ;
+.
 
+<https://w3id.org/profile/vocpub>
+    schema:name "VocPub Profile of SKOS" ;
+.
+
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:132448>
+    schema:name "CHEBI:132448" ;
+.
+
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:138089>
+    schema:name "CHEBI:138089" ;
+.
+
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35546>
+    schema:name "CHEBI:35546" ;
+.
+
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35547>
+    schema:name "CHEBI:35547" ;
+.
+
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35549>
+    schema:name "CHEBI:35549" ;
+.
+
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:38397>
+    schema:name "CHEBI:38397" ;
+.
+
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39426>
+    schema:name "CHEBI:39426" ;
+.
+
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:83492>
+    schema:name "CHEBI:83492" ;
+.
+
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:83493>
+    schema:name "CHEBI:83493" ;
+.
+
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:83507>
+    schema:name "CHEBI:83507" ;
+.
+
+<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:90633>
+    schema:name "CHEBI:90633" ;
+.
+
+<https://www.iso.org/standard/32575.html>
+    schema:name "ISO 19157:2013 Geographic information - Data quality" ;
+.
+
+######
+
+
+org:FormalOrganization
+    schema:description "An Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a Corporation, Charity, Government or Church. Note that this is a super class of `gr:BusinessEntity` and it is recommended to use the GoodRelations vocabulary to denote Business classifications such as DUNS or NAICS." ;
+    schema:name "Formal Organization" ;
+.
+
+org:OrganizationalUnit
+    schema:description "An Organization such as a University Support Unit which is part of some larger FormalOrganization and only has full recognition within the context of that FormalOrganization, it is not a Legal Entity in its own right. Units can be large and complex containing other Units and even FormalOrganizations. Alternative names: _OU_ _Unit_ _Department_" ;
+    schema:name "OrganizationalUnit" ;
+.
+
+org:hasPrimarySite
+    schema:description "Indicates a primary site for the Organization, this is the default means by which an Organization can be contacted and is not necessarily the formal headquarters." ;
+    schema:name "primary Site" ;
+.
+
+org:hasSite
+    schema:description "Indicates a site at which the Organization has some presence even if only indirect (e.g. virtual office or a professional service which is acting as the registered address for a company). Inverse of `org:siteOf`." ;
+    schema:name "has site" ;
+.
+
+org:resultedFrom
+    schema:description "Indicates an event which resulted in this organization. Inverse of `org:resultingOrganization`." ;
+    schema:name "resulted from" ;
+.
+
+org:unitOf
+    schema:description "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger FormalOrganization. This is the inverse of `org:hasUnit`." ;
+    schema:name "unit Of" ;
+.
+
+<https://def.isotc211.org/codesets>
+    schema:name "ISO TC-211 Code Set vocabularies" ;
+.

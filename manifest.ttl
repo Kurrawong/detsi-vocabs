@@ -30,7 +30,7 @@ PREFIX schema: <https://schema.org/>
             schema:name "Resource Data - multi-label" ;
         ] ,
         [
-            dcterms:conformsTo <https://w3id.org/profile/vocpub> ;
+            dcterms:conformsTo <https://linked.data.gov.au/def/vocpub/validator> ;
             prof:hasArtifact
                 "vocabs/MD_MaintenanceFrequencyCode.ttl" ,
                 "vocabs/MD_ProgressCode.ttl" ,
@@ -44,14 +44,14 @@ PREFIX schema: <https://schema.org/>
                 "vocabs/gcmd-horizontalresolutionrange.ttl" ,
                 "vocabs/gcmd-sciencekeywords.ttl" ,
                 "vocabs/gcmd-temporalresolutionrange.ttl" ,
-                "vocabs/gsq-roles.ttl" ,
+                #"vocabs/gsq-roles.ttl" ,
                 "vocabs/qesd-qkd.ttl" ,
                 "vocabs/qesd-uom.ttl" ,
                 "vocabs/qg-agent.ttl" ,
                 "vocabs/qg-security-classification.ttl" ,
                 "vocabs/qld-crs.ttl" ,
                 "vocabs/qld-data-licenses.ttl" ,
-                "vocabs/qld-obsprop.ttl" ,
+                #"vocabs/qld-obsprop.ttl" ,
                 "vocabs/resource-types.ttl" ;
             prof:hasRole <https://prez.dev/ManifestResourceRoles/ResourceData> ;
             schema:description "DETSI vocabs" ;
