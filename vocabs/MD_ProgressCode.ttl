@@ -6,6 +6,12 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://committee.iso.org/home/tc211>
+a schema:Organization ;
+schema:name "ISO/TC 211 Geographic information/Geomatics" ;
+schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI
+.
+
 :accepted
     a skos:Concept ;
     schema:status status:stable ;
