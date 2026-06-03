@@ -21,12 +21,18 @@ tasks:
       - pm:install
     cmd: uv run pm validate ../manifest.ttl
 
-  vocabs:build:
-    desc: Build the oxigraph data
+  vocabs:build-with-pm:
+    desc: Build the oxigraph data with prezmanifest
     cmds:
       - uv run pm load file ../manifest.ttl data.trig
       - uv run oxigraph load --location pyoxigraph_data_dir --format application/trig --file data.trig
       - uv run oxigraph optimize --location pyoxigraph_data_dir
+
+  vocabs:build:
+    desc: Build the oxigraph data
+    cmds:
+     - uv run oxigraph load --location pyoxigraph_data_dir --format text/turtle --file ../vocabs/* --file ../agents.ttl --file ../catalogue.ttl --file ../labels.ttl --file ../manifest.ttl
+     - uv run oxigraph optimize --location pyoxigraph_data_dir
 
   dev:
     desc: Run the development server
