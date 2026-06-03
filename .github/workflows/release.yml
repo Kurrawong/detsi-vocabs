@@ -58,6 +58,9 @@ jobs:
       - name: Create and install azure function app python packages
         run: uv pip install --target "./.python_packages/lib/site-packages" -r ./requirements.txt
 
+      - name: Install prezmanifest
+        run: task pm:install
+
       # TODO: add vocabs validation step with prezmanifest.
 
       - name: Build the oxigraph data
