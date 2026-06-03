@@ -1,3 +1,5 @@
+pyoxigraph_data_dir/
+
 # Python-generated files
 __pycache__/
 *.py[oc]
