@@ -23,8 +23,6 @@ tasks:
 
   vocabs:build:
     desc: Build the oxigraph data
-    deps:
-      - vocabs:validate
     cmds:
       - uv run pm load file ../manifest.ttl data.trig
       - uv run oxigraph load --location pyoxigraph_data_dir --format application/trig --file data.trig
