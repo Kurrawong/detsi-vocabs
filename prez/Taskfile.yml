@@ -11,11 +11,21 @@ tasks:
     desc: Export python dependencies to requirements.txt
     cmd: uv export --output-file requirements.txt -q
 
+  pm:install:
+    desc: Install prezmanifest
+    cmd: uv tool install prezmanifest
+
+  vocabs:validate:
+    desc: Validate the Prez manifest
+    deps:
+      - pm:install
+    cmd: uv run pm validate ../manifest.ttl
+
   vocabs:build:
     desc: Build the oxigraph data
+    deps:
+      - vocabs:validate
     cmds:
-      - uv tool install prezmanifest
-      - uv run pm validate ../manifest.ttl
       - uv run pm load file ../manifest.ttl data.trig
       - uv run oxigraph load --location pyoxigraph_data_dir --format application/trig --file data.trig
       - uv run oxigraph optimize --location pyoxigraph_data_dir
