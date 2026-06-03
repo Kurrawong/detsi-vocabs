@@ -14,7 +14,10 @@ tasks:
   vocabs:build:
     desc: Build the oxigraph data
     cmds:
-      - uv run oxigraph load --location pyoxigraph_data_dir --format text/turtle --file ../vocabs/* --file ../agents.ttl --file ../catalogue.ttl --file ../labels.ttl --file ../manifest.ttl
+      - uv tool install prezmanifest
+      - uv run pm validate ../manifest.ttl
+      - uv run pm load file ../manifest.ttl data.trig
+      - uv run oxigraph load --location pyoxigraph_data_dir --format application/trig --file data.trig
       - uv run oxigraph optimize --location pyoxigraph_data_dir
 
   dev:
