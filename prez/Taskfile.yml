@@ -13,7 +13,7 @@ tasks:
 
   pm:install:
     desc: Install prezmanifest
-    cmd: uv tool install prezmanifest==1.2.0
+    cmd: uv tool install prezmanifest==1.2.3
 
   vocabs:validate:
     desc: Validate the Prez manifest
